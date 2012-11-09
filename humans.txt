@@ -3,7 +3,7 @@
 
 
 /* TEAM */
-  <your title>: Victor Diaz Barrales
+  <your title>: Blinkiverse
   Site:
   Twitter:
   Location:
