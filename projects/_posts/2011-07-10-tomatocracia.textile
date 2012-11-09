@@ -1,0 +1,40 @@
+---
+layout: project 
+root: "./.."
+category: project 
+type: interactive installation  
+img: tomatocracia
+title: Tomatocracia 
+technologies: [Processing, Javascript, Python] 
+when: 28/01/2011 - 30/01/2011
+collaborators: [<a href="http://sergio.eclectico.net">Sergio Galan Nieto</a>] 
+task: Game design, Programming 
+desc: Interactive game where players can throw rotten tomatoes to politicians and celebrities  
+videos:  
+images: 
+sourcecode: 
+context: The App Date Event. Madrid. 
+---
+
+
+Tomatocracia is an interactive game specifically designed for The App Date event in Madrid where the audience were able to throw virtual rotten tomatoes to a series of well known and in most of the cases not liked politicians and celebrities using their phones. The phone detects the arm movement when the player perform a throwing gesture and at this moment, the rotten tomato virtually falls over the person displayed in the large screen. 
+
+At the end of the game, the people could see who was the most tomatoed person during the game which the most non-liked person is democratically chosen. 
+
+Simple and superfunny, everybody loved it! 
+
+<!-- 
+<iframe class="project_full_video" src="http://player.vimeo.com/video/25071870" width="480" height="320"  frameborder="0"></iframe><p><a href="http://www.vimeo.com/25071870" class="project_full_caption"> Tomatocracia Vimeo Link</a> 
+--> 
+
+{% if site.book == true %} 
+<img src="../images/tomatocracia/videocapture/1.jpg" title="Title" alt="Title"><img src="../images/{{page.img}}/videocapture/2.jpg" title="Title" alt="Title"><img src="../images/{{page.img}}/videocapture/3.jpg" title="Title" alt="Title"><img src="../images/{{page.img}}/videocapture/4.jpg" title="Title" alt="Title"><img src="../images/{{page.img}}/videocapture/5.jpg" title="Title" alt="Title">
+{% else %}
+
+!../images/{{page.img}}/videocapture/1.jpg(Title)! 
+!../images/{{page.img}}/videocapture/2.jpg(Title)! 
+!../images/{{page.img}}/videocapture/3.jpg(Title)! 
+!../images/{{page.img}}/videocapture/4.jpg(Title)! 
+!../images/{{page.img}}/videocapture/5.jpg(Title)! 
+{% endif %}
+

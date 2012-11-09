@@ -1,0 +1,31 @@
+---
+layout: post 
+root: "./.." 
+category: [post] 
+tags: [workshop, mediafacade]
+type: mobile experiments  
+img:  
+title: Big Games workshop 
+technologies: [] 
+when: 22/10/2011 - 25/10/2011
+collaborators: [] 
+task: [] 
+desc: 
+context:  
+---
+
+During the last weekend, I coorganized and taugh with my friend <a href="http://sergio.eclectico.net">Sergio Galán</a> a workshop in the Medialab Prado in Madrid about game creation for large screens or Media Facades. We called it <a href="http://www.uncoded.es/biggames">BigGames</a>, pretty complicated isnt it? :) The event was wonderful, amazing people and incredible results for the short time we had. 
+For the event we created a live coding system for the media facade that allows to prototype pretty quickly without the need of been connected to the computer which drives the screen. It was pretty cool to program outside the building and seeing the results immediately. All made using HTML5, javascript and some bits of python. 
+
+The more and more I play with HTML5 the more I like it. Without a doubt the browser as a operating system is the future! 
+
+
+{% if site.videos == true %} 
+<div class="videoWrapper">   
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Fpa7tg_aP2I" frameborder="0" allowfullscreen></iframe>
+</div> 
+{% else %} 
+<video  width="100%" height="360"  src="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.MP4" poster="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.jpg" controls="controls" preload="none">
+        It seems that your browser doesn't support html5 videos!! 
+</video>
+{% endif %}

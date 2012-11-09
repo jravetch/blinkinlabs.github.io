@@ -1,0 +1,52 @@
+---
+layout: project 
+root: "./.."
+category: project 
+type: visualization 
+img: mercamadrid
+title: Mercamadrid visualization 
+technologies: [Python, Processing] 
+when: 28/01/2011 - 30/01/2011
+collaborators: ["Montserrat Cañedo", 
+				"César García",  
+				<a href="http://www.olmeda.artelista.com">María Olmeda Franco</a>, 
+				<a href="http://www.arrsa.org"> Ester Gisbert Alemany </a>, 
+				Javi Esquillor García, 
+				<a href="http://www.linkedin.com/pub/fabio-silli/23/966/727"> Fabio Silli  </a>, 
+				<a href="https://twitter.com/torcuataTK "> Beatríz García </a>, 
+				<a href="http://www.tinapaterson.com "> David Rodríguez (AKA Tina Paterson) </a>, 
+				<a href="http://www.trecedejunio.com"> Sara Alvarellos   </a>, 
+				<a href="http://crearchitetturattivamente.blogspot.com/ "> Martina Minnucci </a>, 
+				<a href="mailto:cpanero@hotmail.com"> Carlos Panero Zurbriggen  </a> 
+
+] 
+task: Visualization design and Programming 
+desc: Visualizing the food flow of the main food hub of Madrid 
+images: 
+sourcecode: 
+context: Visualizar 2011, Medialab Prado, Madrid. 
+---
+
+
+This project aims to shed some light on Madrid food flows through visualization using Mercamadrid open data. Mercamadrid is the biggest food hub in Spain and the second in Europe where a flood of food pass through it every day. 
+
+{% if site.book == false %} 
+!../images/{{page.img}}/big/p1.png(Title)! 
+{% endif %} 
+
+
+It tries to answer basic questions about our consumption habits, self-sustainability and how food is distributed on a daily basis. This project analyzes how production logics have evolved in last years because of changes in our supply chain, based on an anthropological study now in progress. We are particularly interested in examining how some of the controversies which, as semiotic-material constants in the city´s ecology, circulate through food flows and contribute to define the political agenda of the city. 
+
+Different types visualizations where made, one more focused on exploration, where the user can interact and explore the dataset selecting different types of food and seen in the food flows in a period of time. 
+
+The others were static images that tried to depict certain aspects of how we import / export food such as in the following images where they show the longitudes and latitudes where the food that is consumed to Madrid comes from. 
+
+{% if site.book == false %} 
+!../images/{{page.img}}/big/visualizar_lon.png(Title)! 
+!../images/{{page.img}}/big/visualizar_lat.png(Title)! 
+{% endif %} 
+
+
+{% if site.book == true %} 
+<img src="../images/{{page.img}}/big/p1.png" title="Title" alt="Title"><img src="../images/{{page.img}}/big/visualizar_lon.png" title="Title" alt="Title"><img src="../images/{{page.img}}/big/visualizar_lat.png" title="Title" alt="Title">
+{% endif %} 

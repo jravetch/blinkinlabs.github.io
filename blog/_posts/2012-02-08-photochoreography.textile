@@ -1,0 +1,33 @@
+---
+layout: post 
+root: "./.." 
+category: [hack, post] 
+tags: [android, processing, oscdroid]
+type: mobile experiments  
+img: 1photochoreography 
+title: Photo choreography
+technologies: [Processing, Python, PHP, OSCdroid, Android, Arduino] 
+when: 22/10/2011 - 25/10/2011
+collaborators: [<a href="http://www.kitchenbudapest.hu">Kitchen Budapest</a>] 
+task: [] 
+desc: A series of experimentations around new ways of using mobile phones 
+sourcecode: 
+context: Kitchen Budapest Residency. Budapest. Hungary. 
+---
+
+
+My friend / flatmate / <a href="www.kibu.hu">KIBU</a> guest researcher mate Loes and I did a series of pictures almost a month a ago just for fun. We reused them to play a bit using the mobile phone’s screen to create a funny visual composition 
+
+The process is quite similar as I did for the phones color sync experiment but in this case, rather than colors I put the pictures in the phone’s sdcard and display them when the OSC message arrive to the phone indicating which picture to load.
+
+To see how it looked like check the video!
+
+{% if site.videos == true %} 
+<div class="videoWrapper">   
+<iframe width="560" height="315" src="http://www.youtube.com/embed/AGCGSahBxSQ" frameborder="0" allowfullscreen></iframe>
+</div> 
+{% else %} 
+<video  width="100%" height="360"  src="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.MP4" poster="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.jpg" controls="controls" preload="none">
+        It seems that your browser doesn't support html5 videos!! 
+</video>
+{% endif %} 

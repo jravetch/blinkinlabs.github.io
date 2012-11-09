@@ -1,0 +1,221 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Example of HTML5 Slider Control</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" > </script>
+ 		<script> 
+ 		
+ 		var numComponents = 0; 
+ 		var components = Array(); 
+ 		function addSlider(name, min, max, step) { 
+ 			
+ 			html = '<div class = "component_slider" id = "myslider'+numComponents+'">\
+ 						<div class = "name"> ' + name + '</div>\
+   						<div class = "myslider">\
+							<input class = "slide" type="range" min="'+min+'" max="'+max+'" step="'+step+'" name="rating">\
+	    					<div class = "percentage">  </div>\
+						</div>\
+    					<button id ="b"">  </button>\
+  						 </div>'; 
+  						 
+  			$('#maincontainer').append(html); 
+  			
+  			var q = $('#myslider'+ numComponents +' .myslider .slide'); 
+ 			q.change(function () { 
+ 				console.log($(this).val()); 
+ 				if (typeof(printer) != "undefined") {
+ 					printer.text($(this).val()); 
+ 				} 
+ 				
+ 				$(this).parent().find('.percentage').text($(this).val())
+
+ 			}); 
+ 			components.push(q); 
+ 			numComponents++; 
+ 		} 
+ 		
+ 		$(document).ready(function() { 
+			addSlider("1", 0, 255, 1); 
+			addSlider("2", 0, 255, 1); 
+			
+			
+ 		
+ 		}); 
+ 		 
+   		</script> 
+ 		
+ 		
+ 		<style type="text/css"> 
+
+   @import url(); 
+   
+
+
+html { 
+	cursor: default;
+	-webkit-user-select: none; 
+	border: 5px solid white;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	height: 100%;	
+	overflow-y: hidden; 
+	border-radius: 1px; 
+
+} 
+
+a { 
+	cursor: pointer; 
+}
+
+
+body { 
+   	    overflow: hidden; 
+
+	width: 100%;
+	height: 100%; 
+	font-family: Helvetica, Verdana, sans-serif;
+	font-size: 90%;
+	line-height: 1.6em;
+	text-align: left; 
+	margin: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	background: rgba(77, 188, 233, 0.8);
+	color: rgb(0, 0, 0); 
+	overflow-x: hidden;
+
+} 
+
+
+
+
+input[type="range"]{
+	-webkit-appearance:none; 
+	width:72%;
+	height:25px;
+	border: 1px solid #bbb;
+    border-radius:2px; 
+    margin: 0px; 
+}
+
+input::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	width:35px; 
+	height:25px;
+    border-radius:0px;
+	background: #D1E751; 
+	border: 1px solid white;
+}
+
+​
+
+a, a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: 0;
+}
+
+h1 { 
+	-webkit-user-select: auto; 
+	border-bottom: 2px solid rgba(0, 0, 0, 0.2); 
+	font-size: 1.2em;
+	font-weight: 100;
+	text-align: right;
+	margin: 0px;
+	color: #555;
+	padding: 2px 5px 0px 0px;
+	margin-bottom: 0px;
+​
+} 
+
+.component_slider { 
+	position: relative; 
+	margin: 0px;
+    padding: 2px;
+    margin-bottom: 2px;
+    z-index: 0;	
+    background-color: #D1E751; 
+    width: 100%;
+	height: 100%;
+
+} 
+
+.component_slider * {
+    vertical-align: middle; 
+    display: inline; 
+} 
+
+.component_slider .name {
+	color: rgba(85, 85, 85, 0.7);
+ 	float: left; 
+ 	min-width: 55px; 	
+	max-width: 125px; 
+	text-align: center;
+} 
+
+.component_slider .myslider {
+	position: relative;
+
+} 
+
+
+.component_slider .percentage { 
+	
+	position: absolute;
+	right: 3%;
+	top: 0px;
+	color: #F80;
+	text-align: right;
+	font-size: 0.88em;
+	font-weight: 200;
+	font-family: Helvetica;
+} 
+
+
+.component_slider button { 
+	background-color: #26ADE4;
+	border: 0px; 	
+	padding: 5px 12px 5px 12px;
+	border-radius: 2px; 
+	float: right;
+	margin-right: 5px; 
+	-webkit-box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+} 
+
+.component_slider button:hover { 
+	background-color: #4DBCE9;
+	
+} 
+
+.component_slider button:active { 
+	background-color: #4DBCE9;
+	-webkit-box-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+
+} 
+
+
+		</style>
+
+    </head>
+
+    <body> 
+    
+    <h1 contenteditable> OSC Control </h1> 
+  <div id = "maincontainer"> 
+  
+  </div>   
+  
+   
+   
+   </body>
+</html>
+

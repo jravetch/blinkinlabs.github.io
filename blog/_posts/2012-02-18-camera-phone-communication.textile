@@ -1,0 +1,32 @@
+---
+layout: post 
+root: "./.." 
+category: [hack, post] 
+tags: [phone, video]
+type: mobile experiments  
+img: 1cameraphonecommunication 
+title: Screen to Camera Communication 
+technologies: [Processing, Android] 
+when: 22/10/2011 - 25/10/2011
+collaborators: [<a href="http://www.kitchenbudapest.hu">Kitchen Budapest</a>] 
+task: [] 
+desc: A series of experimentations around new ways of using mobile phones 
+sourcecode: 
+context: Kitchen Budapest Residency. Budapest. Hungary. 
+---
+
+I was wondering how could I do some really simple mechanism to send IDs among phones or computers. Something like NFC but without the need of having the hardware to red the tags. So I was checking which hardware parts were ubiquitous now in our phones and computers came with a prototype using the screen and the camera of two devices. 
+
+For this prototype I went the simple way. I color coded the morse code since I realized it was the most robust method to "capture data" with the camera sensor the reason is that different vendors have different sensibilities and refresh rates so just blink in black and white was a bit too weak. 
+
+This is just a hackish way of sending IDs or triggers or, like in the video, messages. Hope you like the idea! 
+
+{% if site.videos == true %} 
+<div class="videoWrapper">   
+<iframe width="560" height="315" src="http://www.youtube.com/embed/B0kS5fBdi24" frameborder="0" allowfullscreen></iframe>
+</div> 
+{% else %} 
+<video  width="100%" height="360"  src="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.MP4" poster="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.jpg" controls="controls" preload="none">
+        It seems that your browser doesn't support html5 videos!! 
+</video>
+{% endif %}

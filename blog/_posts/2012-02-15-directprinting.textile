@@ -1,0 +1,30 @@
+---
+layout: post 
+root: "./.." 
+category: [hack, post] 
+tags: [phone, video]
+type: mobile experiments  
+img: 1directprinting 
+title: Collage & Print
+technologies: [Processing, Python, PHP, OSCdroid, Android, Arduino] 
+when: 22/10/2011 - 25/10/2011
+collaborators: [<a href="http://www.kitchenbudapest.hu">Kitchen Budapest</a>] 
+task: [] 
+desc: A series of experimentations around new ways of using mobile phones 
+sourcecode: 
+context: Kitchen Budapest Residency. Budapest. Hungary. 
+---
+
+After a trip I did back in October to the beautiful Ljubljana, Slovenia, where I met the wonderful hackers and artits from <a href="http://www.ljudmila.org/">Ljudmila</a> I started hacking on a quite funny mobile / computer app, to generate printed photography collages in seconds! 
+
+Basically, you start taking pictures with the phone which will be automatically download to the computer where the collage is created and sent to the printer.
+
+I guess it will be perfect for events! {% if site.videos == true %} 
+<div class="videoWrapper">   
+<iframe width="560" height="315" src="http://www.youtube.com/embed/RWSt179Gn3o" frameborder="0" allowfullscreen></iframe>
+</div> 
+{% else %} 
+<video  width="100%" height="360"  src="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.MP4" poster="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.jpg" controls="controls" preload="none">
+        It seems that your browser doesn't support html5 videos!! 
+</video>
+{% endif %} 

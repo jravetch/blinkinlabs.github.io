@@ -1,0 +1,30 @@
+---
+layout: post
+root: "./.."  
+category:  [hack, post]
+tags: [android]
+type: mobile experiments  
+img: 1phonerace 
+title: Phone race 
+technologies: [Processing, Python, PHP, OSCdroid, Android, Arduino] 
+when: 22/10/2011 - 25/10/2011
+collaborators: [<a href="http://www.kitchenbudapest.hu">Kitchen Budapest</a>] 
+task: [] 
+desc: A series of experimentations around new ways of using mobile phones 
+sourcecode: 
+context: Kitchen Budapest Residency. Budapest. Hungary. 
+---
+
+
+Phone specs are measured in terms of memory, cpu speed, screen technology, but not some many people compares them in terms of grip. So here an small experiment to compare it 
+Using the same method of, messages are sent to the phones from the computer in order to trigger the motor inside the phones resulting in some vibration that makes the phone move physically. 
+
+{% if site.videos == true %} 
+<div class="videoWrapper">   
+<iframe width="560" height="315" src="http://www.youtube.com/embed/4VEuWo4U4bU" frameborder="0" allowfullscreen></iframe>
+</div> 
+{% else %} 
+<video  width="100%" height="360"  src="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.MP4" poster="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.jpg" controls="controls" preload="none">
+        It seems that your browser doesn't support html5 videos!! 
+</video>
+{% endif %} 

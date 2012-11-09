@@ -1,0 +1,34 @@
+---
+layout: post 
+root: "./.." 
+category: [post] 
+tags: [workshop, mediafacade]
+type: mobile experiments  
+img: 1cameraphonecommunication 
+title: Big Games workshop video 
+technologies: [] 
+when: 12/04/2012
+collaborators: [] 
+task: [] 
+desc: 
+context:  
+---
+
+
+As I commented in the previous post I was teaching with my friend <a href="http://sergio.eclectico.net">Sergio Galán</a> <a href="http://www.uncoded.es/biggames">BigGames</a> a workshop in the Medialab Prado in Madrid about game creation for large screens or Media Facades. So well here is the cool video summary created by <a href="http://www.vimeo.com/lara.cano">Lara Cano</a>
+
+
+{% if site.videos == true %} 
+
+<div class="videoWrapper">   
+<iframe class="project_full_video" src="http://player.vimeo.com/video/39880475" width="100%" height="450px"  frameborder="0"></iframe><p><a href="http://www.vimeo.com/39880475" class="project_full_caption"> BigGames Workshop at Medialab Prado Madrid</a> 
+</div>
+
+
+{% else %} 
+<video  width="100%" height="360"  src="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.MP4" poster="../videosparaweb/olebot_-_the_flamenco_robodancer_640x360.jpg" controls="controls" preload="none">
+        It seems that your browser doesn't support html5 videos!! 
+</video>
+{% endif %} 
+
+I have to say that I was really impressed by the participants and the results of the workshop. The nice people of the Medialab Prado will allow the participants to have their projects as a part of the Medialab Prado mediafacade content! Congrats to all! 

@@ -1,0 +1,13 @@
+permalink: none 
+markdown: rdiscount 
+paginate: 5
+pygments: true 
+auto: true 
+server: true 
+book: false
+videos: true 
+server_port: 4000
+baseurl: /
+url: http://localhost:4000 
+root: .
+destination: ./_site

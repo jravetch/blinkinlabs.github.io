@@ -1,0 +1,33 @@
+---
+layout: project
+permalink: /fleet-tracking-system.html 
+root: "./.."
+category: project 
+type: "university project" 
+img: cartracker
+title: Fleet Tracking System  
+technologies: [PHP, Python, SOAP, Bash Programming] 
+when: 07/2005 - 03/2006 
+collaborators:  
+task: 
+desc: Fleet Tracking System
+images: [1.png, 2.png, 3.png, 4.png, 5.png] 
+sourcecode: 
+context: Bachelor Final Project 
+---
+
+
+<div class="infonote">Note: This project was made 7 years ago, I just preserve it here to keep track of what I am doing</div>  
+
+The overall goal of this project goal was to implement a set of computer software that could monitor a fleet of vehicles. 
+
+Each client can work in two modes: active, sending information to the server constantly and passive, sending information by petition. One of the multiples features of the system is that the server not only works as a merely database since it could generate notifications and alert privileged users about anomalies in the routes that the vehicles had to perform. 
+
+The system was designed using a small pc connected to a GPS and a phone which used GPRS a data connection to exchange data information encapsulated in SOAP messages with a remote server. 
+
+!../images/{{page.img}}/big/1.png(Configuration diagram)! 
+
+The server was made using PHP using the Apache web server which at the same triggered different scripts asynchronously in order to process the incoming data. 
+A web application was created in order to monitor the fleet and perform actions over the system.
+
+!../images/{{page.img}}/big/4.png(Web control)!

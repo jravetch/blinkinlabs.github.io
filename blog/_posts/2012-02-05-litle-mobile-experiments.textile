@@ -1,0 +1,23 @@
+---
+layout: post
+root: "./.."  
+category: post 
+type: mobile experiments  
+img: mobileexperiments 
+title: Little Mobile Experiments 
+technologies: [Processing, Python, PHP, OSCdroid, Android, Arduino] 
+when: 16/02/2012 - 25/10/2011
+collaborators: [<a href="http://www.kitchenbudapest.hu">Kitchen Budapest</a>] 
+task: [] 
+desc: A series of experimentations around new ways of using mobile phones 
+sourcecode: 
+context: Kitchen Budapest Residency. Budapest. Hungary. 
+---
+
+I am going to start this little blog with some projects I did months behind in order to start experimenting with technology, specifically with mobile phones, looking for weird / funny inspiring uses.
+
+I did this projects in a month timeframe in order to learn, improve certain skills and gain new ones and the main part, having lot of fun. I made them during my stay at the amazing and inspiring <a href="www.kibu.hu">Kitchen Budapest</a>. In the next posts I will try to be as open as possible with everything I am going to make and try to document a "bit", if at some point you want to ask me something please, do it! I will not keep anything in a black box up in the closet where no body can reach. Knowledge is free, so please feel free to ask!  (Note: If I dont replay soon is because I am busy, but I will do eventualy if I dont forget about)
+
+Here I present you my friends, my Android phones!
+
+!../images/{{page.img}}/big/myandroidphones.jpg(My android phones)! 

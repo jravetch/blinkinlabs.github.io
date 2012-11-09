@@ -1,0 +1,25 @@
+---
+layout: project 
+root: "./.."
+category: project 
+type: university project
+img: psychogeophotography
+title: Psychogeophotography 
+technologies: [] 
+when: 01/2010
+collaborators: [Eliza-Nefeli Tsaoussi] 
+task: Photography and Batch Pictures merge 
+desc: One person with two personalities, two points of view to explore through photography 
+images: [p-0.png, p-1.png, p-2.png, p-3.png, p-4.png, p-5.png, p-6.png, p-7.png, p-8.png, p-9.png, p-10.png, p-11.png, p-12.png, p-13.png, p-14.png, p-15.png, p-16.png, p-17.png, p-18.png, p-19.png, p-20.png, p-21.png, p-22.png, p-23.png, p-24.png, p-25.png, p-26.png] 
+sourcecode: 
+link: [http://www.flickr.com/photos/46638554@N02/, http://www.flickr.com/photos/kiwi_popeye/] 
+context: Aesthetics of interactive media. CSIM Master UPF 
+---
+
+The fictitious itinerary of a person living in "Poblenou area, Barcelona":http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=112009115463063919948.00047d611994066867781&z=16. 
+Our persona suffers from Dissociative Personality disorder. There are days where she is a girl working in a fruit shop, delivering fruit to the neighboring companies and days he is a man with a hazy past.
+Their only way to communicate is through pictures they take in their everyday tour, which are here superimposed in the order they were taken by each personality. 
+
+You can find the pictures alone in the flickr account of "Marian":http://www.flickr.com/photos/46638554@N02/ and "James":http//www.flickr.com/photos/kiwi_popeye/ 
+
+!../images/{{page.img}}/big/p-1.png(Title)! 

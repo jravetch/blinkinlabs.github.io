@@ -1,0 +1,24 @@
+---
+layout: project 
+root: "./.."
+category: hack 
+type: mobile experiment 
+img: ubotherme
+title: uBotherMe 
+technologies: [canoris API, PHP, Android SDK]  
+when: 10/2010
+collaborators: [Pedro Gouveia] 
+task: Android Programming 
+desc: Set the alarm to your friends using the music you want 
+images: [] 
+sourcecode: git@github.com:victordiaz/youBotherMe.git
+context: BCN Music hack day  
+---
+
+
+Imagine for one second that you loose the control of your alarm clock. You cannot set up any alarm but your friends can. With this hack we wanted to provoke to the user the feel of not controlling their own life and reflect how the society we are living in, already is doing it to us, setting up our schedules and rhythms of life. 
+
+We mae an Android alarm clock application that could be only controlled trough a webpage and only by our friends. The user's friends could set the alarm with a custom-generated voice message or some music track directly played from Soundcloud. 
+
+!../images/{{page.img}}/big/img1.png(Title)!
+!../images/{{page.img}}/big/img2.jpg(Title)!

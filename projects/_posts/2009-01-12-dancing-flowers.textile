@@ -1,0 +1,26 @@
+---
+layout: project 
+root: "./.."
+category: project 
+type: interactive installation  
+img: flowerpower
+title: Dancing Flowers  
+technologies: [OpenCV, Processing / Java] 
+when: 12/2009
+collaborators: [Lucas Lopez Serrano, Milena Markova] 
+task: Programming, mapping and interaction design 
+desc: Installation that transforms you into a flower 
+images:  
+sourcecode: 
+context: Historical, social and cultural context of interactive media course. CSIM Master UPF  
+---
+
+Dancing flowers is an installation that tries to reproduce an alternate reality taking different aspects from the real world such as the current weather, the amount of sunlight the current time and with those parameters, create a virtual world where you become a flower. 
+
+This flower is first created according to your height and the color of your t-shirt and then as a normal flower start to grow up more and more. 
+
+!../images/{{page.img}}/big/5_1.png(Title)!
+!../images/{{page.img}}/big/1.png(Title)! 
+!../images/{{page.img}}/big/2.png(Title)!
+!../images/{{page.img}}/big/3.png(Title)!
+!../images/{{page.img}}/big/4.png(Title)!

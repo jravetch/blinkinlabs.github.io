@@ -1,0 +1,124 @@
+---
+layout: default
+title: Main  
+---
+
+{% capture root %}{% if page.root %}{{ page.root }}{% else %}{{ site.root }}{% endif %}{%endcapture%}
+
+<div class="row">	
+	<div class = "eight columns" > 
+		<div class="foundation-header">
+			<h2 class = "correctme">Projects
+			<span class="subheader">check the info inside</span>
+		
+		
+	
+			 <a href ="JavaScript:void()" id = "randomproject" class="subheader"> Be random! </a>  
+			
+				</h2>
+			</div> 
+	
+	
+	<ul class="block-grid five-up  project_preview">
+		
+    	{% for project in site.posts %} 
+		{% if project.category contains 'project' %}  
+
+		<li class = "{{project.type}} "> 
+			<a href="{{root}}{{ project.url }}"> 
+	   		
+			  	<img src="{{root}}/images/{{project.img|downcase}}/preview.jpg" alt="{{project.title}} project"/>  
+				<p> {{project.title }}  </p> 		
+		 		<div class = "project_preview_desc project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{project.desc}} --> </div>
+		
+	
+			</a> 
+	
+		</li> 
+	
+		{% endif %}  	
+    	{% endfor %}  
+
+	</ul> 
+	
+	
+	
+	
+			<div class="foundation-header">
+			<h2 id ="hacks">Experiments
+				<span class="subheader">some cool experiments & hacks</span>
+			</h2> 
+			</div> 
+
+		<ul class="block-grid five-up project_preview">
+
+		
+
+		{% for hack in site.posts %} 
+		{% if hack.category contains 'hack' %}  
+
+		<li class = "{{hack.type}}"> 
+			<a href="{{root}}{{ hack.url }}"> 
+			<img src="./images/{{hack.img|downcase}}/preview.jpg" alt="{{post.title}} project"/>  
+			</a> 
+
+				<p class = "project_preview_title"> {{hack.title }}  </p> 
+			 	<div class = "project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{hack.desc}} --> </div>
+
+
+		</li> 
+
+		{% endif %}  	
+	    {% endfor %}  
+	
+
+	    {% for hack in site.pages %} 
+		{% if hack.category contains 'hack' %}  
+
+		<li class = "{{hack.type}}"> 
+			<a href="{{root}}{{ hack.url }}"> 
+			<img src="./images/{{hack.img|downcase}}/preview.jpg" alt="{{post.title}} project"/>  
+			</a> 
+
+				<p class = "project_preview_title"> {{hack.title }}  </p> 
+			 	<div class = "project_preview_desc show-on-phones hide-on-desktops hide-on-tablets">  <!-- {{hack.desc}} --> </div>
+
+
+
+		</li> 
+		
+		
+		{% endif %}  	
+	    {% endfor %}  
+	
+
+	
+		</ul> 
+
+
+	</div> 
+
+	<div class = "four columns" > 
+
+		<div class = "main_sidebar hide-on-phones"> 
+		
+			<a href="{{ post.url }}/bio/bio.html"> 
+				<img src="{{root}}/images/bio/victordiaz.jpeg" 
+				 alt="{{post.title}} project" id = "imgbio"/>  
+			</a>			
+			
+			<p class="correctme">  I am a researcher & "creative" technologist who loves to experiment and design new ways of interaction among technology and people.
+			 My goal is to make technology more human aware.			
+			</p>
+			
+		
+	</div> 
+
+</div> 
+
+
+
+
+
+
+

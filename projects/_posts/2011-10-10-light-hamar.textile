@@ -1,0 +1,58 @@
+---
+layout: project 
+root: "./.."
+category:  project 
+type: interactive installation 
+img: lighthamar
+title: Light Hamar 
+technologies: [Processing, Python, Arduino] 
+when: 22/10/2011 - 25/10/2011
+collaborators: [
+				<a href="http://sergio.eclectico.net">Sergio Galan,</a>, 
+			 	<a href="http://www.peripecio.com">Guillermo Casado</a>,
+				Lucas Lopez] 
+task: Arduino and Python programming, Network part 
+desc: Interactive Light installation in Hamar, Norway  
+images: 
+sourcecode: 
+context: <a href="http://www.dreamhamar.org/">Dreamhamar Hamar Norway.  </a> 
+---
+
+
+Lighthamar is an interactive light installation made for the <a href="http://www.dreamhamar.org/">Dreamhamar</a> participation network led by <a href="http://www.ecosistemaurbano.com/">Ecosistema Urbano</a> to redesign the Stortorger Square in Hamar, Norway. 
+
+{% if site.book == false %} 
+!../images/{{page.img}}/big/p7.jpg(Title)! 
+{% endif %} 
+
+
+The installation consisted in a grid of helium inflated balloons with ultra bright LEDs inside controlled by a computerized system that allows multiple interactions and working modes that can be changed at any moment. 
+
+{% if site.book == false %} 
+!../images/{{page.img}}/big/p6.jpg(Title)! 
+{% endif %} 
+
+
+Here a list of different features that we made: 
+
+	* Light patterns that change according the environmental sound in the square
+	* Color change according to weather forecast
+	* touch inputs in a phone screen
+	* direct smsing and emailing to different balloons containing the blinking pattern  
+
+{% if site.book == false %} 
+!../images/{{page.img}}/big/p5.jpg(Title)! 
+!../images/{{page.img}}/big/p4.jpg(Title)! 
+!../images/{{page.img}}/big/p3.jpg(Title)! 
+!../images/{{page.img}}/big/p2.jpg(Title)! 
+!../images/{{page.img}}/big/p1.jpg(Title)! 
+{% endif %} 
+
+
+{% if site.book == false %} 
+Most pictures are credited to <a  class="infonote" href="http://www.ecosistemaurbano.com/">Ecosistema Urbano</a> 
+{% endif %} 
+
+{% if site.book == true %} 
+<img src="../images/lighthamar/big/p7.jpg" title="Title" alt="Title"><img src="../images/lighthamar/big/p6.jpg" title="Title" alt="Title"><img src="../images/lighthamar/big/p5.jpg" title="Title" alt="Title"><img src="../images/lighthamar/big/p4.jpg" title="Title" alt="Title"><img src="../images/lighthamar/big/p3.jpg" title="Title" alt="Title"><img src="../images/lighthamar/big/p2.jpg" title="Title" alt="Title"><img src="../images/lighthamar/big/p1.jpg" title="Title" alt="Title">
+{% endif %}
