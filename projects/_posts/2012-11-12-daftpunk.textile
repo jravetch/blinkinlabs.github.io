@@ -1,0 +1,28 @@
+---
+layout: project
+permalink: /daftpunk.html 
+root: "./.."
+category: project 
+type: "Interactive Lighting Project" 
+img: daftpunk
+title: Daft Punk
+technologies: [Processing, Python, C++, C] 
+when: 01/2012 - 9/2012
+collaborators:
+task: 
+desc: Fleet Tracking System
+images: [1.png, 2.png, 3.png, 4.png, 5.png] 
+sourcecode: 
+context: 
+---
+
+At MakerFaire 2012, we ran into the folks behind the "Daft Punk Halloween Tribute,":http://www.kickstarter.com/projects/221718076/daft-punk-halloween-tribute who enlisted us to reconfigure our "DomeStar":/domestar.html project into a three-part lighting rig for a theme party and parade float. 
+
+The end result was a two huge, geometric panels and a three-sided pyramid. Every LED in the fixture is individually addressable, and all geometric forms were mapped into a two dimensional space in our transmission software. With this, we were able to take full advantage of the geometric shapes, by projecting video on to them and using geometrically-aware algorithms. 
+
+The light show was partially sequenced in Ableton Live, and the rest was played live on a Novation Launchpad, using Midi loops inside Ableton. The result was an engaging light show with thousands of permutations and combinations of patterns, colors, and effects. 
+
+<div class="videoWrapper">   
+<iframe class="project_full_video" src="http://player.vimeo.com/video/53355312" width="100%" height="450px"  frameborder="0"></iframe><p><a href="http://www.vimeo.com/53355312" class="project_full_caption">Daft Punk Party Lighting Rig</a> 
+</div>
+
