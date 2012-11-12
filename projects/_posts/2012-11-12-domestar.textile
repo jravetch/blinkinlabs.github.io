@@ -1,0 +1,23 @@
+---
+layout: project
+permalink: /domestar.html 
+root: "./.."
+category: project 
+type: "Interactive Lighting Project" 
+img: domestar
+title: DomeStar
+technologies: [Processing, Python, C++, C] 
+when: 01/2012 - 9/2012
+collaborators: Justin, Angela, Shayna, George, Adam
+task: 
+desc: Fleet Tracking System
+images: [1.png, 2.png, 3.png, 4.png, 5.png] 
+sourcecode: 
+context: 
+---
+
+DomeStar is a 16-foot diameter dome covered with 6,400 addressable RGB LEDs. One part installation, one part chill out space, one part high-energy dance floor. DomeStar invites guests to dance their blinkin' faces off, then to lie down and look up as the complex visualizations warp, twist, shatter and throb around them, enveloping partygoers in a comforting aura of complex energy.
+
+DomeStar was shown at the NYC Resistor Interactive Show, Disorient Country Club, PEX Summer Festival, Burning Man, the Open Hardware Summit and World Maker Faire.
+
+!../images/{{page.img}}/1.jpeg(DomeStar at Country Club)!

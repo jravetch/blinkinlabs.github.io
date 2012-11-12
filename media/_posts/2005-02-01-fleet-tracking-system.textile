@@ -2,7 +2,7 @@
 layout: project
 permalink: /fleet-tracking-system.html 
 root: "./.."
-category: project 
+category: media 
 type: "university project" 
 img: cartracker
 title: Fleet Tracking System  
