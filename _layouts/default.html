@@ -2,14 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
 <head>
    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title> Victor Diaz Portfolio .. {{ page.title }} </title>
-   <meta name="author" content="Victor Diaz Portfolio" /> 
+   <title> Blinkiverse Portfolio .. {{ page.title }} </title>
+   <meta name="author" content="Blinkiverse Portfolio" /> 
 
 	<meta charset="utf-8" />
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" /> 
-
-    <link href="http://feeds.feedburner.com/victordiaz" rel="alternate" title="RSS" type="application/rss+xml" />
 
 	{% capture root %}{% if page.root %}{{ page.root }}{% else %}{{ site.root }}{% endif %}{%endcapture%}
 
@@ -131,102 +129,8 @@
 
 	</script> 
 
-	  <script type="text/javascript">
-
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-19400173-1']);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })(); 
-
-		/* 
-
-		if (navigator.geolocation) {
-	  		navigator.geolocation.getCurrentPosition(function(position) {
-
-				console.log(position.coords.latitude); 
-				console.log(position.coords.longitude); 
 
 
-	  		}, 
-			function (error)
-			{
-				switch(error.code) 
-				{
-					case error.TIMEOUT:
-						alert ('Timeout');
-						break;
-					case error.POSITION_UNAVAILABLE:
-						alert ('Position unavailable');
-						break;
-					case error.PERMISSION_DENIED:
-						alert ('Permission denied');
-						break;
-					case error.UNKNOWN_ERROR:
-						alert ('Unknown error');
-						break;
-				}
-			}
-			); 
-
-		} 
-		*/ 
-
-
-	</script> 
-
-
-	<script> 
-
-		$('.menu a').click(function(){
-		  $('.menu a').removeClass('selected'); 
-		  $(this).toggleClass('selected'); 
-		}); 
-
-		$(function() {
-	    	var url = document.createElement('a'); 
-			url.href = document.URL; 
-			path = url.pathname; 
-			//alert(path); 
-
-	     	$('.menu a[href$="' + path + '"]').attr('class', 'selected'); 
-	     	//$('.site').attr('class', 'greenq'); 
-
-			if (path == '/blog/') { 
-				$('.menu a[href$=blog/index.html]').attr('class', 'selected'); 
-		  	}
-			//alert("qq"); 
-
-
-
-
-			/*else if (path == '/bio/bio.html') { 
-
-		  		$('.menu a[href$="' + path + '"]').attr('class', 'pinkq'); 
-		    	$('.site').attr('class', 'pinkq'); 	
-			}*/
-		}); 
-		</script
-
-
-	</script>
-
-	<script type="text/javascript">
-	    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-	    var disqus_shortname = 'victordiazblog'; // required: replace example with your forum shortname 
-		var disqus_developer = 1; 
-
-	    /* * * DON'T EDIT BELOW THIS LINE * * */
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
-	</script>
 	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 
 	</noscript>
@@ -249,33 +153,7 @@
 
 
 
-	function recomendme() { 
-
-		list = $(".project_preview > li > a > img"); 
-		chosen = list[Math.ceil(list.length * Math.random())]; 
-		pos = $(chosen).offset();  
-		posx = $(chosen).width() / 2 + pos.left; 
-		posy = $(chosen).height() / 2 + pos.top; 
-
-		//console.log(chosen); 
-		//console.log(posx); 
-
-
-		$.scrollTo(chosen, 800, function() { 
-
-			$("#cursor").show(true); 
-			$("#cursor").animate({left: posx +  'px', top: posy +'px'
-			}, 1252, function() { 
-				$(chosen).addClass("hover"); 
-				setTimeout("$(chosen).click();", 200); 
-			}); 
-
-
-		}); 
-
-
-
-	}
+	
 
 	$(document).ready(function() { 
 
@@ -298,46 +176,6 @@
 
 		}); 
 
-		//add css 
-		/* 
-		$('.correctme').addClass("selected"); 
-
-		$('.correctme').click(function(event) { 
-			//alert(event.target.id); 
-			$('#texttochange').text($(this).text()); 
-			$('#myModal').reveal();
-
-		}); 
-		*/ 
-
-		//when clicked on submit then send and close the modal dialog 
-		$('#submit').click(function() {
-			content = $('#texttochange').val(); 	
-
-			$.ajax({
-			   	data: {id:content, qq:5},
-			    type: "GET",
-		        dataType: "jsonp",
-		        url: "http://lab.playfulhacker.com/qq2/echo.php",
-	       		success: function(data) { 
-						alert(content);
-					     alert(data.id); 
-						//$('p').text(data.id);		 
-			   	}
-			}); 
-
-	        $('#myModal').trigger('reveal:close'); //close modal dialog
-
-		}); 
-
-
-		$(window).scroll(function() { 
-				//$('#hey')
-				//.stop()
-				//.animate({top: $(document).scrollTop()},'slow','easeOutBack'); 
-
-				//draw($(document).scrollTop()); 
-		}); 
 
 	    function draw(b) { 
 	      var canvasbg = $("#canvasbg")[0]; 
@@ -368,53 +206,6 @@
 			recomendme(); 
 		}); 
 
-		/* 
-		$('body').prepend('<div id = "q1"></div>'); 
-		$('body').append('<div id = "q2"></div>'); 
-		$('#q1, #q2').css({ 
-			position: 'absolute',
-			width: '100%',
-			height: ($(window).height() / 2) + 1, 
-			top: 0, 
-			left: 0,	
-			opacity: '0.5',		
-			background: 'black',
-			'z-index': 2
-					
-		}); 
-		
-		$('#q1').css('top', ( $(window).height() / 2 ) * -1);
-		$('#q2').css('top', $(window).height() + $(window).height() / 2);
-	
-		$(window).scroll(function() { 
-			$('#q1').css('top', $(document).scrollTop());
-			$('#q2').css('top', $(document).scrollTop() + $(window).height() / 2);
-			
-		});
-	
-		var q = $('.site')[0]; 
-		q.style.webkitTransition = "all 2s ease-out"; 
-		q.style.webkitTransformOrigin = "50% 0%";
-		q.style.webkitTransform = "scale(0.5)";
-	
-		$('#q1').animate({  
-			top: '0px', 
-		    opacity: 1,
-		  }, 2500, function() {
-		    // Animation complete.
-		  }); 
-
-
-		$('#q2').animate({  
-			top: $(window).height() - $(window).height() / 2, 
-		    opacity: 1,
-		  }, 2500, function() {
-		    // Animation complete.
-		  }); 
-
-
-		*/ 
-	
 	}); 
 
 
@@ -424,12 +215,8 @@
 
 </head> 
 <body id = "clouds"> 
-
-<!-- 
-<video id="video_background" autoplay loop width="192px" height="125px" src="q.m4v"></video>  
--->
 	
-<canvas id="canvasbg"></canvas>  
+<!-- <canvas id="canvasbg"></canvas>   -->
 
 <div class="site"> 
 
@@ -438,14 +225,14 @@
 	<div class="row header book"> 
 		
   		<div class="four columns">
-    		<h1 class="logo">	<a href="{{root}}/index.html" class="hide-on-phones"> Victor Diaz Portfolio </a></h1> 
+    		<h1 class="logo">	<a href="{{root}}/index.html" class="hide-on-phones"> Blinkiverse Portfolio </a></h1> 
 		
 			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
-				<h1 class="logo logo-mobile">  Victor Diaz Portfolio </h1> 
+				<h1 class="logo logo-mobile"> Blinkiverse Portfolio </h1> 
 				<a href="{{ post.url }}/bio/bio.html"> 
-					<img src="{{root}}/images/bio/victordiaz.jpeg" 
-				 	alt=""/> 
-						<p>  I am a researcher & creative coder who loves to experiment and design new ways of interaction among technology and people. My goal is to make technology more human aware.			
+<!-- 					<img src="{{root}}/images/bio/victordiaz.jpeg" 
+ -->				 	alt=""/> 
+						<p>We are a small team of cool cats.		
 						</p>
 				 
 				</a> 

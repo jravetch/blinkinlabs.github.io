@@ -2,56 +2,23 @@
 layout: perfil 
 root: "./.."
 category: bio
-title: about me 
+title: about us 
 recentactivities: [
-"Reshape your phone workshop. Electropixel Festival, Nantes", 
-"Reshape your phone workshop. WeLoveCode, Barcelona", 
-"LCD Guimaraes residency. Guimaraes, Portugal", 
-"BigGames workshop at Medialab Prado. Madrid, Spain", 
-"Global Game Jam 2012. Madrid, Spain", 
-"LightHamar Installation in Hamar, Norway", 
-"Piksel Festival 2011, Bergen, Norway",    
-"Beyond Data, Temporary design lab, Budapest & Eindhoven",  
-"Pecha Kucha Night, Budapest, Hungary",  
-"Residency at Kitchen Budapest, Hungary",   
-"Visualizar 2011 Workshop. Media Lab Prado. Madrid, Spain", 
-"Presentation at Media Lab Prado of different uses for Mobile Phones, Madrid, Spain",  
-"Presentation at TheAppDate. Hub Madrid. Madrid, Spain",  
-"Europeana Hackaton Barcelona, Spain",  
-"Presentation at University Politecnica of Madrid. Madrid, Spain", 
-"Tetuan Valley Startup Academy. Madrid, Spain", 
-"Interaction Designer / Android programmer. Madrid, Spain", 
-"City Fireflies presentation at Medialab Prado. Madrid, Spain", 
-"Global Game Jam 2011. Madrid, Spain" 
+"Daft Punk Party.  Williamsburg, NY",
+"Burning Man Dome Installation.  Black Rock City, NV",
+"PEX Festival.  Darlington, MD",
+"Country Club (Festival).  Preston Hollow, NY"
 ] 
-mentions: 
-#cv: <a href="/docs/victor_diaz_english.pdf"> GRAB IT HERE! </a> 
 links: [ 
-<a href="http://www.github.com/victordiaz/">My github</a>,
-<a href="http://www.flickr.com/photos/biquillo/">My flickr photos (pretty outdated!)</a>] 
+<a href="http://www.github.com/partytech/">Our Github</a>
+] 
 
 desc: 
 --- 
 
-<h1> About Victor Diaz </h1>
+<h1> About Blinkiverse </h1>
 
-I am Victor Diaz a Researcher & Creative Coder from Granada, Spain who lives in..., well, somewhere in Europe :P 
-
-I hold a Telecommunications Engineering degree and a MSc on Cognitive Systems and Interactive Media (CSIM) from the University Pompeu Fabra of Barcelona. I have studied one year of the MSc program in Computer Science at the University of Bern and at the University of Fribourg within the Erasmus exchange program and I did a research stay on the Wireless Network System group at the Tokyo University of Sciences. After that I worked with Wireless Sensor Network technologies in a FP7 European project and worked as a Android programmer and interaction designer. 
-
-My current interests stay around of developing novel ways of collaborative interactions in public spaces where time, space and in general, context are key aspects. I like to create rapid-prototyping tools that help to speed up the creation process specifically related to mobile phones.  
-
-Apart that, I am interested as well in human emotions, in how the brain works, in data visualizations, new ways of interfacing with computers, photography, experimental cinema, more humanized architecture and really concerned about new ways of education. And even better if everything is seasoned with open source and free culture :) Too many things isn't it? It could be but somehow all of them are interconnected :) 
-
-I love languages as well and although I do not speak any perfectly I try to do it in English, French, German and Japanese apart from my mother tongue, Spanish. 
-
-My biggest passion is to travel, it always remind me that my culture is not the only one in the world and there are many ways of thinking and seeing about the same thing. This is the beauty of this world, an heritage we should keep. 
-
-<div class="book"> 
-<h1>Here some irrelevant info you might like to know :) </h1>
-
-<div class="q"><h3>Places where I have been (by visiting order)</h3></div> 
-Spain, Portugal, Greece, France, England, Ireland, Italy, Japan, Switzerland, Germany, Czech Republic, The Netherlands, Belgium, Morocco, Hungary, Austria, Poland, Slovakia, Sweden, Serbia, Slovenia, Norway. 
+Blinkiverse is <a href="http://cibomahto.com">Matt</a> and <a href="http://mmmaaa.xxx">Max, two dedicated makers from Brooklyn. 
 
 <div class="q"><h3>Places where I've lived </h3> </div> 
 Granada, Jaen, Madrid, Barcelona (Spain), Montpellier (France), Bern (Switzerland), Budapest (Hungary), Berlin (Germany) and Tokyo (Japan) 
