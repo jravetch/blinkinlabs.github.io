@@ -8,7 +8,7 @@ img: domestar
 title: DomeStar
 technologies: [Processing, Python, C++, C] 
 when: 01/2012 - 9/2012
-collaborators: Justin, Angela, Shayna, George, Adam
+collaborators: [Justin Day, Angela Lind, Shayna Gentiluomo, Adam Meyer, George Shammas, NYC Resistor]
 task: 
 desc: Fleet Tracking System
 images: [1.png, 2.png, 3.png, 4.png, 5.png] 

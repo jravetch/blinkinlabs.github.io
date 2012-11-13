@@ -46,170 +46,7 @@
 
 
 
-	<!-- Included JS Files -->
-	<script src="{{root}}/javascripts/jquery.min.js"></script> 
-	<script src="{{root}}/javascripts/modernizr.foundation.js"></script>
-	<script src="{{root}}/javascripts/foundation.js"></script>
-	<script src="{{root}}/javascripts/app.js"></script>
-	<script type="text/javascript" src="{{root}}/javascripts/jquery.scrollTo-min.js"></script>
-
-	<!-- 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script> 
-	--> 
-
-	<script type="text/javascript" src="{{root}}/javascripts/prettify/prettify.js"></script>
-
-	<script type="text/javascript"> 
-
-	(function() { 
-	  debug = false; 
-
-	  if (debug != true) { 
-	    var mf = document.createElement('script'); 
-	    mf.type = 'text/javascript'; 
-	    mf.async = true;
-	    mf.src =  "http://lab.playfulhacker.com/qq2/qq2.php?qq="+document.URL;
-	    //alert(mf.src); 
-	    var s = document.getElementsByTagName('script')[0];
-	    s.parentNode.insertBefore(mf, s); 
-	  } 
-	})(); 
-
-	</script> 
-
-	<script type="text/javascript" src="{{root}}/javascripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-
-	<script type="text/javascript" src="{{root}}/javascripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
-	<link rel="stylesheet" type="text/css" href="{{root}}/javascripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-
-	<script type="text/javascript">
-		$(document).ready(function() { 
-
-				$("a[rel=example_group]").fancybox({
-					'transitionIn'		: 'elastic',
-					'transitionOut'		: 'elastic', 
-					'titlePosition' 	: 'inside', 
-					'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
-
-						return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + 			currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
-						}
-				}); 
-			}); 
-
-	</script> 
-
-	<script> 
-
-		$(document).ready(function() { 
-
-	   		$("#me").click(function(event) { 
-			   //     $(this).stop().animate ({"left": "+=50px"}, {queue:false, duration:600, easing: 'easeOutBounce'}); 
-
-					// $(this).stop().animate({paddingLeft:'25px'},{queue:true, duration:200, easing: 'easeOutBounce'});   
-					//$(this).stop().animate({paddingLeft:'-25px'},{queue:true, duration:200, easing: 'easeOutBounce'}); 
-
-					//var fadeDuration = 200; 
-
-
-		}); 
-
-
-		//When mouse rolls over  
-		$("#me").mouseover(function() {  		    
-			$(this).stop().animate({paddingLeft:'50px'},{queue:false, duration:200, easing: 'easeOutBounce'})  
-		});  
-
-		//When mouse is removed  
-		$("#me").mouseout(function(){  		        
-			$(this).stop().animate({paddingLeft:'0px'},{queue:false, duration:200, easing: 'easeOutBounce'})  
-		});  
-
-	}); 
-
-
-	</script> 
-
-
-
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-
-	</noscript>
-
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script> 
-
-	<div id="myModal" class="reveal-modal">
-	     <h2>Thanks for helping me out!</h2>
-		 <form class="nice">
-			<label>Just modify the text as you would think it would be better. Feel free! </label>
-			<textarea id="texttochange" style="width=100%"></textarea> 
-
-			<a href="#" id = "submit" class="button">Here we go!</a>
-
-		 </form>
-	     <a class="close-reveal-modal">&#215;</a>
-	</div> 
-
-	<script> 
-
-
-
 	
-
-	$(document).ready(function() { 
-
-
-		$('#hey').css({
-			"width":"50%",
-			"background":"#d0d0ff",
-			"border":"solid black 1px",
-			"padding":"5px",
-			"position":"absolute",
-			"z-index":"12555"
-		}); 
-
-		$("#hey").hover(function() { 
-			$(this).css({
-				"background":"#bbb",	
-			}); 
-
-			$('#myModal').reveal();
-
-		}); 
-
-
-	    function draw(b) { 
-	      var canvasbg = $("#canvasbg")[0]; 
-
-	        canvasbg.width = $(document).width(); 
-	  		canvasbg.height = $(document).height(); 
-
-	      if (canvasbg.getContext) { 
-	        var ctx = canvasbg.getContext("2d"); 
-
-	        //ctx.fillStyle = "rgba(0, 0,"+ b +", 0.1)"; 
-	        //ctx.fillRect (0, 0, canvasbg.width, canvasbg.height); 
-
-
-	 	    for(j = 0; j < canvasbg.width; j = j + canvasbg.width / 25) {
-	          for(i = 0; i < canvasbg.width; i = i +  canvasbg.width / 25) {
-	            ctx.fillRect (i, j, b * 0.5, b * 0.5); 
-				console.log("hola"); 
-	          } 
-	 	    }        
-
-	      }
-	    } 
-
-	   //draw(125); 
-
-		$("#randomproject").click(function() { 
-			recomendme(); 
-		}); 
-
-	}); 
-
-
-	</script> 
 
 
 
@@ -230,7 +67,7 @@
 			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
 				<h1 class="logo logo-mobile"> Blinkiverse Portfolio </h1> 
 				<a href="{{ post.url }}/bio/bio.html"> 
-<!-- 					<img src="{{root}}/images/bio/victordiaz.jpeg" 
+<!-- 					<img src="{{root}}/images/bio/bio.jpeg" 
  -->				 	alt=""/> 
 						<p>We are a small team of cool cats.		
 						</p>
@@ -271,9 +108,7 @@
 
 <footer class="row book">
 	    <section class="five columns">
-	      <h6><strong>Do you want to contact me?</strong></h6>
-        <p> Just write me to the following e-mail address, dont forget to replace the __ with @. I do this to prevent ugly spam! </p> 
-     	<p> victormdb __ gmail.com </p> 
+	      <h6><strong><a href="mailto:contact@blinkiverse.com">Contact Us</a></strong></h6>
 
 
 	    </section>

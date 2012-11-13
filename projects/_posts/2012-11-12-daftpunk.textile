@@ -6,12 +6,12 @@ category: project
 type: "Interactive Lighting Project" 
 img: daftpunk
 title: Daft Punk
-technologies: [Processing, Python, C++, C] 
-when: 01/2012 - 9/2012
-collaborators:
+technologies: [Processing, Python, C++, C, Ableton Live] 
+when: 10/2012
+collaborators: [Dustin John, Phillip Kim]
 task: 
 desc: Fleet Tracking System
-images: [1.png, 2.png, 3.png, 4.png, 5.png] 
+images: [1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg]
 sourcecode: 
 context: 
 ---
@@ -26,3 +26,7 @@ The light show was partially sequenced in Ableton Live, and the rest was played 
 <iframe class="project_full_video" src="http://player.vimeo.com/video/53355312" width="100%" height="450px"  frameborder="0"></iframe><p><a href="http://www.vimeo.com/53355312" class="project_full_caption">Daft Punk Party Lighting Rig</a> 
 </div>
 
+
+Longer video below.
+
+<iframe width="100%" height="450px" src="http://www.youtube.com/embed/HZkRzLUCr5Y" frameborder="0" allowfullscreen></iframe>

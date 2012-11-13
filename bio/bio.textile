@@ -15,20 +15,14 @@ links: [
 
 desc: 
 --- 
-
+<div class="book">
 <h1> About Blinkiverse </h1>
 
-Blinkiverse is <a href="http://cibomahto.com">Matt</a> and <a href="http://mmmaaa.xxx">Max, two dedicated makers from Brooklyn. 
-
-<div class="q"><h3>Places where I've lived </h3> </div> 
-Granada, Jaen, Madrid, Barcelona (Spain), Montpellier (France), Bern (Switzerland), Budapest (Hungary), Berlin (Germany) and Tokyo (Japan) 
+Blinkiverse is <a href="http://cibomahto.com">Matt</a> and <a href="http://mmmaaa.xxx">Max, two dedicated makers from Brooklyn. We enjoy collaborating on interactive art projects
 
 
-<div class="q"><h3> Things I like </h3></div> 
-Take pictures of nonsense things, travel to not-yet-visited countries, cooking, skiing after a huge snow, roller blading in the city, open source, Linux, tinker with Android, <a href="http://en.wikipedia.org/wiki/Spanish_omelette">Tortilla de patatas</a>, sunny days with a blue sky and some little white clouds :), my home town (Granada), nightlife in Madrid, travel by train, get lost in a new city
-	
+<div class="q"><h3>Where the Party Is</h3> </div> 
+We're located in Brooklyn, New York. We primarily work out of <a href="http://nycresistor.com">NYC Resistor</a>, our home-base hackerspace.
 
-<div class="q"><h3> Things I don't like </h3></div> 
-Hypocrisy and many cloudy days in a row :P 
 
 </div> 
