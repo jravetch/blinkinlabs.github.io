@@ -11,7 +11,7 @@ when: 01/2012 - 9/2012
 collaborators: [Justin Day, Angela Lind, Shayna Gentiluomo, Adam Meyer, George Shammas, NYC Resistor]
 task: 
 desc: Fleet Tracking System
-images: [1.png, 2.png, 3.png, 4.png, 5.png] 
+images: [1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg, 6.jpg, 7.jpg]
 sourcecode: 
 context: 
 ---
@@ -20,4 +20,4 @@ DomeStar is a 16-foot diameter dome covered with 6,400 addressable RGB LEDs. One
 
 DomeStar was shown at the NYC Resistor Interactive Show, Disorient Country Club, PEX Summer Festival, Burning Man, the Open Hardware Summit and World Maker Faire.
 
-!../images/{{page.img}}/1.jpeg(DomeStar at Country Club)!
+!../images/{{page.img}}/nw.jpg(DomeStar at Country Club)!
