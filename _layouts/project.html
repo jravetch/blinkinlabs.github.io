@@ -105,7 +105,9 @@ layout: default
 
 {% if page.sourcecode != null %} 
 <h3> Sourcecode: </h3> 
-	<li><a href="{{ page.sourcecode[1] }}">{{ page.sourcecode[0] }}</a></li>
+	{% for index in (0..page.sourcecode.quantity) %}
+	<li><a href="{{ page.sourcecode[index + 1] }}">{{ page.sourcecode[index] }}</a></li>
+	{% endfor %}
 {% endif %} 
 
 {% if page.link != null %} 
