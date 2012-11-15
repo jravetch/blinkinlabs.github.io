@@ -104,27 +104,6 @@ title: Main
 		{% endif %}  	
 	    {% endfor %}  
 	
-
-	    {% for hack in site.pages %} 
-		{% if hack.category contains 'hack' %}  
-
-		<li class = "{{hack.type}}"> 
-			<a href="{{root}}{{ hack.url }}"> 
-			<img src="./images/{{hack.img|downcase}}/preview.jpg" alt="{{post.title}} project"/>  
-			</a> 
-
-				<p class = "project_preview_title"> {{hack.title }}  </p> 
-			 	<div class = "project_preview_desc show-on-phones hide-on-desktops hide-on-tablets">  <!-- {{hack.desc}} --> </div>
-
-
-
-		</li> 
-		
-		
-		{% endif %}  	
-	    {% endfor %}  
-	
-
 	
 		</ul> 
 
