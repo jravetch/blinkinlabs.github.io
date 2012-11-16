@@ -1,0 +1,21 @@
+---
+layout: project
+permalink: /sparklesuit.html 
+root: "./.."
+category: hack 
+type: "Interactive LED Suit Jacket" 
+img: sparklesuit
+title: "Sparkle Suit"
+technologies: [Arduino] 
+when: 08/2011
+collaborators: 
+task: 
+desc:
+images: 
+sourcecode:
+context: 
+---
+
+This is a quick project I threw together for Burning Man 2011. I spent all week at CCC Camp sewing a grid of high-power white LEDs into a suit jacket. The jacket is controlled by a series of Texas Instruments TLC series PWM controllers on the high side, and series of mosfets on the low side of the matrix. I ended up running the suit all night on one 9V battery, because it was too blinding at full power, even in the expanse of the desert.
+
+<iframe width="100%" height="450px" src="http://www.youtube.com/embed/6I6f5msvF5Q" frameborder="0" allowfullscreen></iframe>
