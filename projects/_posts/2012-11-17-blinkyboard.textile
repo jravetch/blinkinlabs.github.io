@@ -1,0 +1,17 @@
+---
+layout: project
+permalink: /blinkyboard.html 
+root: "./.."
+category: project 
+type: "Interactive Lighting Controller" 
+img: blinkyboard
+title: Blinkyboard
+technologies: [C++, C, Processing] 
+when: 8/2012 - 10/2012
+collaborators:
+task: 
+desc:
+images: [1.jpg]
+sourcecode:
+context: 
+---
