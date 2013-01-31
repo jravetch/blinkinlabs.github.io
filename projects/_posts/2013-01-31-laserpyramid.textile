@@ -1,0 +1,19 @@
+---
+layout: project
+permalink: /laserpyramid
+root: "./.."
+category: project 
+type: "Interactive Lighting Project" 
+img: laserpyramid
+title: The Laser Pyramid
+technologies: [C, Python, Lasers] 
+when: 1/2012
+collaborators:
+task: 
+desc: Interactive Lighting Project
+images:
+sourcecode:
+context: 
+---
+
+The Laser Pyramid is an interactive lighting project that we're in the process of assembling for Burning Man 2013.
