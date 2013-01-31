@@ -11,7 +11,7 @@ when: 1/2013
 collaborators:
 task: 
 desc: Interactive Lighting Project
-images:
+images: [1.jpg, 2.jpg, 3.jpg]
 sourcecode:
 context: 
 ---
