@@ -11,7 +11,7 @@ when: 1/2013
 collaborators:
 task: 
 desc: Interactive Lighting Project
-images: [1.jpg, 2.jpg, 3.jpg]
+images: [laserpyramid1.jpg, laserpyramid2.jpg, laserpyramid3.jpg]
 sourcecode:
 context: 
 ---
