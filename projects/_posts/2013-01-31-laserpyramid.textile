@@ -1,13 +1,13 @@
 ---
 layout: project
-permalink: /laserpyramid
+permalink: /laserpyramid.html
 root: "./.."
 category: project 
 type: "Interactive Lighting Project" 
 img: laserpyramid
 title: The Laser Pyramid
 technologies: [C, Python, Lasers] 
-when: 1/2012
+when: 1/2013
 collaborators:
 task: 
 desc: Interactive Lighting Project
