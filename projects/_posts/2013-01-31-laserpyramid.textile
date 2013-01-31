@@ -16,4 +16,10 @@ sourcecode:
 context: 
 ---
 
-The Laser Pyramid is an interactive lighting project that we're in the process of assembling for Burning Man 2013.
+The laser pyramid is a fully interactive installation utilizing four high-powered lasers in a rectangular formation to project a three-dimensional pyramid shape into the sky. This is a proposed project for Burning Man 2013: Cargo Cult. The four lasers will be set atop four small towers along the inside circumference of the Esplanade (inner playa).				
+
+Material and component sourcing has already begun in Shenzhen, China. Hardware, electronics, and communication design has already started. Fabrication and build-out will begin in early March. Final assembly will take place in August in San Francisco.
+
+Standing in any one location at the festival, especially in the open playa, can be a disorienting experience (for better or for worse). It's hard to get a feeling for just how large the place is, and where you fit in to it all. The Laser Pyramid sits silently atop the entire festival, grounding the space and providing a geospacial reference for some 60,000 weary travelers. It serves as a "guidepost" in the sky; a reflection of the playa that is visible from any location. Our lasers will point to the sky, bringing a constellation down to the ground, providing a beacon for thousands of friends and family to navigate and find their place. The Laser Pyramid enables burners to visualize the entire space without leaving the comfort and safety of the ground.
+
+The Laser Pyramid is also interactive via remote control, allowing people to "destabilize" the lights - make them move, dance, and flash - and make the art their own. She enables a sense of home to everyone beneath her, and a sense of belonging to everyone who interacts with her. We like to think that The Laser Pyramid fits perfectly into the Cargo Cult theme - trying to replicate the structures and actions of the ancients with the technology we have on hand.
