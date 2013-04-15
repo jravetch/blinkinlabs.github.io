@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /dangerarray/index.html
+permalink: /dangerarray
 root: "./.."
 category: project 
 type: "Interactive Lighting Project" 
