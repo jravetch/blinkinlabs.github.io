@@ -1,7 +1,7 @@
 ---
 layout: post 
 root: "./.." 
-category: [post-changeme] 
+category: post
 tags: [workshop, mediafacade]
 type: mobile experiments  
 img: aqi-blinkyboard 
