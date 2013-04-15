@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /blinkyboard.html 
+permalink: /blinkyboard/index.html 
 root: "./.."
 category: project 
 type: "Interactive Lighting Controller" 
