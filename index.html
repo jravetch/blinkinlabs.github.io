@@ -58,7 +58,7 @@ title: Main
 		{% if project.category contains 'project' %}  
 
 		<li class = "{{project.type}} "> 
-			<a href="{{root}}{{ project.url }}"> 
+			<a href="{{root}}{{ project.url | replace:'index.html','' }}"> 
 	   		
 			  	<img src="{{root}}/images/{{project.img|downcase}}/preview.jpg" alt="{{project.title}} project"/>  
 				<p> {{project.title }}  </p> 		
