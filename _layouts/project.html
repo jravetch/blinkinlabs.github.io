@@ -32,7 +32,6 @@ layout: default
 	<h3> Extra images </h3> 
 	<div class="b_imagenes"> 
 			{% for image in page.images %} 
-			<!-- <a rel="example_group" href="/images/{{page.img}}/big/{{ image }}" title="img"><img alt="" src="/images/{{page.img}}/thumb/{{ image }}" /></a>  -->
 			<a href="/images/{{page.img}}/big/{{image}}" rel="lightbox"><img src="/images/{{page.img}}/thumb/{{image}}" /></a>
 			{% endfor %} 
 	</div> 
@@ -105,7 +104,7 @@ layout: default
 	
 	{% for item in page.sourcecode %} 
 				
-		<li><a href="{{ item[1] }}"> {{ item[0] }} </a></li>
+		<li><a href="{{ item[1] }}" target="_new"> {{ item[0] }} </a></li>
 
 	{% endfor %}
 {% endif %} 
