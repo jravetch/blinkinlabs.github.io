@@ -11,7 +11,9 @@ collaborators:
 task: 
 desc:
 images: []
-sourcecode: [BLEShield, https://github.com/blinkiverse/BLEShield]
+sourcecode: [
+	[BLEShield, https://github.com/blinkiverse/BLEShield]
+]
 context: 
 ---
 

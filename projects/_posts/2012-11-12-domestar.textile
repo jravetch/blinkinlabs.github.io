@@ -11,8 +11,9 @@ collaborators: [Justin Day, Angela Lind, Shayna Gentiluomo, Adam Meyer, George S
 task: 
 desc:
 images: [1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg, 6.jpg, 7.jpg]
-sourcecode: [DomeTransmitter, https://github.com/hackrockcity/domeTransmitter]
-context: 
+sourcecode: [
+	[DomeTransmitter, https://github.com/hackrockcity/domeTransmitter]
+]
 ---
 
 DomeStar is a 16-foot diameter dome covered with 6,400 addressable RGB LEDs. One part installation, one part chill out space, one part high-energy dance floor. DomeStar invites guests to dance their blinkin' faces off, then to lie down and look up as the complex visualizations warp, twist, shatter and throb around them, enveloping partygoers in a comforting aura of complex energy.

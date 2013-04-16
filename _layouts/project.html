@@ -104,17 +104,8 @@ layout: default
 <h3> Sourcecode: </h3> 
 	
 	{% for item in page.sourcecode %} 
-			
-			{% if forloop.index0 == 0 %}
-				<li><a href="{{ page.sourcecode[1] }}"> {{ page.sourcecode[0] }} </a></li>
-			{% endif %}
-			{% if forloop.index0 == 2 %}
-				<li><a href="{{ page.sourcecode[3] }}"> {{ page.sourcecode[2] }} </a></li>
-			{% endif %}
-			{% if forloop.index0 == 4 %}
-				<li><a href="{{ page.sourcecode[5] }}"> {{ page.sourcecode[4] }} </a></li>	
-			{% endif %}
-
+				
+		<li><a href="{{ item[1] }}"> {{ item[0] }} </a></li>
 
 	{% endfor %}
 {% endif %} 

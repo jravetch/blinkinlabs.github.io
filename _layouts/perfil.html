@@ -36,15 +36,17 @@ layout: default
 	</ul> 
 	{% endif %} 
 	
-	
-	
 	{% if page.links != null %} 
-	<h3 class = "book"> Links </h3> 
-	<ul class = "book"> 
-	{% for link in page.links %} 
-	<li>{{ link }}</li>
-	{% endfor %} 
-	</ul> 
+		<h3 class = "book"> Links </h3> 
+		<ul class = "book"> 
+	
+		{% for link in page.links %} 
+
+			<li><a href="{{ link[1] }}"> {{ link[0] }} </a></li>
+		
+		{% endfor %} 
+		
+		</ul> 
 	{% endif %} 
 	
 	{% if page.mentions != null %} 

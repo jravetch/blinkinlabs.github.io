@@ -8,10 +8,13 @@ recentactivities: [
 	"PEX Festival.  Darlington, MD",
 	"Country Club (Festival).  Preston Hollow, NY"
 ] 
-links: [Our Github, http://www.github.com/blinkiverse] 
+links: [	
+			[Blinkiverse Github, http://www.github.com/blinkiverse],
+			[Max's Blog, http://mmmaaa.xxx],
+			[Matt's Blog, http://cibomahto.com]
+		]
+---
 
-desc: 
---- 
 # About Blinkiverse
 
 Blinkiverse is [Max](http://mmmaaa.xxx) and [Matt](http://cibomahto.com), two dedicated makers from Brooklyn. We enjoy collaborating on interactive art projects.
