@@ -19,4 +19,4 @@ DomeStar is a 16-foot diameter dome covered with 6,400 addressable RGB LEDs. One
 
 DomeStar was shown at the NYC Resistor Interactive Show, Disorient Country Club, PEX Summer Festival, Burning Man, the Open Hardware Summit and World Maker Faire.
 
-!../images/{{page.img}}/nw.jpg(DomeStar at Country Club)!
+!/images/{{page.img}}/nw.jpg(DomeStar at Country Club)!

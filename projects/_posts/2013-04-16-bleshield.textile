@@ -15,7 +15,7 @@ sourcecode: [BLEShield, https://github.com/blinkiverse/BLEShield]
 context: 
 ---
 
-!../images/{{page.img}}/ble.jpg(BLE Shield)!
+!/images/{{page.img}}/ble.jpg(BLE Shield)!
 
 The Blinkiverse BLE Shield gives your "Arduino":http://arduino.cc/ projects the ability to communicate using the Bluetooth Low Energy standard.  Featuring low power consumption and a simple serial interface, the BLE Shield makes it easy to go wireless.  Thanks to the BLE support in iOS 5 and 6, the BLE Shield is a great way to combine Arduino with your iPad or iPhone!
 
@@ -23,7 +23,7 @@ h1. Quick Start
 
 If you’ve just got your hands on a BLE Shield, these steps will get you up and running and verify that everything is working nicely.
 
-!../images/{{page.img}}/ble2.jpg(BLE Shield)!
+!/images/{{page.img}}/ble2.jpg(BLE Shield)!
 
 h2. Things You’ll Need
 
@@ -36,7 +36,7 @@ h2. Step 1 – Connect your BLE Shield to the Arduino
 
 h2. Step 2 – Connect your Arduino to your computer via USB
 
-!../images/{{page.img}}/ble3.jpg(BLE Shield)!
+!/images/{{page.img}}/ble3.jpg(BLE Shield)!
 
 h2. Step 3 – Download the Blinkiverse BLE Shield library for Arduino
 
@@ -52,19 +52,19 @@ h2. Connect your iPad to your Arduino
 
 Open the "LightBlue app":https://itunes.apple.com/en/app/lightblue/id557428110?mt=8 on your iPad or iPhone.  You should see your Arduino in the Devices list on the left-hand side of the screen.
 
-!../images/{{page.img}}/lb1.png(LightBlue App)!
+!/images/{{page.img}}/lb1.png(LightBlue App)!
 
 Tap the device to connect to it.  The blue “Connected” LED on the BLE Shield should light up and the iPad should show a list of Services provided by the BLE Shield.
 
-!../images/{{page.img}}/lb2.png(LightBlue App)!
+!/images/{{page.img}}/lb2.png(LightBlue App)!
 
 Once a connection is established, the BLE Shield Test Sketch begins sending messages to your iPad about once per second.  To see them, tap *0xFFF0* from the Services list, then tap *0xFFF4* (Notify) in the Characteristics list that appears on the right.
 
-!../images/{{page.img}}/lb3.png(LightBlue App)!
+!/images/{{page.img}}/lb3.png(LightBlue App)!
 
 Finally, tap the “Notify” button at the bottom of the screen to begin displaying the messages from the Arduino.
 
-!../images/{{page.img}}/lb4.png(LightBlue App)!
+!/images/{{page.img}}/lb4.png(LightBlue App)!
 
 You should now see a changing message such as *“Connected 10s”* which increments about once per second. This message is coming from the BLE Shield Test Sketch!
 
