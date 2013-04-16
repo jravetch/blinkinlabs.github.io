@@ -91,7 +91,7 @@ title: Main
 		{% if hack.category contains 'hack' %}  
 
 		<li class = "{{hack.type}}"> 
-			<a href="{{root}}{{ hack.url }}"> 
+			<a href="{{root}}{{ hack.url | replace:'index.html',''}}"> 
 			<img src="./images/{{hack.img|downcase}}/preview.jpg" alt="{{post.title}} project"/>  
 			</a> 
 
@@ -114,7 +114,7 @@ title: Main
 
 		<div class = "main_sidebar hide-on-phones"> 
 		
-			<a href="{{ post.url }}/bio/bio.html"> 
+			<a href="{{ post.url }}/bio"> 
 				<img src="{{root}}/images/bio/bio.jpeg" 
 				 alt="{{post.title}} project" id = "imgbio"/>  
 			</a>			
