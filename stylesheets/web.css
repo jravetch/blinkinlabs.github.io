@@ -201,12 +201,11 @@ a:visited {
 
 
 .site { 
-
 	z-index; 2; 
 	height: 100%; 
 	border-top: 5px solid #555; 
-  	border-bottom: 8px solid #555; 
-
+	border-bottom: 8px solid #555; 
+  padding-top: 5px;
 } 
 
 .foundation-header { 
