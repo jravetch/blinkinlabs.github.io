@@ -10,7 +10,7 @@ recentactivities: [
 "Country Club (Festival).  Preston Hollow, NY"
 ] 
 links: [ 
-<a href="http://www.github.com/partytech/">Our Github</a>
+<a href="http://www.github.com/blinkiverse/">Our Github</a>
 ] 
 
 desc: 
