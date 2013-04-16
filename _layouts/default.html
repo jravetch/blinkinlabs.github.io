@@ -12,10 +12,12 @@
 	{% capture root %}{% if page.root %}{{ page.root }}{% else %}{{ site.root }}{% endif %}{%endcapture%}
 
 	<!-- Included CSS Files --> 
-	<link rel="stylesheet" href="{{root}}/stylesheets/foundation.css">
-	<link rel="stylesheet" href="{{root}}/stylesheets/app.css"> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
 	
-	<link href="{{root}}/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
 
 	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
 	
@@ -33,20 +35,8 @@
 	  })();
 
 	</script>
-<!--	
-	<link href="{{root}}/stylesheets/syntax.css" type="text/css" rel="stylesheet" /> 
---> 
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" href="stylesheets/ie.css">
-	<![endif]-->
 
 
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-		
-	<link rel="stylesheet" href="{{root}}/stylesheets/web.css" type="text/css" media="screen, projection" /> 
 	
 	
     <style> 
@@ -77,23 +67,23 @@
 	<div class="row header book"> 
 		
   		<div class="four columns">
-    		<h1 class="logo">	<a href="{{root}}/" class="hide-on-phones"> Blinkiverse Portfolio </a></h1> 
+    		<h1 class="logo">	<a href="/" class="hide-on-phones"> Blinkiverse Portfolio </a></h1> 
 		
 			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
 				<h1 class="logo logo-mobile"> Blinkiverse Portfolio </h1> 
 				<a href="{{ post.url }}/bio"> 
-<!-- 					<img src="{{root}}/images/bio/bio.jpeg" 
+<!-- 					<img src="/images/bio/bio.jpeg" 
  -->
 				 
 				</a> 
 				
 				<div class="eight columns menu menu-mobile">
 
-					<a href="{{root}}/" class=""> Projects </a> 
-					<!-- <a href="{{root}}/index.html#hacks" class=""> Hacks </a> --> 
+					<a href="/" class=""> Projects </a> 
+					<!-- <a href="/index.html#hacks" class=""> Hacks </a> --> 
 					<!--  <a href="/q"> Code </a> --> 
-					<a href="{{root}}/bio" class=""> About </a>  
-					<a href="{{root}}/blog" class=""> Blog </a> 
+					<a href="/bio" class=""> About </a>  
+					<a href="/blog" class=""> Blog </a> 
 
 			  	</div>	
 				
@@ -102,11 +92,11 @@
   		</div>
   		<div class="eight columns menu right hide-on-phones">
 
-			<a href="{{root}}/" class=""> Projects </a> 
-			<!-- <a href="{{root}}/index.html#hacks" class=""> Hacks </a> --> 
+			<a href="/" class=""> Projects </a> 
+			<!-- <a href="/index.html#hacks" class=""> Hacks </a> --> 
 			<!-- <a href="/q"> Code </a> --> 
-  			<a href="{{root}}/bio" class=""> About </a>  
-			<a href="{{root}}/blog" class=""> Blog </a> 
+  			<a href="/bio" class=""> About </a>  
+			<a href="/blog" class=""> Blog </a> 
 
   		</div> 
 	</div>

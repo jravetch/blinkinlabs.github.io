@@ -149,8 +149,8 @@ layout: default
 	{% for project in site.posts %}
 	{% if project.category contains 'project' or project.category contains 'hack' %}  
 		<li> 
-		<a class="has-tip right" id="{{project.img}}" data-width="120px" title="{{project.title}}" href="{{root}}{{ project.url }}"> 
-		<img src="{{root}}/images/{{project.img|downcase}}/preview.jpg" />  
+		<a class="has-tip right" id="{{project.img}}" data-width="120px" title="{{project.title}}" href="{{ project.url }}"> 
+		<img src="/images/{{project.img|downcase}}/preview.jpg" />  
 	
 		</a> 
 		</li> 	

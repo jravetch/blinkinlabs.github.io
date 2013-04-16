@@ -1,7 +1,6 @@
 ---
 layout: project
 permalink: /plotters/index.html 
-root: "./.."
 category: hack 
 type: "Interactive Plotter" 
 img: plotters

@@ -1,7 +1,6 @@
 ---
 layout: project
 permalink: /bleshield/index.html 
-root: "./.."
 category: project 
 type: "Arduino Shield" 
 img: bleshield
