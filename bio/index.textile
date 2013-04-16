@@ -1,13 +1,12 @@
 ---
 layout: perfil 
-root: "./.."
 category: bio
 title: about us 
 recentactivities: [
-"Daft Punk Party.  Williamsburg, NY",
-"Burning Man Dome Installation.  Black Rock City, NV",
-"PEX Festival.  Darlington, MD",
-"Country Club (Festival).  Preston Hollow, NY"
+	"Daft Punk Party.  Williamsburg, NY",
+	"Burning Man Dome Installation.  Black Rock City, NV",
+	"PEX Festival.  Darlington, MD",
+	"Country Club (Festival).  Preston Hollow, NY"
 ] 
 links: [ 
 <a href="http://www.github.com/blinkiverse/">Our Github</a>
