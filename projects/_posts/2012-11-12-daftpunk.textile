@@ -10,7 +10,7 @@ technologies: [Processing, Python, C++, C, Ableton Live]
 when: 10/2012
 collaborators: [Dustin John, Phillip Kim]
 task: 
-desc: Fleet Tracking System
+desc:
 images: [1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg]
 sourcecode: 
 context: 

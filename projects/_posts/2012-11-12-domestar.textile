@@ -10,7 +10,7 @@ technologies: [Processing, Python, C++, C]
 when: 01/2012 - 9/2012
 collaborators: [Justin Day, Angela Lind, Shayna Gentiluomo, Adam Meyer, George Shammas, NYC Resistor]
 task: 
-desc: Fleet Tracking System
+desc:
 images: [1.jpg, 2.jpg, 3.jpg, 4.jpg, 5.jpg, 6.jpg, 7.jpg]
 sourcecode: [DomeTransmitter, https://github.com/hackrockcity/domeTransmitter]
 context: 
