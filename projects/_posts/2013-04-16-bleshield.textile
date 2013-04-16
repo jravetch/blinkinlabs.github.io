@@ -1,0 +1,88 @@
+---
+layout: project
+permalink: /bleshield/index.html 
+root: "./.."
+category: project 
+type: "Arduino Shield" 
+img: bleshield
+title: Bluetooth Low Energy Shield
+technologies: [Arduino, Bluetooth 4.0, iOS]
+when: 04/2013
+collaborators:
+task: 
+desc:
+images: []
+sourcecode: [BLEShield, https://github.com/blinkiverse/BLEShield]
+context: 
+---
+
+!../images/{{page.img}}/ble.jpg(BLE Shield)!
+
+The Blinkiverse BLE Shield gives your "Arduino":http://arduino.cc/ projects the ability to communicate using the Bluetooth Low Energy standard.  Featuring low power consumption and a simple serial interface, the BLE Shield makes it easy to go wireless.  Thanks to the BLE support in iOS 5 and 6, the BLE Shield is a great way to combine Arduino with your iPad or iPhone!
+
+h1. Quick Start
+
+If you’ve just got your hands on a BLE Shield, these steps will get you up and running and verify that everything is working nicely.
+
+!../images/{{page.img}}/ble2.jpg(BLE Shield)!
+
+h2. Things You’ll Need
+
+* A BLE Shield
+* An Arduino (tested on Uno, Leonardo, and Duemilanove) with USB cable for programming and power
+* An iPad or iPhone with BLE support (in this example, an iPad Mini) with the "LightBlue app":https://itunes.apple.com/en/app/lightblue/id557428110?mt=8 installed.
+* A computer with the "Arduino Software":http://arduino.cc/en/Main/Software installed
+
+h2. Step 1 – Connect your BLE Shield to the Arduino
+
+h2. Step 2 – Connect your Arduino to your computer via USB
+
+!../images/{{page.img}}/ble3.jpg(BLE Shield)!
+
+h2. Step 3 – Download the Blinkiverse BLE Shield library for Arduino
+
+"Click Here":https://github.com/blinkiverse/BleShield/archive/master.zip to download the Blinkiverse BLE Shield folder. From the *library* folder, copy the *Blinkiverse_BLEShield* folder to your Arduino libraries folder.
+
+h2. Step 3 – Upload the BLE Shield demo sketch to your Arduino
+
+Open the Arduino Software on your computer and choose *File* | *Sketchbook* | *libraries* | *Blinkiverse_BLEShield* | *BLEShield*
+
+Click Upload
+
+h2. Connect your iPad to your Arduino
+
+Open the "LightBlue app":https://itunes.apple.com/en/app/lightblue/id557428110?mt=8 on your iPad or iPhone.  You should see your Arduino in the Devices list on the left-hand side of the screen.
+
+!../images/{{page.img}}/lb1.png(LightBlue App)!
+
+Tap the device to connect to it.  The blue “Connected” LED on the BLE Shield should light up and the iPad should show a list of Services provided by the BLE Shield.
+
+!../images/{{page.img}}/lb2.png(LightBlue App)!
+
+Once a connection is established, the BLE Shield Test Sketch begins sending messages to your iPad about once per second.  To see them, tap *0xFFF0* from the Services list, then tap *0xFFF4* (Notify) in the Characteristics list that appears on the right.
+
+!../images/{{page.img}}/lb3.png(LightBlue App)!
+
+Finally, tap the “Notify” button at the bottom of the screen to begin displaying the messages from the Arduino.
+
+!../images/{{page.img}}/lb4.png(LightBlue App)!
+
+You should now see a changing message such as *“Connected 10s”* which increments about once per second. This message is coming from the BLE Shield Test Sketch!
+
+Next, in the Arduino software, open the *Serial Monitor*. You may need to select a speed of 115200. If your iOS device is connected over bluetooth and the blue “connected” LED is lit on the BLE Shield, you should see messages printing to the Serial Monitor once a second.
+
+On your device, select *0xFFF0* from the Services list, then select *0xFFF1* (Write) from the Characteristics list. Tap the *Write* button, tap the *Write ASCII* text box, write a short message, and tap *Send*. You should see your message appear in the Arduino Serial Monitor!
+
+h1. Next Steps
+
+Take a look at the source code for the BLE Shield Test Sketch.
+
+Make some changes to get a feel for how things work.
+
+Be sure to check out the Resources section, below!
+
+h1. Resources
+
+You can find the board design files, BLEShield Arduino library, and example apps in the "BLEShield repository on GitHub":https://github.com/blinkiverse/BleShield.
+
+
