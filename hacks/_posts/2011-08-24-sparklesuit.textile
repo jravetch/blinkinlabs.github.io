@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /sparklesuit.html 
+permalink: /sparklesuit/index.html 
 root: "./.."
 category: hack 
 type: "Interactive LED Suit Jacket" 

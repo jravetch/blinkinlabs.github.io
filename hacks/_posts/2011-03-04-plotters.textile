@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /plotters.html 
+permalink: /plotters/index.html 
 root: "./.."
 category: hack 
 type: "Interactive Plotter" 
