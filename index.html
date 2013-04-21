@@ -1,129 +1,84 @@
 ---
 layout: default
-title: Main  
+title: Main
 ---
 
-<div class="row">	
-	<div class = "eight columns" > 
-
-
-<!-- 		<div class="foundation-header">
-			<h2 class = "correctme">Media
-				<span class="subheader">check out some media</span>	
-			</h2>
-		</div> 
-	
-	
-	<ul class="block-grid five-up  project_preview">
-		
-    	{% for media in site.posts %} 
-		{% if media.category contains 'media' %}  
-
-		<li class = "{{media.type}} "> 
-			<a href="{{root}}{{ media.url }}"> 
-	   		
-			  	<img src="{{root}}/images/{{media.img|downcase}}/preview.jpg" alt="{{media.title}} project"/>  
-				<p> {{media.title }}  </p> 		
-		 		<div class = "project_preview_desc project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{project.desc}} --> </div>
-		
-	
-			</a> 
-	
-		</li> 
-	
-		{% endif %}  	
-    	{% endfor %}  
-
-	</ul>  -->
-
-
-
-
-
+<div class="row">
+	<div class="eight columns" >
 
 		<div class="foundation-header">
-			<h2 class = "correctme">Projects
-			<span class="subheader">check the info inside</span>
-		
-			
-				</h2>
-			</div> 
-	
-	
-	<ul class="block-grid five-up  project_preview">
-		
-    	{% for project in site.posts %} 
-		{% if project.category contains 'project' %}  
+			<h2 class="correctme">Projects
+        <span class="subheader">check the info inside</span>
+      </h2>
+    </div>
+    <ul class="block-grid five-up  project_preview">
+      {% for project in site.posts %}
+        {% if project.category contains 'project' %}
+          <li class="{{project.type}} ">
+            <a href="{{ project.url | replace:'index.html','' }}">
 
-		<li class = "{{project.type}} "> 
-			<a href="{{ project.url | replace:'index.html','' }}"> 
-	   		
-			  	<img src="/images/{{project.img|downcase}}/preview.jpg" alt="{{project.title}} project"/>  
-				<p> {{project.title }}  </p> 		
-		 		<div class = "project_preview_desc project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{project.desc}} --> </div>
-		
-	
-			</a> 
-	
-		</li> 
-	
-		{% endif %}  	
-    	{% endfor %}  
+                <img src="/images/{{project.img|downcase}}/preview.jpg" alt="{{project.title}} project"/>
+              <p> {{project.title }}  </p>
+              <div class="project_preview_desc project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{project.desc}} --> </div>
 
-	</ul> 
-	
-	
-	
-	
-			<div class="foundation-header">
-			<h2 id ="hacks">Experiments
-				<span class="subheader">some cool experiments & hacks</span>
-			</h2> 
-			</div> 
 
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <div class="foundation-header">
+      <h2 id="blinkables">Blinkables
+        <span class="subheader">make your world more blinky!</span>
+      </h2>
+    </div>
 		<ul class="block-grid five-up project_preview">
+      {% for blinkable in site.posts %}
+        {% if blinkable.category contains 'blinkable' %}
+          <li class="{{blinkable.type}}">
+            <a href="{{ blinkable.url | replace:'index.html',''}}">
+              <img src="./images/{{blinkable.img|downcase}}/preview.jpg" alt="{{post.title}} project"/>
+            </a>
+            <p class="project_preview_title"> {{blinkable.title }}  </p>
+            <div class="project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{blinkable.desc}} --> </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+		</ul>
 
-		
+    <div class="foundation-header">
+      <h2 id="hacks">Experiments
+        <span class="subheader">some cool experiments & hacks</span>
+      </h2>
+    </div>
+		<ul class="block-grid five-up project_preview">
+      {% for hack in site.posts %}
+        {% if hack.category contains 'hack' %}
+          <li class="{{hack.type}}">
+            <a href="{{ hack.url | replace:'index.html',''}}">
+              <img src="./images/{{hack.img|downcase}}/preview.jpg" alt="{{post.title}} project"/>
+            </a>
 
-		{% for hack in site.posts %} 
-		{% if hack.category contains 'hack' %}  
+              <p class="project_preview_title"> {{hack.title }}  </p>
+              <div class="project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{hack.desc}} --> </div>
+          </li>
+        {% endif %}
+      {% endfor %}
+		</ul>
+	</div>
 
-		<li class = "{{hack.type}}"> 
-			<a href="{{ hack.url | replace:'index.html',''}}"> 
-			<img src="./images/{{hack.img|downcase}}/preview.jpg" alt="{{post.title}} project"/>  
-			</a> 
-
-				<p class = "project_preview_title"> {{hack.title }}  </p> 
-			 	<div class = "project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{hack.desc}} --> </div>
-
-
-		</li> 
-
-		{% endif %}  	
-	    {% endfor %}  
-	
-	
-		</ul> 
-
-
-	</div> 
-
-	<div class = "four columns" > 
-
-		<div class = "main_sidebar hide-on-phones"> 
-		
-			<a href="{{ post.url }}/bio"> 
-				<img src="/images/bio/bio.jpeg" 
-				 alt="{{post.title}} project" id = "imgbio"/>  
-			</a>			
-			
-			<p class="correctme">Blinkiverse is a small team of hardware and software engineers, makers, and artists. We make interactive lighting installations and whatever else suits our fancy.	
+	<div class="four columns" >
+		<div class="main_sidebar hide-on-phones">
+			<a href="{{ post.url }}/bio">
+				<img src="/images/bio/bio.jpeg"
+				 alt="{{post.title}} project" id="imgbio"/>
+			</a>
+			<p class="correctme">Blinkiverse is a small team of hardware and software engineers, makers, and artists. We make interactive lighting installations and whatever else suits our fancy.
 			</p>
-			
-		
-		</div> 
+		</div>
+	</div>
 
-	</div> 
 </div>
 
 
