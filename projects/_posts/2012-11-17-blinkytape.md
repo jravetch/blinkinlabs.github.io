@@ -12,7 +12,7 @@ task:
 desc:
 images:
 sourcecode: [
-	[Github, https://github.com/blinkiverse/blinkyboard]	
+	[BlinkyTape, https://github.com/blinkiverse/blinkyboard]	
 ]
 context: 
 ---
@@ -73,17 +73,23 @@ Every one of the projects in our Kickstarter video is what we like to call a Spe
 
 ## Blinky Hat - 30 minutes
 
+![Blinky Hat](/images/{{page.img}}/big/hat.png)
+
 The Blinky Hat started its life as a $7 hat found on the streets of Shenzhen, China.  With the help of some double-sided tape, we wrapped a BlinkyTape around the hat brim and plugged it into our computer.
 
 We used the live preview feature of PatternPaint to map out which LEDs were part of the front-left, front-right, and rear parts of the hat.  From there it was a simple matter of making some sweet animations and saving them to the BlinkyTape.  The last step was to simply unplug from the computer and plug into a portable USB charger!
 
 ## Movie FX - 1 Hour
 
+![Movie SFX](/images/{{page.img}}/big/sfx.jpg)
+
 Inspired by the computer-screens-projected-on-faces effects in a popular sci-fi film, this project required only a BlinkyTape, some double-sided sticky tape, and a 4-sided box.
 
 With the BlinkyTape attached to the front of the box we loaded up PatternPaint to make some cool looking animations that would light up our victi-, er, actor's face.  After saving the pattern to the BlinkyTape, we just needed to find a dark, quiet place to film!
 
 ## DJ Booth - 10 Minutes
+
+![DJ Booth](/images/{{page.img}}/big/dj.jpg)
 
 Armed with 3 BlinkyTapes mounted in our aluminum diffuser tubes, a USB hub for power, and a MacBook Pro for the tunes, this project was a breeze to set up.
 
