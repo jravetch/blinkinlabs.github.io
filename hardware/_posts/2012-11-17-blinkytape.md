@@ -1,7 +1,7 @@
 ---
 layout: project
 permalink: /blinkytape/index.html 
-category: project 
+category: hardware
 type: "Interactive Lighting Controller" 
 img: blinkytape
 title: Blinkytape

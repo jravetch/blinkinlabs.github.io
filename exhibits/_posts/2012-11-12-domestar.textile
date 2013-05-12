@@ -1,7 +1,7 @@
 ---
 layout: project
 permalink: /domestar/index.html 
-category: project 
+category: exhibit
 type: "Interactive Lighting Project" 
 img: domestar
 title: DomeStar

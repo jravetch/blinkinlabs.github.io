@@ -1,7 +1,7 @@
 ---
 layout: project
 permalink: /daftpunk/index.html 
-category: project 
+category: exhibit
 type: "Interactive Lighting Project" 
 img: daftpunk
 title: Daft Punk
