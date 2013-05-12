@@ -7,13 +7,13 @@ title: Main
 	<div class="eight columns" >
 
 		<div class="foundation-header">
-			<h2 class="correctme">Projects
-        <span class="subheader">check the info inside</span>
+			<h2 class="correctme">Hardware
+        <span class="subheader">stuff we've made for you!</span>
       </h2>
     </div>
     <ul class="block-grid five-up  project_preview">
       {% for project in site.posts %}
-        {% if project.category contains 'project' %}
+        {% if project.category contains 'hardware' %}
           <li class="{{project.type}} ">
             <a href="{{ project.url | replace:'index.html','' }}">
 
@@ -46,6 +46,28 @@ title: Main
         {% endif %}
       {% endfor %}
 		</ul>
+
+		<div class="foundation-header">
+			<h2 class="correctme">Exhibits
+        <span class="subheader">bringing light to the world</span>
+      </h2>
+    </div>
+    <ul class="block-grid five-up  project_preview">
+      {% for project in site.posts %}
+        {% if project.category contains 'exhibit' %}
+          <li class="{{project.type}} ">
+            <a href="{{ project.url | replace:'index.html','' }}">
+
+                <img src="/images/{{project.img|downcase}}/preview.jpg" alt="{{project.title}} project"/>
+              <p> {{project.title }}  </p>
+              <div class="project_preview_desc project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{project.desc}} --> </div>
+
+
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
 
     <div class="foundation-header">
       <h2 id="hacks">Experiments
