@@ -1,5 +1,5 @@
 permalink: none 
-# markdown: rdiscount 
+markdown: rdiscount 
 paginate: 5
 pygments: true 
 auto: true 
