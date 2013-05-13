@@ -17,11 +17,11 @@ images:
 context: 
 ---
 
+[PatternPaint](https://github.com/blinkiverse/blinkyboard/examples/PatternPaint) is companion software for the [BlinkyTape](/blinkytape).  It allows you to create animations for your BlinkyTape in real-time, and save your designs to the BlinkyTape for playback on-the-go.
+
 ![NyanCat in PatternPaint](/images/{{page.img}}/PatternPaint-nyan.png)
 
 ![NyanCat painted in light](/images/{{page.img}}/nyan-painted.jpg)
-
-[PatternPaint](https://github.com/blinkiverse/blinkyboard/examples/PatternPaint) is companion software for the [BlinkyTape](/blinkytape).  It allows you to create animations for your BlinkyTape in real-time, and save your designs to the BlinkyTape for playback on-the-go.
 
 ## Uses
 
