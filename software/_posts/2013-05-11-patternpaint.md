@@ -136,8 +136,8 @@ create interactive programs that use animations, and more!
 
 We've created an example using multiple animations on the BlinkyTape.
 The BlinkyTape draws a rainbow until the button is pressed, at which point
-it finished the painting by drawing NyanCat.
+it finishes the painting by drawing NyanCat.
 
-![Light painted NyanCat!!!!](/images/{{page.img}}/nyan-painted.jpg)
+![Long NyanCat is Nyaaaaaaaaaaaan](/images/{{page.img}}/nyan-paint-long.jpg)
 
 You can find the code in the [NyanPaint](https://github.com/blinkiverse/blinkyboard/tree/master/examples/light_painting_examples/NyanPaint) example.
