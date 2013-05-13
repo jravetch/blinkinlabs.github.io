@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /blinkables/blinkyboard-pov/index.html 
+permalink: /blinkables/light-painting/index.html
 category: blinkable
 type: "Blinkables" 
 img: blinkables/blinkytube-pov
@@ -11,7 +11,7 @@ collaborators: [Matt Mets, Marty McGuire]
 task:
 desc: Blinkyboard POV
 images:
-sourcecode: [[povmaker, https://github.com/blinkiverse/blinkyboard/tree/master/examples/povmaker]]
+sourcecode: [[povmaker, https://github.com/blinkiverse/BlinkyTape/tree/master/examples/povmaker]]
 context:
 ---
 
@@ -22,7 +22,7 @@ There are some [cool](https://sites.google.com/site/mechatronicsguy/lightscythe)
 being done with [light painting](http://www.flickr.com/groups/lightjunkies/#derp) out
 there!
 
-We were playing with the [Blinkyboard](https://github.com/blinkiverse/blinkyboard),
+We were playing with the [BlinkyTape](https://github.com/blinkiverse/BlinkyTape),
 our tiny board that makes it dead simple to control LEDs over USB, and realized
 that light painting would be a great hack that we could knock out quickly.
 
@@ -59,14 +59,14 @@ that we will paint.
 The default Blinkyboard firmware speaks a very simple serial protocol that
 allows a program on your computer to push pixel values to display.
 
-With this in mind, we wrote a [Processing](http://processing.org/) called [povmaker](https://github.com/blinkiverse/blinkyboard/tree/master/examples/povmaker).
+With this in mind, we wrote a [Processing](http://processing.org/) called [povmaker](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/povmaker).
 
 povmaker is pretty simple.  It uses Processing's drawing routines to create our
 image data on a small canvas 60 pixels tall.  Each column in the image then
 becomes one "frame" for it to send to the Blinkyboard.  This happens in a loop,
 so the animation simply runs over and over until you kill the program.
 
-You can grab the source for povmaker from the [Blinkiverse GitHub](https://github.com/blinkiverse/blinkyboard/tree/master/examples/povmaker) account.  You'll want to customize it by creating your own art, adjusting drawing speeds, etc.
+You can grab the source for povmaker from the [Blinkiverse GitHub](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/povmaker) account.  You'll want to customize it by creating your own art, adjusting drawing speeds, etc.
 
 # Capture
 

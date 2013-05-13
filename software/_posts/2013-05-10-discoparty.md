@@ -6,7 +6,7 @@ img: discoparty
 title: DiscoParty - Music Reactive Lighting
 technologies: [Processing, BlinkyTape]
 sourcecode: [
-	[DiscoParty, https://github.com/blinkiverse/blinkyboard/tree/master/examples/DiscoParty]	
+	[DiscoParty, https://github.com/blinkiverse/BlinkyTape/tree/master/examples/DiscoParty]	
 ]
 type:
 when:
@@ -17,7 +17,7 @@ images:
 context: 
 ---
 
-[DiscoParty](https://github.com/blinkiverse/blinkyboard/examples/DiscoParty) is companion software for the [BlinkyTape](/blinkytape).  It allows you to turn one or more BlinkyTapes into colorful music-reactive lighting.
+DiscoParty is companion software for the [BlinkyTape](/blinkytape).  It allows you to turn one or more BlinkyTapes into colorful music-reactive lighting.
 
 ![DiscoParty DJ Photo Thing]()
 
@@ -41,19 +41,19 @@ To use DiscoParty, you'll need to download and install:
 
 * [Processing 1.5.1](http://processing.org/download/) - Use the latest stable.  DiscoParty is untested in Processing 2.0.
 
-DiscoParty comes in the `examples` folder of the [blinkyboard source repository](https://github.com/blinkiverse/blinkyboard/) on Github.
+DiscoParty comes in the `examples` folder of the [BlinkyTape source repository](https://github.com/blinkiverse/BlinkyTape/) on Github.
 
-If you have Git installed, you can grab the `blinkyboard` repository with:
+If you have Git installed, you can grab the `BlinkyTape` repository with:
 
-	$ git clone git://github.com/blinkiverse/blinkyboard.git
+	$ git clone git://github.com/blinkiverse/BlinkyTape.git
 
-If you don't have Git installed, you can download the [blinkyboard respository as a zip file](https://github.com/blinkiverse/blinkyboard/archive/master.zip).
+If you don't have Git installed, you can download the [BlinkyTape respository as a zip file](https://github.com/blinkiverse/BlinkyTape/archive/master.zip).
 
 # Using DiscoParty
 
 1. Connect your BlinkyTape to your computer via USB.
 2. Open the DiscoParty sketch in Processing
-    * Find it at `blinkyboard/examples/DiscoParty/DiscoParty.pde`.
+    * Find it at `BlinkyTape/examples/DiscoParty/DiscoParty.pde`.
 3. Click the Run button.
 
 Out of the box, DiscoParty uses your computer's built-in sound input (ie -

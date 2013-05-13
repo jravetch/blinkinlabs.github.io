@@ -5,14 +5,14 @@ category: hardware
 type: "Interactive Lighting Controller" 
 img: blinkytape
 title: BlinkyTape
-technologies: [C++, C, Processing, Python] 
+technologies: [C++, C, Processing, Python]
 when: 8/2012 - 10/2012
 collaborators:
 task: 
 desc:
 images:
 sourcecode: [
-	[BlinkyTape, https://github.com/blinkiverse/blinkyboard]	
+	[BlinkyTape, https://github.com/blinkiverse/BlinkyTape]
 ]
 context: 
 ---
@@ -84,7 +84,7 @@ We used the live preview feature of PatternPaint to map out which LEDs were part
 **More Information**
 
 * Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
-* Check out the [BlinkyHat source](https://github.com/blinkiverse/blinkyboard/tree/master/examples/FLEDora)
+* Check out the [BlinkyHat source](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/FLEDora)
 
 ## Movie FX - 1 Hour
 
@@ -98,8 +98,8 @@ With the BlinkyTape attached to the front of the box we loaded up PatternPaint t
 
 * Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
 * Check out the source:
-    * ["Dave" animations](https://github.com/blinkiverse/blinkyboard/tree/master/examples/Dave)
-	* ["Hal" pattern](https://github.com/blinkiverse/blinkyboard/tree/master/examples/Hal9000)
+    * ["Dave" animations](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/Dave)
+	* ["Hal" pattern](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/Hal9000)
 
 ## DJ Booth - 10 Minutes
 
@@ -126,7 +126,7 @@ PatternPaint makes light painting super simple with its image import functionali
 **More Information**
 
 * Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
-* Check out the [NyanPaint](https://github.com/blinkiverse/blinkyboard/tree/master/examples/light_painting_examples/NyanPaint) source.
+* Check out the [NyanPaint](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/light_painting_examples/NyanPaint) source.
 
 # Tech Specs
 

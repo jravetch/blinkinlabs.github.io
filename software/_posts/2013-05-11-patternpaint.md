@@ -6,7 +6,7 @@ img: patternpaint
 title: PatternPaint
 technologies: [Processing, Arduino, BlinkyTape]
 sourcecode: [
-	[PatternPaint, https://github.com/blinkiverse/blinkyboard/tree/master/examples/PatternPaint]	
+	[PatternPaint, https://github.com/blinkiverse/BlinkyTape/tree/master/examples/PatternPaint]	
 ]
 type:
 when:
@@ -17,7 +17,7 @@ images:
 context: 
 ---
 
-[PatternPaint](https://github.com/blinkiverse/blinkyboard/examples/PatternPaint) is companion software for the [BlinkyTape](/blinkytape).  It allows you to create animations for your BlinkyTape in real-time, and save your designs to the BlinkyTape for playback on-the-go.
+PatternPaint is companion software for the [BlinkyTape](/blinkytape).  It allows you to create animations for your BlinkyTape in real-time, and save your designs to the BlinkyTape for playback on-the-go.
 
 ![NyanCat in PatternPaint](/images/{{page.img}}/PatternPaint-nyan.png)
 
@@ -47,19 +47,19 @@ To use PatternPaint, you'll need to download and install:
 * [ControlP5 1.5.2](https://code.google.com/p/controlp5/downloads/list) - Provides the UI widgets for PatternPaint.  [(Installation instructions)](http://www.sojamo.de/libraries/controlP5/)
 * [Arduino 1.0.4](http://arduino.cc/en/Main/Software) - Allows patterns to be saved to the BlinkyTape
 
-PatternPaint comes in the `examples` folder of the [blinkyboard source repository](https://github.com/blinkiverse/blinkyboard/) on Github.
+PatternPaint comes in the `examples` folder of the [BlinkyTape source repository](https://github.com/blinkiverse/BlinkyTape/) on Github.
 
-If you have Git installed, you can grab the `blinkyboard` repository with:
+If you have Git installed, you can grab the `BlinkyTape` repository with:
 
-	$ git clone git://github.com/blinkiverse/blinkyboard.git
+	$ git clone git://github.com/blinkiverse/BlinkyTape.git
 
-If you don't have Git installed, you can download the [blinkyboard respository as a zip file](https://github.com/blinkiverse/blinkyboard/archive/master.zip).
+If you don't have Git installed, you can download the [BlinkyTape respository as a zip file](https://github.com/blinkiverse/BlinkyTape/archive/master.zip).
 
 # Starting PatternPaint
 
 1. Connect your BlinkyTape to your computer via USB
 2. Open the PatternPaint sketch in Processing
-    * Find it at `blinkyboard/examples/PatternPaint/PatternPaint.pde` 
+    * Find it at `BlinkyTape/examples/PatternPaint/PatternPaint.pde`
 3. Click the Run button.
 
 # Using PatternPaint
@@ -103,7 +103,7 @@ Unfortunately, this process is a bit manual at the moment.  We hope to automate 
 1. Quit PatternPaint so it will release control of your BlinkyTape.
 1. Press `CMD-k` (OS X) or `CTRL-k` (Windows and Linux) to open the PatternPaint sketch folder.
 1. Open the `PatternTemplate.ino` sketch in Arduino.
-    * Find it at `blinkyboard/examples/PatternTemplate/PatternTemplate.ino`.
+    * Find it at `BlinkyTape/examples/PatternTemplate/PatternTemplate.ino`.
 1. Choose **File** | **Save As**.
 1. Give a name to your new Arduino sketch.  For example,"MyAwesomeAnimation".
 1. Drag and drop the `pov.h` file from your file browser into Arduino.
@@ -140,4 +140,4 @@ it finishes the painting by drawing NyanCat.
 
 ![Long NyanCat is Nyaaaaaaaaaaaan](/images/{{page.img}}/nyan-paint-long.jpg)
 
-You can find the code in the [NyanPaint](https://github.com/blinkiverse/blinkyboard/tree/master/examples/light_painting_examples/NyanPaint) example.
+You can find the code in the [NyanPaint](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/light_painting_examples/NyanPaint) example.
