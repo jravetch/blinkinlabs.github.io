@@ -1157,6 +1157,7 @@ margin-left: -200px;
 	}
 
 .annoyatron {
+  box-sizing: border-box;
   width: 100%;
   background-color: #FFF;
   font-size: 1.2em;
