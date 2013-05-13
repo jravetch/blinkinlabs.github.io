@@ -41,7 +41,7 @@ The BinkyTape comes with bright, colorful built-in patterns, but of course you w
 
 ## Pattern Editor
 
-![Pattern Editor](/images/{{page.img}}/big/pattern.png)
+![PatternPaint](/images/{{page.img}}/big/pattern.png)
 
 The BlinkyTape comes with a rich set of companion software that run cross-platform on Mac OS X, Windows, and Linux. Creating custom animations is as easy as plugging the BlinkyTape into your computer and starting our pattern editor. Patterns can be edited in real-time, or saved to the strip for playback away from the computer.
 
@@ -81,6 +81,11 @@ The Blinky Hat started its life as a $7 hat found on the streets of Shenzhen, Ch
 
 We used the live preview feature of PatternPaint to map out which LEDs were part of the front-left, front-right, and rear parts of the hat.  From there it was a simple matter of making some sweet animations and saving them to the BlinkyTape.  The last step was to simply unplug from the computer and plug into a portable USB charger!
 
+**More Information**
+
+* Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
+* Check out the [BlinkyHat source](https://github.com/blinkiverse/blinkyboard/tree/master/examples/FLEDora)
+
 ## Movie FX - 1 Hour
 
 ![Movie SFX](/images/{{page.img}}/big/sfx.jpg)
@@ -88,6 +93,13 @@ We used the live preview feature of PatternPaint to map out which LEDs were part
 Inspired by the computer-screens-projected-on-faces effects in a popular sci-fi film, this project required only a BlinkyTape, some double-sided sticky tape, and a 4-sided box.
 
 With the BlinkyTape attached to the front of the box we loaded up PatternPaint to make some cool looking animations that would light up our victi-, er, actor's face.  After saving the pattern to the BlinkyTape, we just needed to find a dark, quiet place to film!
+
+**More Information**
+
+* Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
+* Check out the source:
+    * ["Dave" animations](https://github.com/blinkiverse/blinkyboard/tree/master/examples/Dave)
+	* ["Hal" pattern](https://github.com/blinkiverse/blinkyboard/tree/master/examples/Hal9000)
 
 ## DJ Booth - 10 Minutes
 
@@ -99,6 +111,10 @@ Using the awesome SoundFlower from Cycling '74, we looped the laptop's outgoing 
 
 Warning: This project is super quick to set up, but we had so much fun tweaking the various visual effects that we spent hours playing with it afterwards.
 
+**More Information**
+
+* Learn more about the [DiscoParty](/software/discoparty) app and how you can run it yourself.
+
 ## Light Painting - 10 Minutes
 
 ![Nyan](/images/{{page.img}}/big/nyan.jpg)
@@ -107,9 +123,14 @@ This project used a BlinkyTape mounted in an aluminum diffuser tube, a camera wi
 
 PatternPaint makes light painting super simple with its image import functionality.  Since the BlinkyTape has 60 RGB LEDs, we can load in almost any image that is 60 pixels tall.  By saving the pattern to the BlinkyTape and powering it with a portable USB charger, we can make ridiculously awesome light paintings anywhere and everywhere (that it is dark enough to do so).
 
+**More Information**
+
+* Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
+* Check out the [NyanPaint](https://github.com/blinkiverse/blinkyboard/tree/master/examples/light_painting_examples/NyanPaint) source.
+
 # Tech Specs
 
-The BlinkyTape is a one meter strip of flexible PCB material containing 60 RGB LEDs.  At one end is our custom light processor, the BlinkyBoard.  The BlinkyTape come enclosed in a weatherproof silicone tubing.
+The BlinkyTape is a one meter strip of flexible PCB material containing 60 RGB LEDs.  At one end is our custom light processor, the BlinkyBoard.  The BlinkyTape comes enclosed in a weatherproof silicone tubing.
 
 ## BlinkyBoard Specs
 
