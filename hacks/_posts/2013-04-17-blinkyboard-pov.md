@@ -32,7 +32,9 @@ that light painting would be a great hack that we could knock out quickly.
 
 # Quick Overview
 
-<iframe class="project_full_video" src="http://player.vimeo.com/video/64485701?byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="393" frameborder="0" webkitAllowFullScreen="" mozallowfullscreen="" allowFullScreen=""> </iframe>
+<div class="videoWrapper">
+	<iframe class="project_full_video" src="http://player.vimeo.com/video/64485701?byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="393px" frameborder="0" webkitAllowFullScreen="" mozallowfullscreen="" allowFullScreen=""> </iframe>
+</div>
 
 This video shows the basics of how the process works.
 

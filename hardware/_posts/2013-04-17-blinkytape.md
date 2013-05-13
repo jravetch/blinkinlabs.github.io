@@ -17,7 +17,9 @@ sourcecode: [
 context: 
 ---
 
-<iframe class="project_full_video" src="http://player.vimeo.com/video/66034735?byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<div class="videoWrapper">
+	<iframe class="project_full_video" src="http://player.vimeo.com/video/66034735?byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="394px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
 
 We've had a lot of fun [working](/domestar) with [LEDs](/daftpunk), but we've often been frustrated by how difficult they can be to program, power, mount, and enclose.
 
