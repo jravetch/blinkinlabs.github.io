@@ -4,7 +4,7 @@ permalink: /blinkytape/index.html
 category: hardware
 type: "Interactive Lighting Controller" 
 img: blinkytape
-title: Blinkytape
+title: BlinkyTape
 technologies: [C++, C, Processing, Python] 
 when: 8/2012 - 10/2012
 collaborators:
@@ -16,6 +16,8 @@ sourcecode: [
 ]
 context: 
 ---
+
+<iframe class="project_full_video" src="http://player.vimeo.com/video/66034735?byline=0&amp;portrait=0&amp;color=ffffff" width="700" height="394" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
 We've had a lot of fun [working](/domestar) with [LEDs](/daftpunk), but we've often been frustrated by how difficult they can be to program, power, mount, and enclose.
 
