@@ -2,25 +2,20 @@
 layout: perfil 
 category: bio
 title: about us 
-recentactivities: [
-	"Daft Punk Party.  Williamsburg, NY",
-	"Burning Man Dome Installation.  Black Rock City, NV",
-	"PEX Festival.  Darlington, MD",
-	"Country Club (Festival).  Preston Hollow, NY"
-] 
 links: [	
 			[Blinkiverse Github, http://www.github.com/blinkiverse],
 			[Max's Blog, http://mmmaaa.xxx],
-			[Matt's Blog, http://cibomahto.com]
+			[Matt's Blog, http://cibomahto.com],
+			[Marty's Blog, http://creatingwithcode.com]
 		]
 ---
 
-# About Blinkiverse
+# About the Blinkiverse Team
 
-Blinkiverse is [Max](http://mmmaaa.xxx) and [Matt](http://cibomahto.com), two dedicated makers from Brooklyn. We enjoy collaborating on interactive art projects.
+<img src="/images/bio/team.jpg"/>
 
+**Max Henstell** - Señor Programmer of Blinkiverse, Max is a programmer by day and hardware hacker by night. Max enjoys making things blink, move, and communicate. As an active member of the hackerspace community,  he regularly collaborates with others on open-source software, lighting displays, robots, and other interesting projects.
 
-# Where the Party Is
-We're located in Brooklyn, New York. We primarily work out of [NYC Resistor](http://nycresistor.com), our home-base hackerspace.
+**Matt Mets** - Technically Director of Blinkiverse, Matt is a maker who uses electronics to create playful objects that teach and inspire. An electrical engineer by training, he's been at various times an RF engineer, embedded systems architect, writer, and exhibit designer. He currently lives in Guangzhou, where he enjoys fast access to the world's largest electronics manufacturing base.
 
-# [Contact Us](/contact)
+**Marty McGuire** - Applications Engineer for Blinkiverse, Marty loves to build things that help you build more things.  He has a computer science background with over 10 years of experience writing software for academia, industry, and startups.  Currently residing in Baltimore, he has exchanged his car for a blue Brompton which he rides to and from the Baltimore Node hackerspace.
