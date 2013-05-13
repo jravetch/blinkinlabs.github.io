@@ -70,13 +70,13 @@ title: Main
 		</ul>
 
 		<div class="foundation-header">
-			<h2 class="correctme">Exhibits
+			<h2 class="correctme">Installations
         <span class="subheader">bringing light to the world</span>
       </h2>
     </div>
     <ul class="block-grid five-up  project_preview">
       {% for project in site.posts %}
-        {% if project.category contains 'exhibit' %}
+        {% if project.category contains 'installation' %}
           <li class="{{project.type}} ">
             <a href="{{ project.url | replace:'index.html','' }}">
 
