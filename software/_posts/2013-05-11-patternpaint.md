@@ -23,19 +23,19 @@ context:
 
 [PatternPaint](https://github.com/blinkiverse/blinkyboard/examples/PatternPaint) is companion software for the [BlinkyTape](/blinkytape).  It allows you to create animations for your BlinkyTape in real-time, and save your designs to the BlinkyTape for playback on-the-go.
 
+## Uses
+
+* Create light paintings with long-exposure photography.
+* Design blinky patterns for wearable lights.
+* Set static patterns for ambient light installations.
+* And more!
+
 ## Features
 
 * **Simple Paint Tools** - Create vivid animated patterns with just a few clicks.
 * **Live Preview** - Connect your BlinkyTape to your computer to preview your patterns in real time.
 * **PNG Import and Export** - Create or edit your patterns in your favorite paint program.
 * **Save to BlinkyTape** - When you're done, you can save your patterns directly to the BlinkyTape for playback away from your computer.
-
-## Uses
-
-* Load images for light painting with long-exposure photography
-* Create flashy patterns for wearable lights
-* Design static patterns for ambient light installations
-* And more!
 
 # Downloading PatternPaint
 
