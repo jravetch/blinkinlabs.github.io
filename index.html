@@ -50,25 +50,6 @@ title: Main
       {% endfor %}
     </ul>
 
-    <div class="foundation-header">
-      <h2 id="blinkables">Blinkables
-        <span class="subheader">make your world more blinky!</span>
-      </h2>
-    </div>
-		<ul class="block-grid five-up project_preview">
-      {% for blinkable in site.posts %}
-        {% if blinkable.category contains 'blinkable' %}
-          <li class="{{blinkable.type}}">
-            <a href="{{ blinkable.url | replace:'index.html',''}}">
-              <img src="./images/{{blinkable.img|downcase}}/preview.jpg" alt="{{post.title}} project"/>
-            </a>
-            <p class="project_preview_title"> {{blinkable.title }}  </p>
-            <div class="project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{blinkable.desc}} --> </div>
-          </li>
-        {% endif %}
-      {% endfor %}
-		</ul>
-
 		<div class="foundation-header">
 			<h2 class="correctme">Installations
         <span class="subheader">bringing light to the world</span>

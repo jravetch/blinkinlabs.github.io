@@ -1,9 +1,9 @@
 ---
 layout: project
-permalink: /blinkables/light-painting/index.html
-category: blinkable
-type: "Blinkables" 
-img: blinkables/blinkytube-pov
+permalink: /light-painting/index.html
+category: hacks
+type:
+img: blinkytube-pov
 title: "Light Painting with BlinkyTube Persistence of Vision"
 technologies: [Blinkyboard, Processing, Long Exposure Photography] 
 when: 04/2013
@@ -14,6 +14,10 @@ images:
 sourcecode: [[povmaker, https://github.com/blinkiverse/BlinkyTape/tree/master/examples/povmaker]]
 context:
 ---
+
+**UPDATE: The tutorial below describes our initial experiments with light
+painting.  Check out [PatternPaint](/patternpaint), which makes the whole
+process much easier!**
 
 ![Blinkiverse! Long Exposure](/images/{{page.img}}/big/blinkiverse-pov-final.png)
 
