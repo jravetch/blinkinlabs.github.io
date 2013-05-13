@@ -17,7 +17,9 @@ images:
 context: 
 ---
 
-![Image of PatternPaint (Nyan) side-by-side w/ light painting]()
+![NyanCat in PatternPaint](/images/{{page.img}}/PatternPaint-nyan.png)
+
+![NyanCat painted in light](/images/{{page.img}}/nyan-painted.jpg)
 
 [PatternPaint](https://github.com/blinkiverse/blinkyboard/examples/PatternPaint) is companion software for the [BlinkyTape](/blinkytape).  It allows you to create animations for your BlinkyTape in real-time, and save your designs to the BlinkyTape for playback on-the-go.
 
@@ -35,25 +37,15 @@ context:
 * Design static patterns for ambient light installations
 * And more!
 
-# Installing PatternPaint
+# Downloading PatternPaint
 
 ## Prerequisites
-
-PatternPaint is written in [Processing](http://processing.org/).
 
 To use PatternPaint, you'll need to download and install:
 
 * [Processing 1.5.1](http://processing.org/download/) - Use the latest stable.  PatternPaint is untested in Processing 2.0.
-* [ControlP5 1.5.2](https://code.google.com/p/controlp5/downloads/list) - Provides the UI widgets for PatternPaint.
-	* Installation instructions can be found [here](http://www.sojamo.de/libraries/controlP5/)
-
-### Saving Patterns
-
-Saving patterns to the BlinkyTape currently requires [Arduino](http://arduino.cc/) to program the BlinkyTape.
-
-You'll need to download and install [Arduino 1.0.4](http://arduino.cc/en/Main/Software)
-
-## Downloading PatternPaint
+* [ControlP5 1.5.2](https://code.google.com/p/controlp5/downloads/list) - Provides the UI widgets for PatternPaint.  [(Installation instructions)](http://www.sojamo.de/libraries/controlP5/)
+* [Arduino 1.0.4](http://arduino.cc/en/Main/Software) - Allows patterns to be saved to the BlinkyTape
 
 PatternPaint comes in the `examples` folder of the [blinkyboard source repository](https://github.com/blinkiverse/blinkyboard/) on Github.
 
@@ -72,6 +64,13 @@ If you don't have Git installed, you can download the [blinkyboard respository a
 
 # Using PatternPaint
 
+PatternPaint provides some simple tools for drawing your own patterns.
+
+Alternatively, PatternPaint also lets you save and load PNG files, for use in
+your favorite graphics program.
+
+Here's a breakdown of the PatternPaint UI:
+
 ![PatternPaint Components](/images/{{page.img}}/PatternPaint-screenshot.png)
 
 ## Drawing Conrols
@@ -81,6 +80,12 @@ If you don't have Git installed, you can download the [blinkyboard respository a
     * Click and drag to draw straight lines.
 * Click and drag in the "ToolSize" slider to draw larger or smaller points and lines.
 
+## Importing and Exporting Images
+
+* Click the "Load PNG Image" button to load a PNG image file.  The pattern area will resize to fit the new image.
+    * A BlinkyTape has 60 LEDs, so use images that are 60px tall to fill the whole display!
+* Click the "Save PNG Image" button to save your current pattern as a PNG image.
+
 ## Live Preview Controls
 
 * The preview frame indicator highlights the frame that is currently displayed on your BlinkyTape.
@@ -88,32 +93,26 @@ If you don't have Git installed, you can download the [blinkyboard respository a
 * Click and drag in the "Speed" slider to make the animation preview move faster or slower.
 * When paused, use the Left and Right arrow keys to manually change which frame is displayed on your BlinkyTape.
 
-## Importing and Exporting Images
-
-* Click the "Load PNG Image" button to load a PNG image file.  The pattern area will resize to fit the new image.
-    * A BlinkyTape has 60 LEDs, so use images that are 60px tall to fill the whole display!
-* Click the "Save PNG Image" button to save your current pattern as a PNG image.
-
 # Saving Your Pattern to the BlinkyTape
 
 Patterns are way more fun when they're saved on your BlinkyTape!
 
 Unfortunately, this process is a bit manual at the moment.  We hope to automate many of these steps in the near future!
 
-1. Click **Save to BlinkyTape**
-1. Quit PatternPaint so it will release control of your BlinkyTape
-1. Press `CMD-k` (OS X) or `CTRL-k` (Windows and Linux) to open the PatternPaint sketch folder
-1. Open the `PatternTemplate.ino` sketch in Arduino
-    * Find it at `blinkyboard/examples/PatternTemplate/PatternTemplate.ino`
-1. Choose **File** | **Save As**
-1. Give a name for your new Arduino sketch, like "MyAwesomeAnimation"
-1. Drag and drop the `pov.h` file from your file browser into Arduino
-1. Confirm that you want to overwrite `pov.h`
-1. Check the **Board** menu options in Arduino
-    * Board should be **Arduino Leonardo**
-    * Serial Port should match the serial port for your BlinkyTape.
-	    * For Linux and OS X, this will be something like `/dev/tty.usbserialXXXXXX`
-		* For Windows, this will be something like `COM6`
+1. Click **Save to BlinkyTape**.
+1. Quit PatternPaint so it will release control of your BlinkyTape.
+1. Press `CMD-k` (OS X) or `CTRL-k` (Windows and Linux) to open the PatternPaint sketch folder.
+1. Open the `PatternTemplate.ino` sketch in Arduino.
+    * Find it at `blinkyboard/examples/PatternTemplate/PatternTemplate.ino`.
+1. Choose **File** | **Save As**.
+1. Give a name to your new Arduino sketch.  For example,"MyAwesomeAnimation".
+1. Drag and drop the `pov.h` file from your file browser into Arduino.
+1. Confirm that you want to overwrite `pov.h`.
+1. Check the **Tools** menu options in Arduino.
+    * Set **Board** to **Arduino Leonardo**.
+    * **Serial Port** should match the serial port for your BlinkyTape.
+	    * For Linux and OS X, this will be something like `/dev/tty.usbserialXXXXXX`.
+		* For Windows, this will be something like `COM6`.
 		* Your BlinkyTape must be connected to your computer for this step! :)
 1. Click the Upload button in Arduino.
 1. Once the upload is complete, you will see your pattern play back on the BlinkyTape!
@@ -136,17 +135,9 @@ create interactive programs that use animations, and more!
 ## Chaining Multiple Animations
 
 We've created an example using multiple animations on the BlinkyTape.
-The BlinkyTape's button is used to make it interactive!
+The BlinkyTape draws a rainbow until the button is pressed, at which point
+it finished the painting by drawing NyanCat.
 
-The end result? Light painted NyanCat!
-
-![NyanCat!!!!]()
-
-### How it Works
-
-* When powered on, the BlinkyTape begins playing a rainbow animation.
-* When the button is pressed, the BlinkyTape changes to show NyanCat, then stops
-  animating.
-* Pressing the button again will return to the rainbow animation.
+![Light painted NyanCat!!!!](/images/{{page.img}}/nyan-painted.jpg)
 
 You can find the code in the [NyanPaint](https://github.com/blinkiverse/blinkyboard/tree/master/examples/light_painting_examples/NyanPaint) example.
