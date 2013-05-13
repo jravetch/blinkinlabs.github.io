@@ -1156,5 +1156,20 @@ margin-left: -200px;
 	color: red;
 	}
 
+.annoyatron {
+  width: 100%;
+  background-color: #FFF;
+  font-size: 1.2em;
+  padding: 12px;
+  text-align: center;
+}
 
+.annoyatron a {
+  color: #000;
+}
 
+.annoyatron img {
+  vertical-align: middle;
+  margin: -4px 0 0 3px;
+  width: 171px;
+}
