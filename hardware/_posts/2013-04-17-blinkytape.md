@@ -43,11 +43,11 @@ The BinkyTape comes with bright, colorful built-in patterns, but of course you w
 
 ![PatternPaint](/images/{{page.img}}/big/pattern.png)
 
-The BlinkyTape comes with a rich set of companion software that run cross-platform on Mac OS X, Windows, and Linux. Creating custom animations is as easy as plugging the BlinkyTape into your computer and starting our pattern editor. Patterns can be edited in real-time, or saved to the strip for playback away from the computer.
+The BlinkyTape comes with a rich set of companion software that run cross-platform on Mac OS X, Windows, and Linux. Creating custom animations is as easy as plugging the BlinkyTape into your computer and starting [PatternPaint](/software/patternpaint/). Patterns can be edited in real-time, or saved to the strip for playback away from the computer.
 
 ## Music Reactive Mode
 
-Need some sweet lighting for your next party? No problem, hook a couple of BlinkyTapes up to your USB port, fire up the beat analyzer, and you'll have flashing colors and bright lights in no time.
+Need some sweet lighting for your next party? No problem, hook a couple of BlinkyTapes up to your USB port, fire up [DiscoParty](/software/discoparty/), and you'll have flashing colors and bright lights in no time.
 
 ## Hacking
 
@@ -127,6 +127,7 @@ PatternPaint makes light painting super simple with its image import functionali
 
 * Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
 * Check out the [NyanPaint](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/light_painting_examples/NyanPaint) source.
+* Our initial [experiment on light painting](/light-painting/) shows off the hardware setup.
 
 # Tech Specs
 
