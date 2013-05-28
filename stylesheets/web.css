@@ -651,17 +651,17 @@ video {
   font-weight: bold;
 }
 
-.project_full pre { /* standalone code blocks */
-  margin: 0 20px 15px 10px;
+.project_full pre {
+  margin: 0 20px 15px;
+}
+
+.project_full pre code { /* standalone code blocks */
+  font-weight: normal;
+  font-size: 14px;
   border: 1px solid #CCC;
   padding: 10px;
   border-radius: 5px;
   background-color: #EEE;
-}
-
-.project_full pre code {
-  font-weight: normal;
-  font-size: 14px;
 }
 
 .infonote { 
