@@ -132,7 +132,7 @@ layout: default
 	<h1> More projects </h1>
 	<ul class="qq2"> 
 	{% for project in site.posts %}
-	{% if project.category contains 'project' or project.category contains 'hack' %}  
+	{% if project.category contains 'project' or project.category contains 'hack' and (project.permalink != page.permalink) %}
 		<li> 
 		<a class="has-tip right" id="{{project.img}}" data-width="120px" title="{{project.title}}" href="{{ project.url }}"> 
 		<img src="/images/{{project.img|downcase}}/preview.jpg" />  
