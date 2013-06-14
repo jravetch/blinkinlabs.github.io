@@ -15,6 +15,7 @@ sourcecode: [
 	[BlinkyTape, https://github.com/blinkiverse/BlinkyTape]
 ]
 context: 
+redirects: [/blinkyboard]
 ---
 
 <div class="videoWrapper">
