@@ -11,5 +11,3 @@ root: .
 destination: ./_site
 
 comments: true
-
-redirects: true
