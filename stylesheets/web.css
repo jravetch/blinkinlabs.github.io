@@ -1154,3 +1154,24 @@ margin-left: -200px;
 	a[href$=".jpg"] {
 	color: red;
 	}
+
+/** BlinkyTape Mailchimp subscribe form */
+#blinkytape-signup-form {
+  font: 13.34px helvetica, arial, clean, sans-serif;
+}
+#mc_embed_signup{
+  clear:left;
+  margin-left: 10px;
+}
+
+#mc_embed_signup input.email {
+  margin: 0 0 5px;
+  font-size: 18px;
+  padding: 4px;
+  width: 300px;
+}
+
+#mc_embed_signup input[type="submit"] {
+  position: relative;
+  top: -3px;
+}
