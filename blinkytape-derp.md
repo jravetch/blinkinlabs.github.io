@@ -3,10 +3,10 @@ layout: project
 permalink: /blinkytape/derp/index.html
 ---
 
-# BlinkyTape Developer Early Release Program (BT-DERP)
+# BlinkyTape Developer Early Revision Program (BT-DERP)
 
 This page contains the description and terms for the BlinkyTape
-Developer Early Release Program (BT-DERP).
+Developer Early Revision Program (BT-DERP).
 
 ## What is it?
 
