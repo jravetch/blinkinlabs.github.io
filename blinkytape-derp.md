@@ -164,4 +164,6 @@ posting on the public internet!*
 
 Here you go! We are accepting applications until August 13, 2013 at midnight Eastern time.
 
+If you have any questions about the BT-DERP or the application process, feel free to drop an email to marty \[at\] blinkiverse [dot] com.
+
 <iframe src="https://docs.google.com/forms/d/1hm1VaUdB-JdXPB_4al6nyt9vRMPbxStmiFYT6LFztX4/viewform?embedded=true" width="720" height="1540" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
