@@ -3,10 +3,10 @@ layout: perfil
 category: bio
 title: about us 
 links: [	
-			[Blinkiverse Github, http://www.github.com/blinkiverse],
-			[Max's Blog, http://mmmaaa.xxx],
-			[Matt's Blog, http://cibomahto.com],
-			[Marty's Blog, http://creatingwithcode.com]
+			[Blinkiverse Github, "http://www.github.com/blinkiverse"],
+			[Max's Blog, "http://mmmaaa.xxx"],
+			[Matt's Blog, "http://cibomahto.com"],
+			[Marty's Blog, "http://creatingwithcode.com"]
 		]
 ---
 

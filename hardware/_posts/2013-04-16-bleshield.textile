@@ -12,7 +12,7 @@ task:
 desc:
 images: []
 sourcecode: [
-	[BLEShield, https://github.com/blinkiverse/BLEShield]
+	[BLEShield, "https://github.com/blinkiverse/BLEShield"]
 ]
 context: 
 ---

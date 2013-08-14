@@ -6,7 +6,7 @@ img: discoparty
 title: DiscoParty - Music Reactive Lighting
 technologies: [Processing, BlinkyTape]
 sourcecode: [
-	[DiscoParty, https://github.com/blinkiverse/BlinkyTape/tree/master/examples/DiscoParty]	
+	[DiscoParty, "https://github.com/blinkiverse/BlinkyTape/tree/master/examples/DiscoParty"]
 ]
 type:
 when:

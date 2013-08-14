@@ -9,7 +9,7 @@ technologies: [C/C++, Arduino, Processing]
 desc:
 images:
 sourcecode: [
-	[BlinkyTape, https://github.com/blinkiverse/BlinkyTape]
+	[BlinkyTape, "https://github.com/blinkiverse/BlinkyTape"]
 ]
 ---
 

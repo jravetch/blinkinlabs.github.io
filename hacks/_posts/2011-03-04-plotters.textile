@@ -11,7 +11,7 @@ collaborators:
 task: 
 desc: Interactive Pen Plotters
 images: 
-sourcecode: [[PlotterDigitizer, https://github.com/mhenstell/PlotterProjects/tree/master/PlotterDigitizer]]
+sourcecode: [[PlotterDigitizer, "https://github.com/mhenstell/PlotterProjects/tree/master/PlotterDigitizer"]]
 context: 
 ---
 

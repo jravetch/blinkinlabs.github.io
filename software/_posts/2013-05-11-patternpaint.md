@@ -6,7 +6,7 @@ img: patternpaint
 title: PatternPaint
 technologies: [Processing, Arduino, BlinkyTape]
 sourcecode: [
-	[PatternPaint, https://github.com/blinkiverse/BlinkyTape/tree/master/examples/PatternPaint]	
+	[PatternPaint, "https://github.com/blinkiverse/BlinkyTape/tree/master/examples/PatternPaint"]
 ]
 type:
 when:

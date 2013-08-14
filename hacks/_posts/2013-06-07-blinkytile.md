@@ -11,7 +11,7 @@ collaborators:
 task:
 desc: Re-assemble your BlinkyTape into a 2D grid display of roughly 8x8 pixels.
 images:
-sourcecode: [[BlinkyTile, https://github.com/blinkiverse/BlinkyTape/tree/master/examples/BlinkyTile]]
+sourcecode: [[BlinkyTile, "https://github.com/blinkiverse/BlinkyTape/tree/master/examples/BlinkyTile"]]
 context:
 ---
 

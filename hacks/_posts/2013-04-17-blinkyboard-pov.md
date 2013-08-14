@@ -11,7 +11,7 @@ collaborators: [Matt Mets, Marty McGuire]
 task:
 desc: Blinkyboard POV
 images:
-sourcecode: [[povmaker, https://github.com/blinkiverse/BlinkyTape/tree/master/examples/povmaker]]
+sourcecode: [[povmaker, "https://github.com/blinkiverse/BlinkyTape/tree/master/examples/povmaker"]]
 context:
 ---
 
