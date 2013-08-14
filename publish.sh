@@ -9,7 +9,7 @@ fi
 mkdir /tmp/jekyll_build
 
 # build website
-jekyll --no-auto /tmp/jekyll_build/
+jekyll build -d /tmp/jekyll_build/
 
 # publish on github only if jekyll build was successful
 if [ $? -eq 0 ]; then
