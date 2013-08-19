@@ -63,3 +63,11 @@ Jordan has been building light art for eight years now, starting from humble beg
 
 Jordan will be using his BlinkyTape to improve on his friend Zao Naegle's design
 for a *five to six foot wizard staff* with a BlinkyTape-illuminated orb.
+
+## Mark Kriegsman
+
+![Mark!](/images{{page.img}}/devs/mark.jpg)
+
+[Mark](https://en.wikipedia.org/wiki/Mark_Kriegsman) is co-author (with Daniel Garcia) of the popular open source "FastSPI" LED library.  Mark creates his own LED artworks as well as teaching an LED programming class in order to, as he says "Let a thousand pixels bloom."  He has founded three companies, holds several patents, and has been publishing his code as open source software since a surprisingly long time ago.
+
+Mark is building a color-calibration profile for the BlinkyTape, so that others can have better, more predictable control over exactly the colors they display on their BlinkyTape.   Mark also hopes to migrate this LED color-calibration code back into the FastSPI LED library's general open source color handling routines.
