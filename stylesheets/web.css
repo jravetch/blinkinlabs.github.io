@@ -1175,3 +1175,22 @@ margin-left: -200px;
   position: relative;
   top: -3px;
 }
+
+.project_full.docs {
+  counter-reset: section;
+}
+
+.project_full.docs h2 {
+  counter-reset: subsection;
+  counter-increment: section;
+}
+.project_full.docs h2:before {
+  content: counter(section) ". ";
+}
+
+.project_full.docs h3 {
+  counter-increment: subsection;
+}
+.project_full.docs h3:before {
+  content: counter(section) "." counter(subsection) ". ";
+}

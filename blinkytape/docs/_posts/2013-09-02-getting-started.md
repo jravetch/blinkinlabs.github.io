@@ -1,0 +1,46 @@
+---
+layout: doc
+permalink: /blinkytape/docs/getting-started/index.html
+title: Getting Started with BlinkyTape
+---
+
+Woop woop!
+
+{% include btdocs/install-arduino.md %}
+
+{% include btdocs/install-arduino-bt-libs.md %}
+
+{% include btdocs/plug-it-in.md %}
+
+## Load the "Hello World" Program in Arduino
+
+* Open Arduino
+* In the menus, choose **Examples | BlinkyTape | HelloWorld**
+	* Picture go here.
+
+{% include btdocs/arduino-pre-program.md %}
+
+{% include btdocs/arduino-program.md %}
+
+## Make Your Changes!
+
+Look for these lines:
+
+	Some code = Goes.here("later");
+
+Change the value of `"later"` to `"blerp"` so that your code looks like this:
+
+	Some code = Goes.here("blerp");
+
+Press the Upload (icon) button again to send your new version of the program
+to the BlinkyTape. When the upload is complete, the BlinkyTape should be
+displaying your color of choice!
+
+## Next Steps
+
+* Learn more about the BlinkyTape Arduino API.
+* Want to dig deeper? Check out the BlinkyTape Hardware Schematics.
+* Share the something something something.
+
+{% include btdocs/arduino-troubleshooting.md %}
+
