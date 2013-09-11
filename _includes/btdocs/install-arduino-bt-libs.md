@@ -1,6 +1,6 @@
 ## Install the BlinkyTape Arduino Libraries
 
-Our next step is to download and install a couple of things that we've used to make the Blinkytape firmware better. If you don't know what a *library* is, don't worry -- just think of it as some helper code. We'll download and install these libraries, and then most of us won't think about them again for a long time.
+Our next step is to download and install a couple of things that we've used to make the Blinkytape firmware better. If you don't know what a *library* is, don't worry -- just think of it as some helper code. We'll download and install these libraries so we can use the example code. Later on, when you're making your own firmware, you'll see how some of these libraries make it easier to program for BlinkyTape.
 
 First install [this](https://github.com/BlinkyTape/FastSPI_LED2) (It's called 'FastSPI\_LED2')
 and then [this](https://github.com/BlinkyTape/BlinkyTape_Arduino)! (This one is called 'BlinkyTape\_Arduino')
