@@ -4,23 +4,23 @@ permalink: /blinkytape/docs/getting-started/index.html
 title: Getting Started with BlinkyTape
 ---
 
-First off, welcome! This is good stuff.  We've had a blast making Blinkytape, and we're real glad you're here.  Blinkytape is a community project, and we really need people like you in order to continue the awesomeization of LED strips everywhere.
+First off, welcome! This is good stuff.  We've had a blast making BlinkyTape, and we're real glad you're here.  BlinkyTape is a community project, and we really need people like you in order to continue the awesomization of LED strips everywhere.
 
-If you [remember,](/blinkytape/) we created Blinkytape in order to make LEDs easier to use. A big part of this was making sure that it's easy to make programs that will talk to Blinkytape. *But* -- and this is a big but -- you *don't* need to program in order to make your Blinkytape do awesome stuff.
+If you [remember](/blinkytape/), we created BlinkyTape in order to make LEDs easier to use. A big part of this was making sure that it's easy to make programs that will talk to BlinkyTape. *But* -- and this is a big but -- you *don't* need to program in order to make your BlinkyTape do awesome stuff.
 
 # But I don't want to program anything!  What's the easiest way to make things happen?
 
-OK! This is a good place to start. There are a few really solid options. First and foremost, there's [PatternPaint](/software/patternpaint/) <!--- change to the docs version of patternpaint when it's ready --->which is designed to help you animate your Blinkytape with a simple visual editor. It's especially super for making patterns in long-exposure photography or [persistence of vision](http://en.wikipedia.org/wiki/Persistence_of_vision) but it's also good for just making cool stuff happen on your Blinkytape strip.
+OK! This is a good place to start. There are a few really solid options. First and foremost, there's [PatternPaint](/software/patternpaint/) <!--- change to the docs version of patternpaint when it's ready --->which is designed to help you animate your BlinkyTape with a simple visual editor. It's especially super for making patterns in long-exposure photography or [persistence of vision](http://en.wikipedia.org/wiki/Persistence_of_vision) but it's also good for just making cool stuff happen on your BlinkyTape strip.
 
-There aren't very many projects that are good-to-go right now, because Blinkytape has just gotten into the hands of a few developers. However, that's going to be changing soon, and there are a few cool things.  So check out [BlinkyTile](/blinkytile) and [DiscoParty](/software/discoparty/) - both are extremely cool, and there should be more to come.
+There aren't very many projects that are good-to-go right now, because BlinkyTape has just gotten into the hands of a few developers. However, that's going to be changing soon, and there are a few cool things.  So check out [BlinkyTile](/blinkytile) and [DiscoParty](/software/discoparty/) - both are extremely cool, and there should be more to come.
 
-# OK! I want to make my own programs that talk to Blinkytape, because I have some AMAZING ideas.
+# OK! I want to make my own programs that talk to BlinkyTape, because I have some AMAZING ideas.
 
-Fantastic - we can't wait until we see your brain-contents playing back on a Blinkytape! That might not have come out right...but don't worry, we've made the 'tapes easy to program. Like we said before, we're super-duper excited about what the community comes up with. So far, we've been doing most of our programming in [Processing](http://processing.org/). You might have already grabbed that in order to play with PatternPaint, but if not, we'd suggest you go ahead and do that now. And if Processing isn't your thing, that's OK! The community has already done some work in other languages. You'll find more info about this path by following [THIS LINK RIGHT HERE!](/blinkytape/docs/processing/)
+Fantastic - we can't wait until we see your brain-contents playing back on a BlinkyTape! That might not have come out right...but don't worry, we've made the 'tapes easy to program. Like we said before, we're super-duper excited about what the community comes up with. So far, we've been doing most of our programming in [Processing](http://processing.org/). You might have already grabbed that in order to play with PatternPaint, but if not, we'd suggest you go ahead and do that now. And if Processing isn't your thing, that's OK! The community has already done some work in other languages. You'll find more info about this path by following [THIS LINK RIGHT HERE!](/blinkytape/docs/processing/)
 
-# That's cool, but I want to get right down and change the program that runs on the Blinkytape!
+# That's cool, but I want to get right down and change the program that runs on the BlinkyTape!
 
-You're right: this *is* cool too.  The Blinkyboard (which, [as you know already](/blinkytape/), is the heart and soul of your Blinkytape) is very similar to an [Arduino](http://www.arduino.cc/) and you can use the [Arduino environment](http://arduino.cc/en/Main/Software) to program it. Of course, there are a few other details that you'll want to know about, and you'll find this information [RIGHT HERE](/blinkytape/docs/arduino/)
+You're right: this *is* cool too.  The BlinkyBoard (which, [as you know already](/blinkytape/), is the heart and soul of your BlinkyTape) is very similar to an [Arduino](http://www.arduino.cc/) and you can use the [Arduino environment](http://arduino.cc/en/Main/Software) to program it. Of course, there are a few other details that you'll want to know about, and you'll find this information [RIGHT HERE](/blinkytape/docs/arduino/)
 
 # Wait, I don't have one yet...what do I do now?
 
