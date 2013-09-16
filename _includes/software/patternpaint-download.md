@@ -17,9 +17,27 @@ Here is the link to [what we want](/blinkytape/BlinkyTape.zip). <!--- we'll have
 ### Install it
 Unzip this folder in your Processing libraries folder - this is located at Documents/Processing/libraries on Mac or My Documents\Processing\libraries on Windows.
 
-## Restart Processing, if it is running.
-
-You should now see the BlinkyTape examples if you go to **File | Examples**. This will open a chooser-type window so you can scroll through all of your installed examples for Processing.  You'll find ours in **Contributed Libraries | BlinkyTape**. 
-
 ## Install the ControlP5 library
-The last step before firing up PatternPaint is to install a Processing library called "ControlP5." This helps us draw interface elements. Luckily, Processing 2 lets us easily install it by going to **Sketch | Import Library | Add Library**. A new window with a search box should pop up when you select this option - just type in 'controlp5' and click to install. If you have any trouble, [here's some more info about libraries for Processing](http://processing.org/reference/libraries/) including [manual install instructions](http://wiki.processing.org/w/How_to_Install_a_Contributed_Library).
+The last step before firing up PatternPaint is to install a Processing library
+called "ControlP5." This helps us draw interface elements. 
+
+Luckily, Processing 2 has a way to easily install ControlP5 without
+downloading it separately. In Processing, open the **Sketch** menu, followed by
+**Import Library**, then **Add Library**.  A new **Library Manager** window will
+appear. In the "*Filter your search...*" box, type in 'controlp5' and click the
+ControlP5 item that appears to install it.
+
+If you have any trouble, [here's some more info about libraries for
+Processing](http://processing.org/reference/libraries/) including [instructions
+for manually installing libraries](http://wiki.processing.org/w/How_to_Install_a_Contributed_Library).
+If you need to install it manually, you can download ControlP5 from [the
+ControlP5 home page](http://www.sojamo.de/libraries/controlP5/).
+
+## Restart Processing
+
+Be sure to close Processing and start it up again so it can find the new libraries.
+
+You should now see the BlinkyTape examples if you look in the menu under
+**File | Examples**. This will open a chooser-type window so you can scroll
+through all of your installed examples for Processing.  You'll find ours in
+**Contributed Libraries | BlinkyTape**. 
