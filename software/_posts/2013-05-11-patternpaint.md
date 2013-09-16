@@ -37,23 +37,7 @@ PatternPaint is companion software for the [BlinkyTape](/blinkytape).  It allows
 * **PNG Import and Export** - Create or edit your patterns in your favorite paint program.
 * **Save to BlinkyTape** - When you're done, you can save your patterns directly to the BlinkyTape for playback away from your computer.
 
-# Downloading PatternPaint
-
-## Prerequisites
-
-To use PatternPaint, you'll need to download and install:
-
-* [Processing 1.5.1](http://processing.org/download/) - Use the latest stable.  PatternPaint is untested in Processing 2.0.
-* [ControlP5 1.5.2](https://code.google.com/p/controlp5/downloads/list) - Provides the UI widgets for PatternPaint.  [(Installation instructions)](http://www.sojamo.de/libraries/controlP5/)
-* [Arduino 1.0.4](http://arduino.cc/en/Main/Software) - Allows patterns to be saved to the BlinkyTape
-
-PatternPaint comes in the `examples` folder of the [BlinkyTape source repository](https://github.com/blinkiverse/BlinkyTape/) on Github.
-
-If you have Git installed, you can grab the `BlinkyTape` repository with:
-
-	$ git clone git://github.com/blinkiverse/BlinkyTape.git
-
-If you don't have Git installed, you can download the [BlinkyTape respository as a zip file](https://github.com/blinkiverse/BlinkyTape/archive/master.zip).
+{% include software/patternpaint-download.md %}
 
 # Starting PatternPaint
 
@@ -73,7 +57,7 @@ Here's a breakdown of the PatternPaint UI:
 
 ![PatternPaint Components](/images/{{page.img}}/PatternPaint-screenshot.png)
 
-## Drawing Conrols
+## Drawing Controls
 
 * Click in the color selector to change the current color.
 * Click in the pattern area to place points in the current color.
@@ -94,6 +78,8 @@ Here's a breakdown of the PatternPaint UI:
 * When paused, use the Left and Right arrow keys to manually change which frame is displayed on your BlinkyTape.
 
 # Saving Your Pattern to the BlinkyTape
+
+**UNDER CONSTRUCTION:** Give it a try, but we're squashing some bugs right now.
 
 Patterns are way more fun when they're saved on your BlinkyTape!
 

@@ -9,7 +9,9 @@ Go ahead and start a new Processing sketch and call it something like 'BlinkyFoo
 ### Grab the BlinkyTape class and add it to your new sketch
 The easiest way to use a class in Processing is to add it in as another tab in your new sketch. Open one of the other examples from BlinkyTape using the **File | Examples** menu -- I'd recommend 'BlinkyDirect.'
 
-ColorChooser will open in a separate window and you'll see that it has a tab called BlinkyTape. Click on that tab and copy the entire contents (command-a or control-a is your friend here, so you don't miss anything.)
+**Sorry -- this example & the accompanying class may not be packaged up correctly at this point (mid-September 2013) -- [here's a link to the sketch](/blinkytape/BlinkyTapeDirect.zip) if not.**
+
+This new sketch will open in a separate window and you'll see that it has a tab called BlinkyTape. Click on that tab and copy the entire contents (command-a or control-a is your friend here, so you don't miss anything.)
 
 Go back to the new 'BlinkyFoo' sketch you created, then click on the down arrow near the tab.
 
