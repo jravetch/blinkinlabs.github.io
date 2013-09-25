@@ -18,7 +18,7 @@ if [ $? -eq 0 ]; then
     git add .
     publish_date=`date`
     git commit -m "updated site ${publish_date}"
-    git remote add origin git@github.com:blinkiverse/blinkiverse.github.com.git
+    git remote add origin git@github.com:BlinkyTape/blinkinlabs.github.io.git
     git push origin master --force
 
     echo "Successfully built and published to github..."
