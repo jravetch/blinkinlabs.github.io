@@ -3,7 +3,7 @@
 
 
 /* TEAM */
-  <your title>: Blinkiverse
+  <your title>: Blinkinlabs
   Site:
   Twitter:
   Location:
