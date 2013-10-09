@@ -3,6 +3,7 @@ layout: doc
 permalink: /blinkytape/docs/getting-started/index.html
 title: Getting Started with BlinkyTape
 ---
+![Meet BlinkyTape](/images/blinkytape/big/bt.jpg)
 
 First off, welcome! This is good stuff.  We've had a blast making BlinkyTape, and we're real glad you're here.  BlinkyTape is a community project, and we really need people like you in order to continue the awesomization of LED strips everywhere.
 
