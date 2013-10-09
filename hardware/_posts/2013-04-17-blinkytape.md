@@ -146,6 +146,10 @@ PatternPaint makes light painting super simple with its image import functionali
 * Check out the [NyanPaint](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/light_painting_examples/NyanPaint) source.
 * Our initial [experiment on light painting](/light-painting/) shows off the hardware setup.
 
+# OK, awesome! How do I lean how to use it?
+
+We are so glad you asked. We have been working on a sweet [Getting Started Guide](/blinkytape/docs/getting-started/) which should help you learn about basic usage, including how to make your own programs and new firmware.
+
 # Tech Specs
 
 The BlinkyTape is a one meter strip of flexible PCB material containing 60 RGB LEDs.  At one end is our custom light processor, the BlinkyBoard.  The BlinkyTape comes enclosed in a weatherproof silicone tubing.

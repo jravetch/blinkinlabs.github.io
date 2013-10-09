@@ -17,6 +17,8 @@ The easiest platform to program for BlinkyTape is called [Processing](http://pro
 
 {% include btdocs/processing-class-internal.md %}
 
+{% include btdocs/processing-troubleshooting.md %}
+
 {% include btdocs/other-languages.md %}
 
 Last, we just want to say that we're super excited to see the amazing things you come up with!

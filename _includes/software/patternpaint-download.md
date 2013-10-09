@@ -7,12 +7,12 @@ To use PatternPaint, you'll need to download and install:
 * [Processing](http://processing.org/download/) - Use the latest stable.  PatternPaint is known to work with Processing 2.0.2.
 * [Arduino](http://arduino.cc/en/Main/Software) - Allows patterns to be saved to the BlinkyTape, so not needed if you're only going to use your BlinkyTape while it's connected to a computer.
 
-## Install the BlinkyTape Processing Libraries
+## Install the BlinkyTape Processing Libraries & Software
 
 Now that you have downloaded Processing, let's get the BlinkyTape examples. This stuff lets us make our programs a bit more simply than if we had to do everything from scratch, as you'll see later on. There's also some helper code in here if you start programming for yourself a little down the line.
 
 ### Get it. 
-Here is the link to [what we want](/blinkytape/BlinkyTape.zip). <!--- we'll have to change this when there's a different download link --->
+Here is the link to [the package we want](/blinkytape/BlinkyTape.zip). This includes PatternPaint as a software example for Processing.<!--- we'll have to update this when there's a different download link --->
 
 ### Install it
 Unzip this folder in your Processing libraries folder - this is located at Documents/Processing/libraries on Mac or My Documents\Processing\libraries on Windows.
