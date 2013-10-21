@@ -79,17 +79,23 @@ Here's a breakdown of the PatternPaint UI:
 
 # Saving Your Pattern to the BlinkyTape
 
-**UNDER CONSTRUCTION:** Give it a try, but we're squashing some bugs right now.
+**UPDATE 10/21/13:** This should now work on OS X!  Just make sure that you grab a fresh copy of [the BlinkyTape Processing package](https://github.com/Blinkinlabs/BlinkyTape_Processing) and that you also install something called the [AVR Crosspack.](http://www.obdev.at/products/crosspack/download.html)
 
-Patterns are way more fun when they're saved on your BlinkyTape!
+Patterns are way more fun when they're saved on your BlinkyTape!  For the Mac types, the process shouldn't be too difficult.
 
-Unfortunately, this process is a bit manual at the moment.  We hope to automate many of these steps in the near future!
+1. Fire up PatternPaint in Processing, as above. 
+1. Draw the pattern you want to save.
+1. Ignore the **Save to BlinkyTape** button, and press `CMD-l` instead.
+1. That's it!  Your tape should pause for a moment as it's uploading the new program, containing your custom pattern.
 
+If you're not on OS X, this process is a bit more manual, but it's still possible.  You'll just need a few files, including this [PatternTemplate Arduino file](/blinkytape/PatternTemplate.zip) which requires the [NeoPixel Library](https://github.com/adafruit/Adafruit_NeoPixel)
+
+1. Fire up PatternPaint in Processing, as above. 
+1. Draw the pattern you want to save.
 1. Click **Save to BlinkyTape**.
 1. Quit PatternPaint so it will release control of your BlinkyTape.
 1. Press `CMD-k` (OS X) or `CTRL-k` (Windows and Linux) to open the PatternPaint sketch folder.
 1. Open the `PatternTemplate.ino` sketch in Arduino.
-    * Find it at `BlinkyTape/examples/PatternTemplate/PatternTemplate.ino`.
 1. Choose **File** | **Save As**.
 1. Give a name to your new Arduino sketch.  For example,"MyAwesomeAnimation".
 1. Drag and drop the `pov.h` file from your file browser into Arduino.
@@ -102,6 +108,8 @@ Unfortunately, this process is a bit manual at the moment.  We hope to automate 
 		* Your BlinkyTape must be connected to your computer for this step! :)
 1. Click the Upload button in Arduino.
 1. Once the upload is complete, you will see your pattern play back on the BlinkyTape!
+
+For more information on using your BlinkyTape with Arduino, as well as information about *how to return to the factory pattern*, [click here.](/blinkytape/docs/arduino)
 
 # Advanced Usage
 
