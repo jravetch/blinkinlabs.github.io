@@ -79,13 +79,13 @@ Here's a breakdown of the PatternPaint UI:
 
 # Saving Your Pattern to the BlinkyTape
 
-**UPDATE 10/21/13:** This should now work on OS X!  Just make sure that you grab a fresh copy of [the BlinkyTape Processing package](https://github.com/Blinkinlabs/BlinkyTape_Processing) and that you also install something called the [AVR Crosspack.](http://www.obdev.at/products/crosspack/download.html)
+**UPDATE 10/21/13:** This should now work on OS X!  Just make sure that you grab a fresh copy of the [BlinkyTape software package](/blinkytape/BlinkyTape.zip) (or follow the instructions [here](/blinkytape/docs/processing/) for the very freshest version) and that you also install something called the [AVR Crosspack](http://www.obdev.at/products/crosspack/download.html/), which lets your Mac talk to the BlinkyTape controller board.
 
 Patterns are way more fun when they're saved on your BlinkyTape!  For the Mac types, the process shouldn't be too difficult.
 
 1. Fire up PatternPaint in Processing, as above. 
 1. Draw the pattern you want to save.
-1. Ignore the **Save to BlinkyTape** button, and press `CMD-l` instead.
+1. Ignore the **Save to BlinkyTape** button, and just press `CMD-l` instead. (That's a lower-case L, just in case you're wondering...)
 1. That's it!  Your tape should pause for a moment as it's uploading the new program, containing your custom pattern.
 
 If you're not on OS X, this process is a bit more manual, but it's still possible.  You'll just need a few files, including this [PatternTemplate Arduino file](/blinkytape/PatternTemplate.zip) which requires the [NeoPixel Library](https://github.com/adafruit/Adafruit_NeoPixel)
@@ -109,7 +109,7 @@ If you're not on OS X, this process is a bit more manual, but it's still possibl
 1. Click the Upload button in Arduino.
 1. Once the upload is complete, you will see your pattern play back on the BlinkyTape!
 
-For more information on using your BlinkyTape with Arduino, as well as information about *how to return to the factory pattern*, [click here.](/blinkytape/docs/arduino)
+For more information on using your BlinkyTape with Arduino, as well as information about *how to return to the factory pattern*, [click here.](/blinkytape/docs/arduino/)
 
 # Advanced Usage
 
