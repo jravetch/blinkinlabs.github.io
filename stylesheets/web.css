@@ -81,10 +81,10 @@ background: url(/images/clouds.png);
 
 body {
   background-color: #eeffec; 
-  background:url(/images/bg/bg.png); 
+  background:url(/images/blinkinlabs-top.png),url(/images/bg/bg.png); 
 
 
-  background-repeat: repeat; 
+  background-repeat: repeat-x, repeat; 
   font: 13.34px helvetica, arial, clean, sans-serif;
   font-size: small; 
 	
@@ -231,7 +231,7 @@ a:visited {
 .logo { 
 	font-family: 'arial', sans-serif; 
 	font-size: 1.6em; 
-	padding-top: 15px; 
+	padding-top: 40px; 
 	width:363px;
 	text-align: left; 
 	

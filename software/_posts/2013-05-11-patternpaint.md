@@ -79,7 +79,7 @@ Here's a breakdown of the PatternPaint UI:
 
 # Saving Your Pattern to the BlinkyTape
 
-**UPDATE 10/21/13:** This should now work on OS X!  Just make sure that you grab a fresh copy of the [BlinkyTape software package](/blinkytape/BlinkyTape.zip) (or follow the instructions [here](/blinkytape/docs/processing/) for the very freshest version) and that you also install something called the [AVR Crosspack](http://www.obdev.at/products/crosspack/download.html/), which lets your Mac talk to the BlinkyTape controller board.
+**UPDATE 10/21/13:** This should now work on OS X!  Just make sure that you grab a fresh copy of the [BlinkyTape software package](/blinkytape/BlinkyTape.zip) (or follow the instructions [here](/blinkytape/docs/processing/) for the very freshest version) and that you also install something called the [AVR Crosspack, version 2013-02-12](http://www.obdev.at/products/crosspack/download.html/), which lets your Mac talk to the BlinkyTape controller board.
 
 Patterns are way more fun when they're saved on your BlinkyTape!  For the Mac types, the process shouldn't be too difficult.
 
