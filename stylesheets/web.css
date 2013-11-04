@@ -169,7 +169,16 @@ a:visited {
 .foundation-header h2 { 
 	margin-bottom: 2px; 
 	padding-left: 0px;
-} 
+}
+
+.foundation-header h1 {
+  margin-bottom: 2px;
+  padding-left: 0px;
+  font-size: 2em;
+}
+.foundation-header h1 span {
+  font-size: 0.6em;
+}
 
 .header { 
 	margin-top: 0px;
@@ -262,11 +271,11 @@ a:visited {
 
 .project_preview img { 
 	border: 0px solid #222; 
-	text-align:center;
 	margin: 0px; 
-  	padding:0px;  
+ 	padding:0px;  
 	width: 100%;
 	height: auto;
+	text-align:center;
 	
 	-moz-transform: rotate(0deg) scale(1);
 	-webkit-transform: rotate(0deg) scale(1);
@@ -287,11 +296,7 @@ a:visited {
 	box-shadow: 0px 1px 2px #222;	
 
 	z-index: 1; 		
-		
-	position:relative; 
-	z-index:1; 
 	float: left; 
-
 } 
 
 @-webkit-keyframes bounce {
@@ -305,48 +310,6 @@ a:visited {
 
 .project_preview img:hover, .hover { 
 	opacity: 0.8; 
-	
-	
-	/*
-	-moz-transition: all 0.2s ease-out;
-	-webkit-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
- 	-transition: all 0.2s ease-out;
-	
-    -moz-transform: rotate(0deg) scale(1.1);
-    -webkit-transform: rotate(0deg) scale(1.1); 
-    -o-transform: rotate(0deg) scale(1.1); 
-    transform: rotate(0deg) scale(1.1); 
-
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px; 
-	-o-border-radius: 2px;
-	-border-radius: 2px;
-	
-	position: relative; 
-	
-	*/ 
-	
-	/* 
-	-moz-box-shadow: 1px 1px 5px #222;
-	-webkit-box-shadow: 1px 1px 5px #222; 
-	-o-box-shadow: 1px 1px 5px #222;
-	-box-shadow: 1px 1px 5px #222;
-	
- 	-moz-transition: all 0.2s ease-out;
-	-webkit-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
- 	-transition: all 0.2s ease-out;
- 	
-    -webkit-animation-name: bounce;
-    -webkit-animation-duration: 0.2s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-direction: alternate; 
-
-	z-index: 1000; 
-	
-	*/ 
-	
 }
 
 .project_preview p { 
@@ -1145,4 +1108,28 @@ margin-left: -200px;
 }
 .project_full.docs h3:before {
   content: counter(section) "." counter(subsection) ". ";
+}
+
+.blinkytape-front-splash a img {
+  border: 0px solid #222;
+  margin: 0px;
+  padding:0px;
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  -webkit-transition: -webkit-transform 0.2s ease-out;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+
+  -moz-box-shadow: 0px 1px 2px #222;
+  -webkit-box-shadow: 0px 1px 2px #222;
+  -o-box-shadow: 0px 1px 2px #222;
+  box-shadow: 0px 1px 2px #222;
+}
+
+.blinkytape-front-splash a img:hover {
+	opacity: 0.8; 
 }

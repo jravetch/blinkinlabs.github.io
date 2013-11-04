@@ -1,7 +1,7 @@
 ---
 layout: project
 permalink: /bleshield/index.html 
-category: hardware
+category: [hardware, frontpage]
 type: "Arduino Shield" 
 img: bleshield
 title: Bluetooth Low Energy Shield

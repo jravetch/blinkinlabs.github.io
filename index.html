@@ -2,18 +2,39 @@
 layout: default
 title: Main
 ---
-
 <div class="row">
 	<div class="eight columns" >
-
 		<div class="foundation-header">
-			<h2 class="correctme">Hardware
-        <span class="subheader">stuff we've made for you!</span>
-      </h2>
+			<h1>BlinkyTape
+        <span class="subheader">LEDs are awesome!</span>
+      </h1>
+    </div>
+    <div class="row blinkytape-front-splash">
+      <a href="/blinkytape/"><img src="/images/blinkytape/bt-splash.jpg" alt="BlinkyTape"/></a>
+    </div>
+
+		<div class="foundation-header" style="margin-top:20px">
+			<h1>Other Blinkinlabs Stuff</h1>
+        <span class="subheader">Other things are also awesome!</span>
+      </h1>
     </div>
     <ul class="block-grid five-up  project_preview">
+      {% for page in site.pages %}
+        {% if page.category contains 'frontpage' %}
+          <li class="{{page.type}} ">
+            <a href="{{ page.url | replace:'index.html','' }}">
+
+                <img src="/images/{{page.img|downcase}}/preview.jpg" alt="{{page.title}}"/>
+              <p> {{page.title }}  </p>
+              <div class="page_preview_desc page_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{page.desc}} --> </div>
+
+
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
       {% for project in site.posts %}
-        {% if project.category contains 'hardware' %}
+        {% if project.category contains 'frontpage' %}
           <li class="{{project.type}} ">
             <a href="{{ project.url | replace:'index.html','' }}">
 
@@ -27,71 +48,7 @@ title: Main
         {% endif %}
       {% endfor %}
     </ul>
-
-		<div class="foundation-header">
-			<h2 class="correctme">Software
-        <span class="subheader">(softer) stuff we've made for you!</span>
-      </h2>
-    </div>
-    <ul class="block-grid five-up  project_preview">
-      {% for project in site.posts %}
-        {% if project.category contains 'software' %}
-          <li class="{{project.type}} ">
-            <a href="{{ project.url | replace:'index.html','' }}">
-
-                <img src="/images/{{project.img|downcase}}/preview.jpg" alt="{{project.title}} project"/>
-              <p> {{project.title }}  </p>
-              <div class="project_preview_desc project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{project.desc}} --> </div>
-
-
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-
-		<div class="foundation-header">
-			<h2 class="correctme">Installations
-        <span class="subheader">bringing light to the world</span>
-      </h2>
-    </div>
-    <ul class="block-grid five-up  project_preview">
-      {% for project in site.posts %}
-        {% if project.category contains 'installation' %}
-          <li class="{{project.type}} ">
-            <a href="{{ project.url | replace:'index.html','' }}">
-
-                <img src="/images/{{project.img|downcase}}/preview.jpg" alt="{{project.title}} project"/>
-              <p> {{project.title }}  </p>
-              <div class="project_preview_desc project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{project.desc}} --> </div>
-
-
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-
-    <div class="foundation-header">
-      <h2 id="hacks">Experiments
-        <span class="subheader">some cool experiments & hacks</span>
-      </h2>
-    </div>
-		<ul class="block-grid five-up project_preview">
-      {% for hack in site.posts %}
-        {% if hack.category contains 'hack' %}
-          <li class="{{hack.type}}">
-            <a href="{{ hack.url | replace:'index.html',''}}">
-              <img src="./images/{{hack.img|downcase}}/preview.jpg" alt="{{post.title}} project"/>
-            </a>
-
-              <p class="project_preview_title"> {{hack.title }}  </p>
-              <div class="project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{hack.desc}} --> </div>
-          </li>
-        {% endif %}
-      {% endfor %}
-		</ul>
-	</div>
+</div>
 
 	<div class="four columns" >
 		<div class="main_sidebar hide-on-phones">
@@ -100,10 +57,3 @@ title: Main
 	</div>
 
 </div>
-
-
-
-
-
-
-

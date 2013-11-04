@@ -1,12 +1,13 @@
 ---
 layout: perfil 
-category: bio
-title: about us 
+category: [frontpage,bio]
+title: About Us 
 links: [	
 			[Blinkinlabs Github, "http://www.github.com/BlinkyTape"],
 			[Matt's Blog, "http://cibomahto.com"],
 			[Marty's Blog, "http://creatingwithcode.com"]
 		]
+img: bio
 ---
 
 # About the Blinkinlabs Team

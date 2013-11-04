@@ -123,28 +123,3 @@ layout: default
 
 
 </div> <!-- row --> 
-
-
-<div class="row book">	
-<div class = "nine columns"> 
-	
-	<div class="moreprojects">
-	<h1> More projects </h1>
-	<ul class="qq2"> 
-	{% for project in site.posts %}
-	{% if project.category contains 'project' or project.category contains 'hack' and (project.permalink != page.permalink) %}
-		<li> 
-		<a class="has-tip right" id="{{project.img}}" data-width="120px" title="{{project.title}}" href="{{ project.url }}"> 
-		<img src="/images/{{project.img|downcase}}/preview.jpg" />  
-	
-		</a> 
-		</li> 	
-	{% endif %}  	
-	{% endfor %}  
-	</ul>
-	</div>
-	<div class = "nine columns"> </div>
-	
-</div> <!-- row --> 
-
-
