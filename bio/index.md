@@ -1,6 +1,6 @@
 ---
 layout: perfil 
-category: [frontpage,bio]
+category: bio
 title: About Us 
 links: [	
 			[Blinkinlabs Github, "http://www.github.com/BlinkyTape"],
