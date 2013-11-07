@@ -1,13 +1,34 @@
 ---
 layout: doc
-permalink: /blinkytape/docs/getting-started/index.html
 title: Getting Started with BlinkyTape
 ---
-![Meet BlinkyTape](/images/blinkytape/big/bt.jpg)
+![Meet BlinkyTape](/images/blinkytape/bt-splash.jpg)
 
 First off, welcome! This is good stuff.  We've had a blast making BlinkyTape, and we're real glad you're here.  BlinkyTape is a community project, and we really need people like you in order to continue the awesomization of LED strips everywhere.
 
-If you [remember](/blinkytape/), we created BlinkyTape in order to make LEDs easier to use. A big part of this was making sure that it's easy to make programs that will talk to BlinkyTape. *But* -- and this is a big but -- you *don't* need to program in order to make your BlinkyTape do awesome stuff.
+# Sign Up to be Notified when the BlinkyTape is Available for Purchase
+
+We're busily manufacturing the first BlinkyTapes for our Kickstarter Backers.
+Afterwards, we plan to make the BlinkyTape available for purchase via
+distributors online.
+
+**Subscribe here to be notified when the BlinkyTape becomes available!**
+
+<!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="http://blinkiverse.us7.list-manage1.com/subscribe/post?u=dc573c24e7e76c16c7e391838&amp;id=e44ba946d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <input type="hidden" value="btweb-avail-2013-07" name="SIGNUPSRC" id="SIGNUPSRC"/>
+    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+# What the Heck is a BlinkyTape?
+
+We created [BlinkyTape](/blinkytape/about/) in order to make LEDs easier to use. A big part of this was making sure that it's easy to make programs that will talk to BlinkyTape. *But* -- and this is a big but -- you *don't* need to program in order to make your BlinkyTape do awesome stuff.
 
 # But I don't want to program anything!  What's the easiest way to make things happen?
 

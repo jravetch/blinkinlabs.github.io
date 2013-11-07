@@ -1,0 +1,51 @@
+---
+layout: default
+--- 
+
+
+<div class="row">	
+
+<div class = "twelve columns"> 
+
+</div> 
+</div>
+
+<div class="row">	
+<div class = "nine columns"> 
+	
+	<div class = "project_full"> 
+		
+		<div class = "qq5">
+		<h1>
+		{{ page.title }} 
+		</h1> 
+	
+		</div> 
+	
+		{{ content }} 
+	
+	</div> 
+	
+
+	{% if page.images != null %} 
+	<div class = "content"> 
+	<h3> Extra images </h3> 
+	<div class="b_imagenes"> 
+			{% for image in page.images %} 
+			<a href="/images/{{page.img}}/big/{{image}}" rel="lightbox"><img src="/images/{{page.img}}/thumb/{{image}}" /></a>
+			{% endfor %} 
+	</div> 
+	</div> 
+	{% endif %} 
+	
+
+	
+</div>
+<div class="three columns" >
+  <div class="main_sidebar hide-on-phones">
+    <iframe frameborder="0" height="380" src="http://www.kickstarter.com/projects/740956622/blinkytape-the-led-strip-reinvented/widget/card.html" width="220"></iframe>
+  </div>
+</div>
+
+
+</div> <!-- row --> 

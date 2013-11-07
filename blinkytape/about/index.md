@@ -1,36 +1,10 @@
 ---
-layout: project
-permalink: /blinkytape/index.html 
+layout: blinkytape
 category: hardware
 type: "Interactive Lighting Controller" 
 img: blinkytape
 title: BlinkyTape
-technologies: [C/C++, Arduino, Processing]
-desc:
-images:
-sourcecode: [
-	[BlinkyTape, "https://github.com/blinkiverse/BlinkyTape"]
-]
 ---
-
-## Sign Up to be Notified when the BlinkyTape is Available for Purchase
-
-We're busily manufacturing the first BlinkyTapes for our Kickstarter Backers.
-Afterwards, we plan to make the BlinkyTape available for purchase via
-distributors online.
-
-**Subscribe here to be notified when the BlinkyTape becomes available!**
-
-<!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup">
-<form action="http://blinkiverse.us7.list-manage1.com/subscribe/post?u=dc573c24e7e76c16c7e391838&amp;id=e44ba946d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-	<input type="hidden" value="btweb-avail-2013-07" name="SIGNUPSRC" id="SIGNUPSRC"/>
-	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-</form>
-</div>
-
-<!--End mc_embed_signup-->
 
 <div class="videoWrapper">
 	<iframe class="project_full_video" src="http://player.vimeo.com/video/66034735?byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="394px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
