@@ -6,7 +6,7 @@ img: discoparty
 title: DiscoParty - Music Reactive Lighting
 technologies: [Processing, BlinkyTape]
 sourcecode: [
-	[DiscoParty, "https://github.com/blinkiverse/BlinkyTape/tree/master/examples/DiscoParty"]
+	[DiscoParty, "https://github.com/Blinkinlabs/BlinkyTape_Processing/tree/master/examples/DiscoParty"]
 ]
 type:
 when:
@@ -17,9 +17,9 @@ images:
 context: 
 ---
 
-DiscoParty is companion software for the [BlinkyTape](/blinkytape).  It allows you to turn one or more BlinkyTapes into colorful music-reactive lighting.
+DiscoParty is companion software for the [BlinkyTape](/blinkytape/).  It allows you to turn one or more BlinkyTapes into colorful music-reactive lighting.
 
-![DiscoParty DJ Photo Thing]()
+![DiscoParty DJ Photo Thing](/images/blinkytape/big/dj.jpg)
 
 ## Uses
 
@@ -39,15 +39,15 @@ DiscoParty is companion software for the [BlinkyTape](/blinkytape).  It allows y
 
 To use DiscoParty, you'll need to download and install:
 
-* [Processing 1.5.1](http://processing.org/download/) - Use the latest stable.  DiscoParty is untested in Processing 2.0.
+* [Processing](http://processing.org/download/) - Use the latest stable. 
 
-DiscoParty comes in the `examples` folder of the [BlinkyTape source repository](https://github.com/blinkiverse/BlinkyTape/) on Github.
+DiscoParty comes in the `examples` folder of the [BlinkyTape source repository](https://github.com/Blinkinlabs/BlinkyTape_Processing) on Github.
 
 If you have Git installed, you can grab the `BlinkyTape` repository with:
 
-	$ git clone git://github.com/blinkiverse/BlinkyTape.git
+	$ git clone git@github.com:Blinkinlabs/BlinkyTape_Processing.git
 
-If you don't have Git installed, you can download the [BlinkyTape respository as a zip file](https://github.com/blinkiverse/BlinkyTape/archive/master.zip).
+If you don't have Git installed, you can download the [BlinkyTape respository as a zip file](https://github.com/BlinkinLabs/BlinkyTape_processing/archive/master.zip).
 
 # Using DiscoParty
 
@@ -61,20 +61,21 @@ microphone input) for it's sound source.  This is a great way to get started
 quickly, but means that your lights will react to *all* ambient sound in the
 room, not just your music.
 
-## "Clean" Audio Input with SoundFlower (OS X Only)
+## Send your computer's Audio Input into DiscoParty with SoundFlower (OS X Only)
 
-For users of Mac OS X, SoundFlower is a great way to capture your system's audio
-in a "clean" way.
+For users of Mac OS X, SoundFlower is a great way to send your computer's audio output right into DiscoParty without using the microphone.
+
+Windows users shouldn't have to worry about this part.
 
 To use DiscoParty with SoundFlower:
 
 1. Install [Soundflower](http://cycling74.com/soundflower-landing-page/) (requires reboot!)
-2. Run `Soundflowerbed`
+2. Run `Soundflowerbed` - this is a small app that keeps a configuration widget in the top-right part of your Mac's menu bar.
 3. Configure system audio to pipe through Soundflower:
     1. Option-click on the Volume control in the OS X taskbar
     2. Change **Output Device** to **Soundflower (2ch)**
     3. Repeat 1 and 2 to set **Input Device** to **Soundflower (2ch)**
-4. Run DiscoParty as usual.
+4. Run DiscoParty in Processing.
 
 # Advanced Usage
 
@@ -86,8 +87,8 @@ sound frequencies that your lights respond to, any more!
 
 ## How DiscoParty Detects Interesting Sounds
 
-...
+DiscoParty uses some cool beat-detection code from the minim class: have a look at some [documentation.](http://code.compartmental.net/tools/minim) This is a nice toolbox of stuff like beat detectors. DiscoParty draws some cool stuff based on these, then uses our BlinkyTape code to render those onto the LED strip.  You could use this to make your own special DiscoParty with different colors, or a different kind of response to the music...right now it's tuned to react most strongly to kick drums.
 
 ## How DiscoParty Displays Lights on a BlinkyTape
 
-...
+For more on using the BlinkyTape software, see the [BlinkyTape Processing Page.](/blinkyTape/docs/processing/)
