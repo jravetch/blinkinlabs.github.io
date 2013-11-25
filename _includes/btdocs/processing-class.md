@@ -1,7 +1,10 @@
 ## Using the BlinkyTape class
-So now you've Processing installed, you have some example code, and you're all ready to get going. Fantastic. Let's get you going on a new project that demonstrates a helper class for using BlinkyTape with Processing, called (creatively) `BlinkyTape`.
+So now you've Processing installed, you have some example code, and you're all ready to get going. Fantastic. Let's get you going on a new project that demonstrates a helper class for using BlinkyTape with Processing, called (creatively) `BlinkyTape`.  You'll find it as a file called BlinkyTape.pde in several of the included examples, including the BlinkyTapeDirect.  When you open that project, you can find this file already open in a tab -- just copy & paste the contents of that tab into your Processing projects.
 
-This class takes an area of the screen and renders it to an attached BlinkyTape. It's neat because it lets you use the robust functionality for drawing that's built into Processing.
+This class can be used in a couple of ways.  You can use it to set pixels individually with a `.pushPixel()` method, and then call `.update()` when you're done.  There are also `.getIndex()` and `.setIndex()` methods so you can go right to setting the LED you want.
+There's another very clever way to use this class, however, which is the `.render()` method.  This takes an area of the screen and renders an approximation of it to an attached BlinkyTape. It's neat because it lets you use the robust functionality for drawing that's built into Processing and translate that into blinking LEDs!
+
+If that sounds complicated, don't worry -- we'll got through this in greater detail in these examples.
 
 ### Let's get started.
 Go ahead and start a new Processing sketch and call it something like 'BlinkyFoo'.
@@ -9,7 +12,7 @@ Go ahead and start a new Processing sketch and call it something like 'BlinkyFoo
 ### Grab the BlinkyTape class and add it to your new sketch
 The easiest way to use a class in Processing is to add it in as another tab in your new sketch. Open one of the other examples from BlinkyTape using the **File | Examples** menu -- I'd recommend 'BlinkyDirect.'
 
-**Sorry -- this example & the accompanying class may not be packaged up correctly at this point (mid-September 2013) -- [here's a link to the sketch](/blinkytape/BlinkyTapeDirect.zip) if not.**
+<!-- **Sorry this example & the accompanying class may not be packaged up correctly at this point (mid-September 2013)  [here's a link to the sketch](/blinkytape/BlinkyTapeDirect.zip) if not.** -->
 
 This new sketch will open in a separate window and you'll see that it has a tab called BlinkyTape. Click on that tab and copy the entire contents (command-a or control-a is your friend here, so you don't miss anything.)
 

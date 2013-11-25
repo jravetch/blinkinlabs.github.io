@@ -13,8 +13,9 @@ if you get stuck.
 
 ### Upload Errors
 
-* Check to make sure that your BlinkyTape is connected to your computer via a micro-USB cable.
-* Check to make sure that your **Tools | Board** setting is set to **Arduino Leonardo**.
+First off, unplug your BlinkyTape, then plug it back in.  If you've made a successful upload in the past, this will almost always take care of the issue.  When it's plugged in, the tape should be playing the last pattern you programmed onto it.
+
+* Check to make sure that your **Tools | Board** setting is set to **Arduino Leonardo**. (Or **BlinkyTape** if you have the special package installed.)
 * Check to make sure that your **Tools | Serial Port** setting is set to the right thing.
 
 ### BlinkyTape Not Acting Right

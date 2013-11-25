@@ -75,7 +75,6 @@ We used the live preview feature of PatternPaint to map out which LEDs were part
 **More Information**
 
 * Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
-* Check out the [BlinkyHat source](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/FLEDora)
 
 ## Movie FX - 1 Hour
 
@@ -88,9 +87,9 @@ With the BlinkyTape attached to the front of the box we loaded up PatternPaint t
 **More Information**
 
 * Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
-* Check out the source:
+<!-- * Check out the source:
     * ["Dave" animations](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/Dave)
-	* ["Hal" pattern](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/Hal9000)
+	* ["Hal" pattern](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/Hal9000) -->
 
 ## DJ Booth - 10 Minutes
 
@@ -117,12 +116,12 @@ PatternPaint makes light painting super simple with its image import functionali
 **More Information**
 
 * Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
-* Check out the [NyanPaint](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/light_painting_examples/NyanPaint) source.
+<!-- * Check out the [NyanPaint](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/light_painting_examples/NyanPaint) source. -->
 * Our initial [experiment on light painting](/light-painting/) shows off the hardware setup.
 
 # OK, awesome! How do I lean how to use it?
 
-We are so glad you asked. We have been working on a sweet [Getting Started Guide](/blinkytape/docs/getting-started/) which should help you learn about basic usage, including how to make your own programs and new firmware.
+We are so glad you asked. The main [BlinkyTape page](/blinkytape/) some great links to help you learn about basic usage, including how to make your own programs and new firmware.  In fact, why don't you leap on over to the page that talks about how to program for BlinkyTape in [Processing!](/blinkytape/docs/processing/)
 
 # Tech Specs
 

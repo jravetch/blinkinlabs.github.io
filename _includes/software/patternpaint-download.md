@@ -12,7 +12,7 @@ To use PatternPaint, you'll need to download and install:
 Now that you have downloaded Processing, let's get the BlinkyTape examples. This stuff lets us make our programs a bit more simply than if we had to do everything from scratch, as you'll see later on. There's also some helper code in here if you start programming for yourself a little down the line.
 
 ### Get it. 
-Here is the link to [the package we want](/blinkytape/BlinkyTape.zip). This includes PatternPaint as a software example for Processing.<!--- we'll have to update this when there's a different download link --->
+Here is the link to [the package we want](https://github.com/Blinkinlabs/BlinkyTape_Processing). This includes PatternPaint as a software example for Processing.<!--- we'll have to update this when there's a different download link --->
 
 ### Install it
 Unzip this folder in your Processing libraries folder - this is located at Documents/Processing/libraries on Mac or My Documents\Processing\libraries on Windows.
@@ -27,11 +27,7 @@ downloading it separately. In Processing, open the **Sketch** menu, followed by
 appear. In the "*Filter your search...*" box, type in 'controlp5' and click the
 ControlP5 item that appears to install it.
 
-If you have any trouble, [here's some more info about libraries for
-Processing](http://processing.org/reference/libraries/) including [instructions
-for manually installing libraries](http://wiki.processing.org/w/How_to_Install_a_Contributed_Library).
-If you need to install it manually, you can download ControlP5 from [the
-ControlP5 home page](http://www.sojamo.de/libraries/controlP5/).
+If you have any trouble, [here's some more info about libraries for Processing](http://processing.org/reference/libraries/) including [instructions for manually installing libraries](http://wiki.processing.org/w/How_to_Install_a_Contributed_Library).  If you need to install it manually, you can download ControlP5 from [the ControlP5 home page](http://www.sojamo.de/libraries/controlP5/).
 
 ## Restart Processing
 

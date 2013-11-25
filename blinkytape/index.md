@@ -28,7 +28,7 @@ We're busily manufacturing the first BlinkyTapes for our Kickstarter Backers.  A
 
 BlinkyTape is a super-cool LED strip with full-color RGB LEDs and an integrated microcontroller. We created [BlinkyTape](/blinkytape/about/) in order to make LEDs easier to use. A big part of this was making sure that it's easy to make programs that will talk to BlinkyTape. *But* -- and this is a big but -- you *don't* need to program in order to make your BlinkyTape do awesome stuff.
 
-# [But I don't want to program anything!  What's the easiest way to make things happen?](/software/discoparty)
+# [But I don't want to program anything!  What's the easiest way to make things happen?](/software/patternpaint/)
 
 OK! This is a good place to start. There are a few really solid options. First and foremost, there's [PatternPaint](/software/patternpaint/) <!--- change to the docs version of patternpaint when it's ready --->which is designed to help you animate your BlinkyTape with a simple visual editor. It's especially super for making patterns in long-exposure photography or [persistence of vision](http://en.wikipedia.org/wiki/Persistence_of_vision) but it's also good for just making cool stuff happen on your BlinkyTape strip.
 

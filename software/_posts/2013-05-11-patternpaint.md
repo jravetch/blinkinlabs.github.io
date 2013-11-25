@@ -43,7 +43,8 @@ PatternPaint is companion software for the [BlinkyTape](/blinkytape).  It allows
 
 1. Connect your BlinkyTape to your computer via USB
 2. Open the PatternPaint sketch in Processing
-    * Find it at `BlinkyTape/examples/PatternPaint/PatternPaint.pde`
+    * Find it in the Examples menu within Processing, in 'Contributed Libraries'
+    * Or, find it at `BlinkyTape/examples/PatternPaint/PatternPaint.pde` (probably in your `documents/Processing/Libraries folder`)
 3. Click the Run button.
 
 # Using PatternPaint
