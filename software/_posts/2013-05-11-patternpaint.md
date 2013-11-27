@@ -135,4 +135,4 @@ it finishes the painting by drawing NyanCat.
 
 ![Long NyanCat is Nyaaaaaaaaaaaan](/images/{{page.img}}/nyan-paint-long.jpg)
 
-You can find the code in the [NyanPaint](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/light_painting_examples/NyanPaint) example.
+You can find the code in the [NyanPaint](https://github.com/Blinkinlabs/BlinkyTape_Processing/tree/master/examples/KickstarterVideo/NyanPaint) example.

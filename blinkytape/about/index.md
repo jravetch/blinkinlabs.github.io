@@ -116,7 +116,7 @@ PatternPaint makes light painting super simple with its image import functionali
 **More Information**
 
 * Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
-<!-- * Check out the [NyanPaint](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/light_painting_examples/NyanPaint) source. -->
+* Check out the [NyanPaint](https://github.com/Blinkinlabs/BlinkyTape_Processing/tree/master/examples/KickstarterVideo/NyanPaint) source. 
 * Our initial [experiment on light painting](/light-painting/) shows off the hardware setup.
 
 # OK, awesome! How do I lean how to use it?
