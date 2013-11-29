@@ -87,9 +87,9 @@ With the BlinkyTape attached to the front of the box we loaded up PatternPaint t
 **More Information**
 
 * Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
-<!-- * Check out the source:
-    * ["Dave" animations](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/Dave)
-	* ["Hal" pattern](https://github.com/blinkiverse/BlinkyTape/tree/master/examples/Hal9000) -->
+* Check out the source:
+    * ["Dave" animations](https://github.com/Blinkinlabs/BlinkyTape_Arduino/tree/master/examples/KickstarterVideo/Dave/)
+    * ["Hal" pattern](https://github.com/Blinkinlabs/BlinkyTape_Arduino/tree/master/examples/KickstarterVideo/Hal9000/)
 
 ## DJ Booth - 10 Minutes
 
@@ -116,7 +116,7 @@ PatternPaint makes light painting super simple with its image import functionali
 **More Information**
 
 * Learn more about [PatternPaint](/software/patternpaint) and how you can make your own patterns!
-* Check out the [NyanPaint](https://github.com/Blinkinlabs/BlinkyTape_Processing/tree/master/examples/KickstarterVideo/NyanPaint) source. 
+* Check out the [NyanPaint](https://github.com/Blinkinlabs/BlinkyTape_Arduino/tree/master/examples/KickstarterVideo/NyanPaint) source. 
 * Our initial [experiment on light painting](/light-painting/) shows off the hardware setup.
 
 # OK, awesome! How do I lean how to use it?

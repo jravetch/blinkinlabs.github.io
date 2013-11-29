@@ -28,11 +28,15 @@ We're busily manufacturing the first BlinkyTapes for our Kickstarter Backers.  A
 
 BlinkyTape is a super-cool LED strip with full-color RGB LEDs and an integrated microcontroller. We created [BlinkyTape](/blinkytape/about/) in order to make LEDs easier to use. A big part of this was making sure that it's easy to make programs that will talk to BlinkyTape. *But* -- and this is a big but -- you *don't* need to program in order to make your BlinkyTape do awesome stuff.
 
-# [But I don't want to program anything!  What's the easiest way to make things happen?](/software/patternpaint/)
+# [What's the first thing I should do with BlinkyTape? OR let's make things blink without programming!](/software/patternpaint/)
 
-OK! This is a good place to start. There are a few really solid options. First and foremost, there's [PatternPaint](/software/patternpaint/) <!--- change to the docs version of patternpaint when it's ready --->which is designed to help you animate your BlinkyTape with a simple visual editor. It's especially super for making patterns in long-exposure photography or [persistence of vision](http://en.wikipedia.org/wiki/Persistence_of_vision) but it's also good for just making cool stuff happen on your BlinkyTape strip.
+Great, let's get up to speed.  First let's install [PatternPaint](/software/patternpaint/) <!--- change to the docs version of patternpaint when it's ready --->which is designed to help you animate your BlinkyTape with a simple visual editor. PatternPaint is especially super for making patterns in long-exposure photography or [persistence of vision](http://en.wikipedia.org/wiki/Persistence_of_vision) but it's also good for just making cool stuff happen on your BlinkyTape strip.
 
-There aren't very many projects that are good-to-go right now, because BlinkyTape has just gotten into the hands of a few developers. However, that's going to be changing soon, and there are a few cool things.  So check out [BlinkyTile](/blinkytile) and [DiscoParty](/software/discoparty/) - both are extremely cool, and there should be more to come.
+**Windows users: this package also contains the drivers, so you need to start [here!!](/software/patternpaint/)**  
+
+Other platforms don't need special drivers, but we still recommend checking out PatternPaint.
+
+We also hope to showcase cool community projects here, and we have a few examples to get you going, so check out [BlinkyTile](/blinkytile), [AmbiTape](/ambitape) and [DiscoParty](/software/discoparty/) - all these are extremely cool, in our opintion, but we're looking forward to even cooler stuff coming from the community.
 
 # [OK! I want to make my own programs that talk to BlinkyTape, because I have some AMAZING ideas.](/blinkytape/docs/processing/)
 
