@@ -119,7 +119,7 @@ PatternPaint makes light painting super simple with its image import functionali
 * Check out the [NyanPaint](https://github.com/Blinkinlabs/BlinkyTape_Arduino/tree/master/examples/KickstarterVideo/NyanPaint) source. 
 * Our initial [experiment on light painting](/light-painting/) shows off the hardware setup.
 
-# OK, awesome! How do I lean how to use it?
+# OK, awesome! How do I learn how to use it?
 
 We are so glad you asked. The main [BlinkyTape page](/blinkytape/) some great links to help you learn about basic usage, including how to make your own programs and new firmware.  In fact, why don't you leap on over to the page that talks about how to program for BlinkyTape in [Processing!](/blinkytape/docs/processing/)
 
