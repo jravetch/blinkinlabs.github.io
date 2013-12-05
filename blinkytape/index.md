@@ -42,8 +42,11 @@ We also hope to showcase cool community projects here, and we have a few example
 
 Fantastic - we can't wait until we see your brain-contents playing back on a BlinkyTape! That might not have come out right...but don't worry, we've made the 'tapes easy to program. Like we said before, we're super-duper excited about what the community comes up with. So far, we've been doing most of our programming in [Processing](http://processing.org/). You might have already grabbed that in order to play with PatternPaint, but if not, we'd suggest you go ahead and do that now. And if Processing isn't your thing, that's OK! The community has already done some work in other languages. You'll find more info about this path by following [THIS LINK RIGHT HERE!](/blinkytape/docs/processing/)
 
-# [That's cool, but I want to get right down and change the program that runs on the BlinkyTape!](/blinkytape/docs/arduino)
+# [That's cool, but I want to get right down and change the program that runs on the BlinkyTape!](/blinkytape/docs/arduino/)
 
 You're right: this *is* cool too.  The BlinkyBoard (which, [as you might know already](/blinkytape/about/), is the heart and soul of your BlinkyTape) is very similar to an [Arduino](http://www.arduino.cc/) and you can use the [Arduino environment](http://arduino.cc/en/Main/Software) to program it. Of course, there are a few other details that you'll want to know about, and you'll find this information [RIGHT HERE](/blinkytape/docs/arduino/)
+
+# [I'm having trouble with my BlinkTape](/blinkytape/docs/troubleshooting/)
+Have no fear, just head over to this page with some troubleshooting tips for common BlinkyTape problems, [RIGHT HERE](/blinkytape/docs/troubleshooting/)
 
 <!--- I'd usually end by asking for feedback - are you guys getting lots of emails about this? --->
