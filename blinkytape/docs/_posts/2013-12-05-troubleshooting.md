@@ -25,8 +25,6 @@ Sorry about that! Once again with the Windows drivers. Processing 2 and later ca
 
 However, all is not lost. It may be possible to fix this by installing a newer driver. Check with your graphics chip/card manufacturer and install their latest. For example, we were able to resolve this by updating the drivers for a computer with Intel HD 3000 graphics.
 
-We're also working on a new version of DiscoParty that doesn't require OpenGL - it can now be found in the examples/experimental section of our Processing package, [here](https://github.com/Blinkinlabs/BlinkyTape_Processing/tree/master/examples/experimental/DiscoParty_Burst).
-
 ## I just made a custom Arduino program and uploaded it to my BlinkyTape! But...it doesn't seem to be doing anything.
 Uh oh. It's possible to create Arduino sketches that will compile just fine, but will then crash when it tries to run on your BlinkyTape. There are a few reasons for this: using too much memory, asking for something from a memory location that's not defined, dividing by zero...that sort of thing. Some of these will put your Arduino in a state where it doesn't want to accept another sketch.
 
@@ -34,9 +32,14 @@ However, there is a way to force your BlinkyTape to reset, so you can reprogram 
 
 ![BlinkyTape Reset points](/images/blinkytape/big/bt_reset.png)
 
-There are four small holes near the USB connector. Use a small piece of wire to briefly connect the one furthest from the connector to the ground pad. If you don't have a small piece of wire, you can use two sewing needles - this approach also offers an advantage, since you can pierce the silicone protective tubing rather than peeling it back from the end.
+We've found that it's easy to use two sewing needles to reset the tape without peeling back the protective cover. There are four small holes near the USB connector - place one needle in the one furthest from the connector, and then push one so it's touching the ground pad.  Then when you touch them together, the tape will be in reset mode, so it can accept a new sketch.
 
 As for timing, we'd suggest clicking the Arduino upload button, then using this method to reset your tape so it can accept a new sketch. You might need to try a few times to get the timing down right, but it should eventually work.
+
+It should also be noted that this won't have any lasting effect if you're not uploading a sketch - this won't reset the tape to factory by itself.
+
+## I'm having intermittent issues, not always connecting, or strange behavior...
+It's worth checking to see if your USB cable is bad.  Keep in mind that USB cables move around a lot and don't last forever, especially when you're relying on them for data transmission.  A cable that works fine for charging a phone might not work for your BlinkyTape.  Try swapping the one you're currently using for another microUSB cable, and if the one we shipped you isn't great, please let us know.
 
 ## Still no worky!!!
 OK, challenges are interesting and we are eager to meet and overcome them!  Try heading to the [forum](/forums) or emailing us at `support@blinkinlabs.com`.
