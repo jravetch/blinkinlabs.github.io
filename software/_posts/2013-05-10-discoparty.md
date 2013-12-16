@@ -45,7 +45,7 @@ DiscoParty comes in the `examples` folder of the [BlinkyTape source repository](
 
 If you have Git installed, you can grab the `BlinkyTape` repository with:
 
-	$ git clone https://Blinkinlabs/BlinkyTape_Processing.git
+	$ git clone https://github.com/Blinkinlabs/BlinkyTape_Processing.git
 
 If you don't have Git installed, you can download the [BlinkyTape respository as a zip file](https://github.com/BlinkinLabs/BlinkyTape_processing/archive/master.zip).
 
