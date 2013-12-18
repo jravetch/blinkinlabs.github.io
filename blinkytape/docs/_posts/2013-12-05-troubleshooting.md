@@ -32,9 +32,9 @@ However, there is a way to force your BlinkyTape to reset, so you can reprogram 
 
 ![BlinkyTape Reset points](/images/blinkytape/big/bt_reset.png)
 
-We've found that it's easy to use two sewing needles to reset the tape without peeling back the protective cover. There are four small holes near the USB connector - place one needle in the one furthest from the connector, and then push one so it's touching the ground pad.  Then when you touch them together, the tape will be in reset mode, so it can accept a new sketch.
+We've found that it's easy to use two sewing needles to reset the tape without peeling back the protective cover. There are four small holes near the USB connector - place one needle in the one furthest from the connector, and then push one so it's touching the ground pad.  Touch the two needles together and the tape will be in reset mode. Once you've reset the tape, you'll have six seconds to start uploading a new sketch using the Arduino IDE or the 'Restore Rainbow Sketch' option in PatternPaint.
 
-As for timing, we'd suggest clicking the Arduino upload button, then using this method to reset your tape so it can accept a new sketch. You might need to try a few times to get the timing down right, but it should eventually work.
+As for timing, we'd suggest clicking the Arduino upload button, then using this method to reset your tape so it can accept a new sketch. You might need to try a few times to get the timing down right, but it'll work.
 
 It should also be noted that this won't have any lasting effect if you're not uploading a sketch - this won't reset the tape to factory by itself.
 
