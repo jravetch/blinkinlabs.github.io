@@ -25,6 +25,15 @@ Sorry about that! Once again with the Windows drivers. Processing 2 and later ca
 
 However, all is not lost. It may be possible to fix this by installing a newer driver. Check with your graphics chip/card manufacturer and install their latest. For example, we were able to resolve this by updating the drivers for a computer with Intel HD 3000 graphics.
 
+## I'm having some odd issues with my BlinkyTape on Ubuntu...
+It seems that Ubuntu 13.10 runs a program called 'modem-manager' that identifies your BlinkyTape as a modem and tries to talk with it. In this ase, the tape will work for a moment, then stop updating, and first 10 or so LEDs on the strip will turn black.  
+
+The easiest way to fix this is to remove the modem manager software completely:
+
+	sudo aptitude remove modemmanager
+
+If you do need to use a dial-up modem, you may be able to stop the service temporarily, but most users can just remove this program without any problems.
+
 ## I just made a custom Arduino program and uploaded it to my BlinkyTape! But...it doesn't seem to be doing anything.
 Uh oh. It's possible to create Arduino sketches that will compile just fine, but will then crash when it tries to run on your BlinkyTape. There are a few reasons for this: using too much memory, asking for something from a memory location that's not defined, dividing by zero...that sort of thing. Some of these will put your Arduino in a state where it doesn't want to accept another sketch.
 
