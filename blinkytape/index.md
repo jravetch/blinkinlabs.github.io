@@ -14,7 +14,7 @@ We're very pleased to say that you can now find BlinkyTape for sale at[ Adafruit
 
 BlinkyTape is a super-cool LED strip with full-color RGB LEDs and an integrated microcontroller. We created [BlinkyTape](/blinkytape/about/) in order to make LEDs easier to use. A big part of this was making sure that it's easy to make programs that will talk to BlinkyTape. *But* -- and this is a big but -- you *don't* need to program in order to make your BlinkyTape do awesome stuff.
 
-# Phase One: get up your BlinkyTape and running with [PatternPaint](/software/patternpaint/)!
+# Phase One: Get your BlinkyTape up and running with [PatternPaint](/software/patternpaint/)!
 
 [![PatternPaint](/images/blinkytape/big/patternQT.png)](/software/patternpaint/)
 
