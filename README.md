@@ -38,7 +38,7 @@ You should be on the `source` branch. You can verify this like so:
 
 	$ git status
 	# On branch source
-	# Everything is up to date.
+	nothing to commit, working directory clean
 	$
 
 ## Install Dependencies
