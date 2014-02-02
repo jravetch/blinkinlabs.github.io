@@ -132,6 +132,18 @@ for no sidebar.
 
 Put it in `stylesheets/web.css`.
 
+# Publishing!
+
+You'll need push permissions on the repo at git@github.com:blinkinlabs/blinkinlabs.github.io.
+
+Assuming you've got your git SSH stuff configured correctly, you should only
+need to run a single script:
+
+	$ ./publish.sh
+
+This will render out the site to a temporary directory, the replace the `master`
+branch in the git repository with the contents of the static site.
+
 ----
 
 # TODOs
