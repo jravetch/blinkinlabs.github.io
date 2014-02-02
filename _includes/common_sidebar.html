@@ -1,0 +1,39 @@
+<div class = "three columns"> 
+  <div class = "project_full, project_info">
+
+    <div class="sidebar-nav">
+      <h3><a href="/blinkytape/">BlinkyTape</a></h3>
+      <h3><a href="/blog/">Blog</a></h3>
+      <h3><a href="/installations/">Installations</a></h3>
+    </div>
+
+    {% if page.technologies != null %} 
+    <h3> Used Technologies: </h3> 
+      <ul> 
+        {% for technology in page.technologies %} 
+        <li> {{ technology }} </li> 
+        {% endfor %} 
+      </ul> 
+    {% endif %} 
+
+    {% if page.sourcecode != null %} 
+    <h3> Sourcecode: </h3> 
+      <ul> 
+      {% for item in page.sourcecode %} 
+        <li><a href="{{ item[1] }}" target="_new"> {{ item[0] }} </a></li>
+      {% endfor %}
+      </ul>
+    {% endif %} 
+
+    <div class="sidebar-blog-links">
+      <h3>Latest Posts</h3>
+      <ul>
+      {% for post in site.posts %}
+        {% if post.category contains 'post' %}
+          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{post.url}}">{{post.title}}</a></li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div> 

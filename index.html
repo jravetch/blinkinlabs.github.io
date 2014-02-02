@@ -18,40 +18,27 @@ title: Main
       </div>
     </div>
 
-		<div class="foundation-header" style="margin-top:20px">
-			<h1>Other Blinkinlabs Stuff</h1>
-        <span class="subheader">We've done some cool stuff researching future creative technologies.  Have a look!</span>
-      </h1>
-    </div>
     <ul class="block-grid two-up  project_preview front-page-projects">
-      {% for page in site.pages %}
-        {% if page.category contains 'frontpage' %}
-          <li class="{{page.type}} ">
-            <a href="{{ page.url | replace:'index.html','' }}">
-
-                <img src="/images/{{page.img|downcase}}/preview-2up.jpg" alt="{{page.title}}"/>
-              <p> {{page.title }}  </p>
-              <div class="page_preview_desc page_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{page.desc}} --> </div>
-
-
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
-      {% for project in site.posts %}
-        {% if project.category contains 'frontpage' %}
-          <li class="{{project.type}} ">
-            <a href="{{ project.url | replace:'index.html','' }}">
-
-                <img src="/images/{{project.img|downcase}}/preview-2up.jpg" alt="{{project.title}} project"/>
-              <p> {{project.title }}  </p>
-              <div class="project_preview_desc project_preview_desc hide-on-phones hide-on-desktops hide-on-tablets">  <!-- {{project.desc}} --> </div>
-
-
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
+      <li class="frontpage">
+        <div class="foundation-header">
+          <h1><a href="/blog/">Blog</a></h1>
+          <span class="subheader">Have a look at what we're up to!</span>
+        </div>
+        {% assign blog_post = site.categories.blog.first %}
+        <a href="/blog/">
+          <img src="/images/{{blog_post.img}}/{{blog_post.preview}}" alt="{{blog_post.title}}"/>
+        </a>
+        <a class="caption" href="/blog/">{{blog_post.title}}</a>
+      </li>
+      <li class="frontpage">
+        <div class="foundation-header">
+          <h1><a href="/installations/">Installations</a></h1>
+          <span class="subheader">Blinky Builds Around the World!</span>
+        </div>
+        <a href="/installations/">
+          <img src="/images/domestar/preview-2up.jpg" alt="Blinkinlabs Installations"/>
+        </a>
+      </li>
     </ul>
 </div>
 

@@ -1,0 +1,15 @@
+<div class="project_full post post-{{ page.id }}">
+  <div class="qq5">
+    <a href="{{page.url}}"><h1>{{page.title}}</h1></a>
+    <span class="author">
+      Posted <a href="{{page.url}}">{{ page.date | date: '%B %d, %Y' }}</a> by {{ page.author }}
+  	</span> 
+  </div> 
+
+
+  <hr /> 
+  
+  <div class="entrybody">
+    {{ page.content }}
+  </div> 
+</div> 

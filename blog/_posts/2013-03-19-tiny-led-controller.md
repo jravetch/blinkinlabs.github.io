@@ -13,6 +13,7 @@ collaborators:
 task: 
 desc: 
 context:  
+preview: led1-preview-2up.jpg
 ---
 
 ![LED Controller](/images/{{page.img}}/led1.jpg)
