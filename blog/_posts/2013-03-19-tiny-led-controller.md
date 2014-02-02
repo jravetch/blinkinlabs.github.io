@@ -1,18 +1,9 @@
 ---
 layout: post 
-root: "./.." 
 author: Matt Mets
 category: post
-tags: 
-type: 
-img: blog 
 title: Tiny LED Controller and the Cheapest Buttons, Ever
-technologies: 
-when: 3/19/2013
-collaborators: 
-task: 
-desc: 
-context:  
+img: blog/2013-03-19-tiny-led-controller
 preview: led1-preview-2up.jpg
 ---
 
