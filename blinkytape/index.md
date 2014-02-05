@@ -36,7 +36,7 @@ If you're interested in making a new stand-along BlinkyTape program, you probabl
 
 Or you can just jump over to the [Blinkinlabs Github](https://github.com/Blinkinlabs) to get your hands dirty right away. There are even some examples in other languages like Perl and Python!
 
-# [I'm having trouble with my BlinkTape](/blinkytape/docs/troubleshooting/)
+# [I'm having trouble with my BlinkyTape](/blinkytape/docs/troubleshooting/)
 Have no fear, just head over to this page with some troubleshooting tips for common BlinkyTape problems, [RIGHT HERE](/blinkytape/docs/troubleshooting/)
 
 # Join our mailing list
