@@ -11,11 +11,12 @@ Here's the code:
 	void setup() {
   	// Connect to the first serial port we can find
   	// We assume there is a BlinkyTape there
-  	for(String p : Serial.list()) {
-    	if (p.startsWith("/dev/tty.usbmodem")) {
-      	s = new Serial(this, p, 115200);
-    	}
-  	}
+  	  for(String p : Serial.list()) {
+            // NOTE: you'll need to change the next line to match the serial port system, i.e. COMx on Windows
+    	    if (p.startsWith("/dev/tty.usbmodem")) { 
+      	    s = new Serial(this, p, 115200);
+    	    }
+  	  }
 	}
 	
 	float phase = 0;
@@ -43,4 +44,4 @@ Here's the code:
 
 Most everything here is in the single `for` loop within the `draw()` routine. It goes through 60 times (once for each LED on the BlinkyTape) and calculates a color value; it then sends each one over as an individual byte. Each LED on the strip gets three bytes, one each for red, green, and blue. Then, after the `for` loop ends, we send a byte with the value 255 (aka 0xFF) to tell the BlinkyTape to display the colors it just received.
 
-Sending 3 x 60 bytes for color followed by a single 255 is about all it takes to talk to your BlinkyTape. However, as we will see later, there are a couple of other things to consider.
+Sending 3 x 60 bytes for color followed by a single 255 is about all it takes to talk to your BlinkyTape. This will always work, as long as you have a standard firmware on your Blinkytape.  However, if you're programming in Processing, you're probably not going to want to use your BlinkyTape like this.

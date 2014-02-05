@@ -2,12 +2,13 @@
 
 Our next step is to download and install a couple of things that we've used to make the Blinkytape firmware better. If you don't know what a *library* is, don't worry -- just think of it as some helper code. We'll download and install these libraries so we can use the example code. Later on, when you're making your own firmware, you'll see how some of these libraries make it easier to program for BlinkyTape.
 
-First install [this](https://github.com/Blinkinlabs/FastSPI_LED2) (It's called 'FastSPI\_LED2')
-and then [this](https://github.com/Blinkinlabs/BlinkyTape_Arduino)! (This one is called 'BlinkyTape\_Arduino')
+First install [this](https://code.google.com/p/fastspi/downloads/list) -- it's called 'FastSPI\_LED2' and it's for talking with LED strips like the one in your BlinkyTape. Grab the latest version, 'RC5' as of this writing.
+
+Then go ahead and grab [this](https://github.com/Blinkinlabs/BlinkyTape_Arduino)! This one is called 'BlinkyTape\_Arduino' and it's all the stuff we wrote, including our example code.
 
 ### Get 'em. 
 
-The quickest way to do this is to use the 'Download Zip' button on the right-hand side of the page. The button should look something like this:
+If you're not a Git expert, the quickest way to get our BlinkyTape\_Arduino package is to use the 'Download Zip' button on the right-hand side of the page. The button should look something like this:
 
 ![zip download button](/images/blinkytape/big/git_download_zip.png)
 
