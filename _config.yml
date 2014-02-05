@@ -10,3 +10,5 @@ root: .
 destination: ./_site
 
 comments: true
+
+excerpt_separator: "<!--more-->"

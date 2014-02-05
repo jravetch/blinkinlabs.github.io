@@ -11,6 +11,8 @@ preview: led1-preview-2up.jpg
 
 When I saw this tiny LED controller on Taobao for only RMB10 (about $1.60 USD), I had to know what was inside of it. Less than 12 hours after clicking buy, it arrived at our office. Of course, the first thing I had to do was tear it apart to see what was inside.
 
+<!--more-->
+
 The first thing to notice is the packaging, or lack thereof. It’s literally a piece of heat shrink tubing molded around a small PCB, with a sicker stuck to the one side. Note: this is totally something you could do at home, and makes for a quick, dust-free housing. Add some silicone glue around the wires and you’re water resistant, too!
 
 ![LED Controller](/images/{{page.img}}/led2.jpg)
