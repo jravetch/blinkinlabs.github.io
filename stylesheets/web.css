@@ -119,21 +119,19 @@ h1 {
 
 
 a { 
-	color: #333;
+  color: rgb(113,109,186);
 	text-decoration: none; 
 } 
 
 a:visited {
-  color: #333;
+	color: rgb(238,80,162);
   text-decoration: none; 
 } 
 
 a:hover {
-  color: #666;
+	color: rgb(89,212,249);
   text-decoration: none; 
 }
-
-
 
 .bgtransparent { 
 	background-color: black; 
