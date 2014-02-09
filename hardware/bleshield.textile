@@ -10,7 +10,6 @@ when: 04/2013
 collaborators:
 task: 
 desc:
-images: []
 sourcecode: [
 	[BLEShield, "https://github.com/blinkiverse/BLEShield"]
 ]

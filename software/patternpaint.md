@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /software/patternpaint/index.html
+permalink: patternpaint/index.html
 category: software
 img: patternpaint
 title: PatternPaint

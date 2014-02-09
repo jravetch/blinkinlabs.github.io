@@ -1,6 +1,6 @@
 ---
 layout: doc
-permalink: /blinkytape/docs/processing/index.html
+permalink: processing/index.html
 title: Programming for Blinkytape using languages like Processing
 ---
 OK, so you want to make a program that runs on your computer and sends instructions to your BlinkyTape? That's fabulous, and you're in the right place. (If that's not you, sorry, you're going to have find training techniques for [canine agility](http://en.wikipedia.org/wiki/Dog_agility) somewhere else.)

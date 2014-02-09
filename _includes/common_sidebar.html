@@ -28,10 +28,8 @@
     <div class="sidebar-blog-links">
       <h3>Latest Posts</h3>
       <ul>
-      {% for post in site.posts %}
-        {% if post.category contains 'post' %}
-          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{post.url}}">{{post.title}}</a></li>
-        {% endif %}
+      {% for post in site.posts limit:5 %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{post.url}}">{{post.title}}</a></li>
       {% endfor %}
       </ul>
     </div>

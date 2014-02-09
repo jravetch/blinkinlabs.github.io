@@ -1,6 +1,6 @@
 ---
 layout: doc
-permalink: /blinkytape/docs/troubleshooting/index.html
+permalink: troubleshooting/index.html
 title: Troubleshooting OR How to fix common issues with the BlinkyTape
 ---
 Like anything, BlinkyTape doesn't always work perfectly. There are a few issues that you might run into while you're getting up and running, or while you're creating your BlinkyTape magnum opus.  Here are a few suggestions on how to get going again if you run into an issue.

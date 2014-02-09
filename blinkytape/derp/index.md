@@ -1,6 +1,5 @@
 ---
 layout: project
-permalink: /blinkytape/derp/index.html
 img: bt-derp
 ---
 

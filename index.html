@@ -24,7 +24,7 @@ title: Main
           <h1><a href="/blog/">Blog</a></h1>
           <span class="subheader">Have a look at what we're up to!</span>
         </div>
-        {% assign blog_post = site.categories.blog.first %}
+        {% assign blog_post = site.posts.first %}
         <a href="/blog/">
           <img src="/images/{{blog_post.img}}/{{blog_post.preview}}" alt="{{blog_post.title}}"/>
         </a>

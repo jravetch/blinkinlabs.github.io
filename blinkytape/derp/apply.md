@@ -1,6 +1,5 @@
 ---
 layout: project
-permalink: /blinkytape/derp/apply.html
 ---
 
 Looking for the BlinkyTape DERP developers? Check out the [main page](/blinkytape/derp/).

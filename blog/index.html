@@ -2,37 +2,31 @@
 layout: default
 --- 
 
-
 <div class="row">	
 	<div class = "nine columns posts" > 
 
-		{% for page in site.posts %} 
-		{% if page.category contains 'post' %}
+		{% for page in paginator.posts %} 
 		  {% include blog_inline.html %} 
-		{% endif %}
 		{% endfor %} 
 	
-	<!-- 	
 		<div class="page">
 		<ul class="pagination">
 		<li class="unavailable"><a href="">&laquo;</a></li>
 		{% for num in (1..paginator.total_pages) %}
 		{% if num == paginator.page %} 
 	     	<li class="current"><a href="">{{num}}</a></li> 
-		{%else%}
-			<li><a href="/page{{num}}">{{num}}</a></li>
+		{%elsif num == 1%}
+      <li><a href="/blog/">{{num}}</a></li>
+    {% else %}
+			<li><a href="/blog/page/{{num}}/">{{num}}</a></li>
 		{% endif %} 
 		{% endfor %} 
 		<li>&raquo;</li>
 		</ul>
 		</div>
-	 -->  
 		
 	</div> 
 
   {% include common_sidebar.html %}
 
 </div> 
-
-
-

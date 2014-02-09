@@ -1,6 +1,6 @@
 ---
 layout: doc
-permalink: /blinkytape/docs/patternpaint/index.html
+permalink: patternpaint/index.html
 title: Putting Patterns on your BlinkyTape with PatternPaint
 ---
 

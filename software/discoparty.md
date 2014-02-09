@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /software/discoparty/index.html
+permalink: discoparty/index.html
 category: software
 img: discoparty
 title: DiscoParty - Music Reactive Lighting

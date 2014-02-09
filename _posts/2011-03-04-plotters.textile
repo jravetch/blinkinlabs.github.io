@@ -17,8 +17,9 @@ context:
 
 This is a quick set of projects we threw together for the 2011 NYC Resistor Interactive Show. The first was a Wacom pen digitizer and a processing sketch that Matt connected to our large-format pen plotter, which we hacked out of an old vinyl cutter with MakerBot electronics. The second project was a processing sketch that emulated the PhotoBooth application, which took a picture using the computer's webcam, converted it to vectors, and drew it on a smaller HP pen plotter.
 
-!../images/{{page.img}}/big/max.jpg(Pen Plotter Result)!
+!/images/{{page.img}}/big/max.jpg(Pen Plotter Result)!
 
+<!--more-->
 
 Test video below:
 

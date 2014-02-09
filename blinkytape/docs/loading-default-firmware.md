@@ -1,6 +1,6 @@
 ---
 layout: doc
-permalink: /blinkytape/docs/loading-default-firmware/index.html
+permalink: loading-default-firmware/index.html
 title: Loading the Default BlinkyTape Firmware
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: doc
-permalink: /blinkytape/docs/tubeinstructions/index.html
+permalink: tubeinstructions/index.html
 title: BlinkyTube Assembly Instructions!
 ---
 

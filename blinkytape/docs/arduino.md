@@ -1,6 +1,6 @@
 ---
 layout: doc
-permalink: /blinkytape/docs/arduino/index.html
+permalink: arduino/index.html
 title: Programming your Blinkytape's firmware
 ---
 We're about to do some very exciting stuff -- we're going to put a whole new program right on your Blinkytape. Since this is a pretty small program that runs on a piece of hardware, we're going to call it *firmware.* If you're not familiar with the term already, you'll probably hear the term again when you're updating the software on a new camera, TV, car, or smart fridge. At the end of the day, it's a program like any other that runs on a tiny computer in the Blinkytape (the Blinkyboard.)

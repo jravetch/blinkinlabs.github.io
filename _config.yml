@@ -1,6 +1,7 @@
 permalink: none 
 markdown: rdiscount 
 paginate: 5
+paginate_path: "/blog/page/:num"
 pygments: true 
 
 port: 4000

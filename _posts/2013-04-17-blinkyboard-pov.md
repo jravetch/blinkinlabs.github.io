@@ -30,6 +30,8 @@ We were playing with the [BlinkyTape](https://github.com/blinkiverse/BlinkyTape)
 our tiny board that makes it dead simple to control LEDs over USB, and realized
 that light painting would be a great hack that we could knock out quickly.
 
+<!--more-->
+
 # Quick Overview
 
 <div class="videoWrapper">

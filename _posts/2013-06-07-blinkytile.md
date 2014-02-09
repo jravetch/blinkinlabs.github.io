@@ -4,6 +4,7 @@ permalink: /blinkytile/index.html
 category: hacks
 type:
 img: blinkytile
+preview: preview-2up.jpg
 title: "BlinkyTile - A square LED matrix made from BlinkyTape"
 technologies: [BlinkyTape, Laser Cutter]
 when: 06/2013
@@ -24,6 +25,8 @@ The BlinkyTile is an advanced hardware project that you can do with your
 display of (almost) 8x8 pixels!
 
 This project is pretty advanced, so be prepared to spend some time on it!
+
+<!--more-->
 
 # What You'll Need
 
