@@ -62,9 +62,9 @@ You'll then be able to see the site by pointing your browser at http://localhost
 
 ## Blog Post Files
 
-Blog posts go in `blog/_posts/` and they must have a date in the file name. For example:
+Blog posts go in `_posts/` and they must have a date in the file name. For example:
 
-	blog/_posts/2013-03-19-tiny-led-controller.md
+	_posts/2013-03-19-tiny-led-controller.md
 
 A `.md` extension indicates that the contents of the post will be in Markdown format.
 
@@ -92,6 +92,7 @@ posts use the `post` layout.
 * `title: Tiny LED ...` - The title of the post.
 * `img: blog/...` - The subdirectory under `images/` where you will place images
 for this post.
+	* In this case, images go in: `images/blog/2013-03-19-tiny-led-controller/`
 * `preview: foo.jpg` - The file in the "`img`" directory to use when this post
 appears on the front page of the site. The image should be 500x300px.
 
@@ -149,8 +150,6 @@ branch in the git repository with the contents of the static site.
 # TODOs
 
 * Put images on an asset host like S3 instead of keeping them in the git repo.
-* Fix pagination on `/blog/`. It is broken because we store things wrong.
 * The main BlinkyTape page should get some love in the form of fancy styling and
 images instead of acting like a long form content page.
-* Lots of old projects should be moved to the blog section.
 * ???
