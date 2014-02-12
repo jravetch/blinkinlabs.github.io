@@ -1,7 +1,7 @@
 ---
 layout: project
 permalink: /light-painting/index.html
-category: hacks
+category: projects
 type:
 img: blinkytube-pov
 title: "Light Painting with BlinkyTube Persistence of Vision"

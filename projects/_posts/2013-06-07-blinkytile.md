@@ -1,7 +1,7 @@
 ---
 layout: project
 permalink: /blinkytile/index.html
-category: hacks
+category: projects
 type:
 img: blinkytile
 preview: preview-2up.jpg

@@ -32,11 +32,13 @@ title: Main
       </li>
       <li class="frontpage">
         <div class="foundation-header">
-          <h1><a href="/installations/">Installations</a></h1>
-          <span class="subheader">Blinky Builds Around the World!</span>
+          <h1><a href="/projects/">Projects</a></h1>
+          <span class="subheader">Blinky Things that You can Make!</span>
         </div>
-        <a href="/installations/">
-          <img src="/images/domestar/preview-2up.jpg" alt="Blinkinlabs Installations"/>
+        <a href="/projects/">
+          {% assign proj_post = site.categories.projects.first %}
+          {{ proj_post.name }}
+          <img src="/images/{{proj_post.img}}/{{proj_post.preview}}" alt="Blinkinlabs Projects"/>
         </a>
       </li>
     </ul>

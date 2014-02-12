@@ -1,13 +1,13 @@
 ---
 layout: project
-permalink: /installations/index.html
+permalink: /projects/index.html
 category: frontpage
-title: Installations
+title: Projects
 img: domestar
 ---
 <ul class="block-grid five-up project_preview">
   {% for project in site.posts %}
-	{% if project.category contains 'installation' %}
+	{% if project.category contains 'project' %}
 	  <li class="{{project.type}} ">
 		<a href="{{ project.url | replace:'index.html','' }}">
 
