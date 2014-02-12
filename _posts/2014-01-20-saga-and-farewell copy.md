@@ -2,13 +2,13 @@
 layout: post 
 author: Ethan Hartman
 category: post
-title: The Saga of the Tubes & Farewell For Now!
+title: The Saga of the Tubes
 img: blog/2014-01-20-saga-and-farewell
 preview: tubes-farewell.jpg
 ---
 Hey everyone,
 
-It's been a long time since we started this journey, but here we are with what looks to be the final update of this Kickstarter campaign.
+It's been a long time since we started this journey, but it looks like we've managed to complete fulfillment for our Kickstarter campaign.
 
 ![Tubes](https://s3.amazonaws.com/ksr/assets/001/539/078/b176cb05da5d45587929f79a29b4e069_large.jpg?1390067089)
 
@@ -32,16 +32,13 @@ Unfortunately, though we'd hoped to explore the possibility of offering these tu
 
 They're not too hard to put together, but there are one or two tricks...[so here it is...](http://blinkinlabs.com/blinkytape/docs/tubeinstructions/)
 
-# That's all folks...but stay tuned!
+# ...stay tuned!
 
 Now that the tubes have gone out, we've completed the last phase of fulfillment for this project.  We're incredibly grateful to have been able to make this come to fruition, and your support was what made it all possible.
 
 This may be the end of the Kickstarter project, but we're not going anywhere!  First of all, we know that there are still some lagging shipments and a few of you will need some help with your BlinkyTapes.  If you need help, please email us at support@blinkinlabs.com and we'll help get to the bottom of your issue.
 
-Secondly, the BlinkyTape project lives on! We're working with some outstanding friends in the community to add features and fix bugs in the software, and to improve the documentation.  Over on [Blinkinlabs forum](http://forums.blinkinlabs.com/), there's a lively discussion taking place about new uses and techniques for using the tape. And, of course, the BlinkyTape is now available commercially at both [Seeed Studio](http://www.seeedstudio.com/depot/blinkytape-basic-p-1679.html) and [Adafruit Industries](http://www.adafruit.com/product/1605).
+And of course, the BlinkyTape project lives on! We're working with some outstanding friends in the community to add features and fix bugs in the software, and to improve the documentation.  Over on [Blinkinlabs forum](http://forums.blinkinlabs.com/), there's a lively discussion taking place about new uses and techniques for using the tape. And, of course, the BlinkyTape is now available commercially at both [Seeed Studio](http://www.seeedstudio.com/depot/blinkytape-basic-p-1679.html) and [Adafruit Industries](http://www.adafruit.com/product/1605).
 
-Even better, we have some great stuff planned for the future, including more super-fun, easy-to-use LED products.  Stay in touch with us at blinkinlabs.com and please consider following @blinkyTape and/or @blinkinlabs on Twitter - we will also be sending out very occasional email blasts for major updates, for example if we do another Kickstarter or launch our own e-commerce site.  When we get there, we'll also be looking for ways to say thank you to you, our original backers.
+Even better, we have some great stuff planned for the future, including more super-fun, easy-to-use LED products.  Stay in touch with us at blinkinlabs.com and please consider following @blinkyTape and/or @blinkinlabs on Twitter - we will also be sending out very occasional email blasts for major updates, for example if we do another Kickstarter or launch our own e-commerce site.  When we get there, we'll also be looking for ways to say "thank you" to our original backers.
 
-Which brings us to the end of the Kickstarter, so, thank you, once again, for making this possible.
-
-I told myself I wouldn't cry, but here we are...so please Blink On, you wonderful people!
