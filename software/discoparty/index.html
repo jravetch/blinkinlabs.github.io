@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> BlinkyTape .. DiscoParty - Music Reactive Lighting </title>
+   <meta name="author" content="BlinkyTape" />
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" /> 
+
+	<!-- Included CSS Files --> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
+	
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
+
+	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38619168-1']);
+	  _gaq.push(['_setDomainName', 'blinkiverse.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  <style>
+    body {
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition-property: all 2s ease-out;
+    }
+  </style>
+</head> 
+<body> 
+	
+<div class="site"> 
+<div class="container">
+	
+	<div class="row header book"> 
+		
+  		<div class="four columns">
+      <h1 class="logo">	<a href="/" class="hide-on-phones"><img src="/images/blinkinlabs-logo-trans.png" alt="BlinkyTape Logo" title="Blinkinlabs Logo" /></a></h1>
+		
+			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
+				<h1 class="logo logo-mobile"><a href="/"><img src="/images/blinkinlabs-logo-trans.png" alt="Blinkinlabs Logo" title="BlinkyTape" /></a></h1>
+				
+				<div class="eight columns menu menu-mobile">
+					<a href="/bio"> About </a>
+          <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+			  </div>
+				
+			</div>			
+
+  		</div>
+  		<div class="eight columns menu right hide-on-phones" style="padding-top:45px">
+        <a href="/bio"> About </a>
+	      <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+      </div>
+	</div>
+  
+  <div class="row">	
+
+<div class = "twelve columns"> 
+
+</div> 
+</div>
+
+<div class="row">	
+<div class = "nine columns"> 
+	
+	<div class = "project_full"> 
+		
+		<div class = "qq5">
+		<h1>
+		DiscoParty - Music Reactive Lighting 
+		</h1> 
+	
+		</div> 
+	
+		<p>DiscoParty is companion software for the <a href="/blinkytape/">BlinkyTape</a>.  It allows you to turn one or more BlinkyTapes into colorful music-reactive lighting.</p>
+
+<p><img src="/images/blinkytape/big/dj.jpg" alt="DiscoParty DJ Photo Thing" /></p>
+
+<h2>Uses</h2>
+
+<ul>
+<li>Light up your DJ booth.</li>
+<li>Add mood lighting to your next party.</li>
+<li>Create installations that react to music, voice, or other sounds.</li>
+<li>And more!</li>
+</ul>
+
+
+<h2>Features</h2>
+
+<ul>
+<li>Uses your computer's audio input.</li>
+<li>Written in <a href="http://processing.org/">Processing</a>, so customization is easy!</li>
+</ul>
+
+
+<h1>Downloading DiscoParty</h1>
+
+<h2>Prerequisites</h2>
+
+<p>To use DiscoParty, you'll need to download and install:</p>
+
+<ul>
+<li><a href="http://processing.org/download/">Processing</a> - Use the latest stable.</li>
+</ul>
+
+
+<p>DiscoParty comes in the <code>examples</code> folder of the <a href="https://github.com/Blinkinlabs/BlinkyTape_Processing">BlinkyTape source repository</a> on Github.</p>
+
+<p>If you have Git installed, you can grab the <code>BlinkyTape</code> repository with:</p>
+
+<pre><code>$ git clone https://github.com/Blinkinlabs/BlinkyTape_Processing.git
+</code></pre>
+
+<p>If you don't have Git installed, you can download the <a href="https://github.com/BlinkinLabs/BlinkyTape_processing/archive/master.zip">BlinkyTape respository as a zip file</a>.</p>
+
+<h1>Using DiscoParty</h1>
+
+<ol>
+<li>Connect your BlinkyTape to your computer via USB.</li>
+<li>Open the DiscoParty sketch in Processing
+
+<ul>
+<li>Find it at <code>BlinkyTape/examples/DiscoParty/DiscoParty.pde</code>.</li>
+</ul>
+</li>
+<li>Click the Run button.</li>
+</ol>
+
+
+<p>Out of the box, DiscoParty uses your computer's built-in sound input (ie -
+microphone input) for it's sound source.  This is a great way to get started
+quickly, but means that your lights will react to <em>all</em> ambient sound in the
+room, not just your music.</p>
+
+<h2>Send your computer's Audio Input into DiscoParty with SoundFlower (OS X Only)</h2>
+
+<p>For users of Mac OS X, SoundFlower is a great way to send your computer's audio output right into DiscoParty without using the microphone.</p>
+
+<p>Windows users shouldn't have to worry about this part.</p>
+
+<p>To use DiscoParty with SoundFlower:</p>
+
+<ol>
+<li>Install <a href="http://cycling74.com/soundflower-landing-page/">Soundflower</a> (requires reboot!)</li>
+<li>Run <code>Soundflowerbed</code> - this is a small app that keeps a configuration widget in the top-right part of your Mac's menu bar.</li>
+<li>Configure system audio to pipe through Soundflower:
+
+<ol>
+<li>Option-click on the Volume control in the OS X taskbar</li>
+<li>Change <strong>Output Device</strong> to <strong>Soundflower (2ch)</strong></li>
+<li>Repeat 1 and 2 to set <strong>Input Device</strong> to <strong>Soundflower (2ch)</strong></li>
+</ol>
+</li>
+<li>Run DiscoParty in Processing.</li>
+</ol>
+
+
+<h1>Advanced Usage</h1>
+
+<p>For folks who are comfortable making things in Processing, here's a little more
+in-depth technical information about how the DiscoParty works with BlinkyTapes.</p>
+
+<p>You can use this information to customize the colors that are displayed, the
+sound frequencies that your lights respond to, any more!</p>
+
+<h2>How DiscoParty Detects Interesting Sounds</h2>
+
+<p>DiscoParty uses some cool beat-detection code from the minim class: have a look at some <a href="http://code.compartmental.net/tools/minim">documentation.</a> This is a nice toolbox of stuff like beat detectors. DiscoParty draws some cool stuff based on these, then uses our BlinkyTape code to render those onto the LED strip.  You could use this to make your own special DiscoParty with different colors, or a different kind of response to the music...right now it's tuned to react most strongly to kick drums.</p>
+
+<h2>How DiscoParty Displays Lights on a BlinkyTape</h2>
+
+<p>For more on using the BlinkyTape software, see the <a href="/blinkyTape/docs/processing/">BlinkyTape Processing Page.</a></p>
+ 
+	
+	</div> 
+	
+
+	 
+	
+</div>
+<div class = "three columns"> 
+  <div class = "project_full, project_info">
+
+    <div class="sidebar-nav">
+      <h3><a href="/blinkytape/">BlinkyTape</a></h3>
+      <h3><a href="/blog/">Blog</a></h3>
+      <h3><a href="/projects/">Projects</a></h3>
+    </div>
+
+     
+    <h3> Used Technologies: </h3> 
+      <ul> 
+         
+        <li> Processing </li> 
+         
+        <li> BlinkyTape </li> 
+         
+      </ul> 
+     
+
+     
+    <h3> Sourcecode: </h3> 
+      <ul> 
+       
+        <li><a href="https://github.com/Blinkinlabs/BlinkyTape_Processing/tree/master/examples/DiscoParty" target="_new"> DiscoParty </a></li>
+      
+      </ul>
+     
+
+    <div class="sidebar-blog-links">
+      <h3>Latest Posts</h3>
+      <ul>
+      
+        <li><span>27 Feb 2014</span> &raquo; <a href="/post/spectrogram.html">New Audio Visualizer -- BlinkySpectrogram!</a></li>
+      
+        <li><span>12 Feb 2014</span> &raquo; <a href="/post/zomg-blog.html">ZOMG! We're starting a blog!</a></li>
+      
+        <li><span>20 Jan 2014</span> &raquo; <a href="/post/saga-tubes.html">The Saga of the Tubes</a></li>
+      
+        <li><span>13 Dec 2013</span> &raquo; <a href="/post/plan-comes-together.html">I love it when a plan comes together</a></li>
+      
+        <li><span>22 Nov 2013</span> &raquo; <a href="/post/super-shipping.html">I love it when a plan comes together</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</div> 
+
+</div> <!-- row --> 
+ 
+
+ 
+
+</div>
+
+
+<footer class="row book">
+	    <section class="five columns">&nbsp; </section>
+	    
+	
+	    <section class="four columns">
+	      <ul class="block-grid three-up">
+			<li> 
+	      	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=BlinkyTape" style="width:220px; height:20px;"></iframe>
+			</li>
+		
+		
+		</ul>
+		</section> 
+		 
+	   
+	    <section class="seven columns">
+	      <p>Last update 2014-03-11 11:44:30 -0400 </p>
+	      <p>Created using <a href="http://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://foundation.zurb.com/">Foundation</a></p>
+		
+		</section> 
+		
+</footer>
+</div>
+
+<!-- container -->
+
+
+
+</body>
+</html>

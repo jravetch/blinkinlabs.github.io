@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> BlinkyTape .. New Audio Visualizer -- BlinkySpectrogram! </title>
+   <meta name="author" content="BlinkyTape" />
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" /> 
+
+	<!-- Included CSS Files --> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
+	
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
+
+	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38619168-1']);
+	  _gaq.push(['_setDomainName', 'blinkiverse.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  <style>
+    body {
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition-property: all 2s ease-out;
+    }
+  </style>
+</head> 
+<body> 
+	
+<div class="site"> 
+<div class="container">
+	
+	<div class="row header book"> 
+		
+  		<div class="four columns">
+      <h1 class="logo">	<a href="/" class="hide-on-phones"><img src="/images/blinkinlabs-logo-trans.png" alt="BlinkyTape Logo" title="Blinkinlabs Logo" /></a></h1>
+		
+			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
+				<h1 class="logo logo-mobile"><a href="/"><img src="/images/blinkinlabs-logo-trans.png" alt="Blinkinlabs Logo" title="BlinkyTape" /></a></h1>
+				
+				<div class="eight columns menu menu-mobile">
+					<a href="/bio"> About </a>
+          <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+			  </div>
+				
+			</div>			
+
+  		</div>
+  		<div class="eight columns menu right hide-on-phones" style="padding-top:45px">
+        <a href="/bio"> About </a>
+	      <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+      </div>
+	</div>
+  
+  <div class="row">	
+  <div class = "nine columns" > 
+
+    <div class="project_full post" id="post"> 
+      <div class="qq5">
+        <h1>New Audio Visualizer -- BlinkySpectrogram!</h1> 
+        <span class="author">
+          Posted February 27, 2014 by Ethan Hartman
+        </span> 
+      </div> 
+     <hr /> 
+    
+      <p>Hey!</p>
+
+<p>So, yes, as we were saying the blogging and such.  Well, it's been a fairly quiet time at global BlinkinLabs HQ as we cook up some new, amazing junk.  However, we've also been doing just a little in terms of smaller stuff.</p>
+
+<p><a href="/post/spectrogram.html"><img src="/images/blog/2014-02-27-spectrogram/spectrograml.jpg" alt="Typewriter" /></a></p>
+
+<p>Like this!  A brandy new audio visualization for your BlinkyTape!</p>
+
+<!--more-->
+
+
+<p>Still reading...that's awesome!  The new audio visualizer is called <a href="https://github.com/Blinkinlabs/BlinkyTape_Processing/tree/master/examples/BlinkySpectrogram">BlinkySpectrogram</a> and, as you might have guessed, it's based on the concept of a <a href="http://en.wikipedia.org/wiki/Spectrogram">spectrogram</a> which is a type of technical visualization of audio.  Basically, it does some clever analysis (called an <a href="http://en.wikipedia.org/wiki/Fast_Fourier_transform">FFT</a>) that organizes the sound into time-based slices, and looks to see what frequencies are present in each slice.  This visualization is showing pretty much one slice at a time on yout BlinkyTape, and I like it a lot.</p>
+
+<p>The frequencies are organized into bands, which are arranged in octaves...that means doubling instead of linear, which is closer to the way we hear things, <a href="http://en.wikipedia.org/wiki/Psychoacoustics">psychoacoustically</a>.  Bands with more energy are redder, and those with less are darker and bluer.</p>
+
+<p>Cool right?  OH, well, I guess you want to try it first.  So grab <a href="/blinkytape/docs/processing/">Processing</a> if you haven't already, then the <a href="https://github.com/Blinkinlabs/BlinkyTape_Processing/tree/master/examples/BlinkySpectrogram">files</a>, your favorite virtual audio cable (see the README, but basically you'll want <a href="https://code.google.com/p/soundflower/">SoundFlower</a> on OS X or <a href="http://vb-audio.pagesperso-orange.fr/Cable/index.htm">VB-Cable</a> in Win) and then fire up an example.  I suggest LCD Soundsystem's <a href="http://open.spotify.com/album/1R8kkopLT4IAxzMMkjic6X"><em>Sound of Silver</em></a> which should provide a good demo for you.</p>
+
+<p>And as always, let us know what you think on the <a href="http://forums.blinkinlabs.com/index.php?p=/discussions">forum</a> and we'd happily accept some improvements to the code if you're savvy!</p>
+ 
+      
+      <a name="comments"></a>
+      <div id="disqus_thread" style="margin-top: 40px">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'blinkinlabscom';
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    </div>
+  </div> 
+
+<div class = "three columns"> 
+  <div class = "project_full, project_info">
+
+    <div class="sidebar-nav">
+      <h3><a href="/blinkytape/">BlinkyTape</a></h3>
+      <h3><a href="/blog/">Blog</a></h3>
+      <h3><a href="/projects/">Projects</a></h3>
+    </div>
+
+     
+
+     
+
+    <div class="sidebar-blog-links">
+      <h3>Latest Posts</h3>
+      <ul>
+      
+        <li><span>27 Feb 2014</span> &raquo; <a href="/post/spectrogram.html">New Audio Visualizer -- BlinkySpectrogram!</a></li>
+      
+        <li><span>12 Feb 2014</span> &raquo; <a href="/post/zomg-blog.html">ZOMG! We're starting a blog!</a></li>
+      
+        <li><span>20 Jan 2014</span> &raquo; <a href="/post/saga-tubes.html">The Saga of the Tubes</a></li>
+      
+        <li><span>13 Dec 2013</span> &raquo; <a href="/post/plan-comes-together.html">I love it when a plan comes together</a></li>
+      
+        <li><span>22 Nov 2013</span> &raquo; <a href="/post/super-shipping.html">I love it when a plan comes together</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</div> 
+
+
+</div> 
+
+ 
+
+ 
+
+</div>
+
+
+<footer class="row book">
+	    <section class="five columns">&nbsp; </section>
+	    
+	
+	    <section class="four columns">
+	      <ul class="block-grid three-up">
+			<li> 
+	      	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=BlinkyTape" style="width:220px; height:20px;"></iframe>
+			</li>
+		
+		
+		</ul>
+		</section> 
+		 
+	   
+	    <section class="seven columns">
+	      <p>Last update 2014-03-11 11:44:30 -0400 </p>
+	      <p>Created using <a href="http://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://foundation.zurb.com/">Foundation</a></p>
+		
+		</section> 
+		
+</footer>
+</div>
+
+<!-- container -->
+
+
+
+</body>
+</html>

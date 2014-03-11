@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> BlinkyTape .. Tiny LED Controller and the Cheapest Buttons, Ever </title>
+   <meta name="author" content="BlinkyTape" />
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" /> 
+
+	<!-- Included CSS Files --> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
+	
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
+
+	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38619168-1']);
+	  _gaq.push(['_setDomainName', 'blinkiverse.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  <style>
+    body {
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition-property: all 2s ease-out;
+    }
+  </style>
+</head> 
+<body> 
+	
+<div class="site"> 
+<div class="container">
+	
+	<div class="row header book"> 
+		
+  		<div class="four columns">
+      <h1 class="logo">	<a href="/" class="hide-on-phones"><img src="/images/blinkinlabs-logo-trans.png" alt="BlinkyTape Logo" title="Blinkinlabs Logo" /></a></h1>
+		
+			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
+				<h1 class="logo logo-mobile"><a href="/"><img src="/images/blinkinlabs-logo-trans.png" alt="Blinkinlabs Logo" title="BlinkyTape" /></a></h1>
+				
+				<div class="eight columns menu menu-mobile">
+					<a href="/bio"> About </a>
+          <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+			  </div>
+				
+			</div>			
+
+  		</div>
+  		<div class="eight columns menu right hide-on-phones" style="padding-top:45px">
+        <a href="/bio"> About </a>
+	      <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+      </div>
+	</div>
+  
+  <div class="row">	
+  <div class = "nine columns" > 
+
+    <div class="project_full post" id="post"> 
+      <div class="qq5">
+        <h1>Tiny LED Controller and the Cheapest Buttons, Ever</h1> 
+        <span class="author">
+          Posted March 19, 2013 by Matt Mets
+        </span> 
+      </div> 
+     <hr /> 
+    
+      <p><img src="/images/blog/2013-03-19-tiny-led-controller/led1.jpg" alt="LED Controller" /></p>
+
+<p>When I saw this tiny LED controller on Taobao for only RMB10 (about $1.60 USD), I had to know what was inside of it. Less than 12 hours after clicking buy, it arrived at our office. Of course, the first thing I had to do was tear it apart to see what was inside.</p>
+
+<!--more-->
+
+
+<p>The first thing to notice is the packaging, or lack thereof. It’s literally a piece of heat shrink tubing molded around a small PCB, with a sicker stuck to the one side. Note: this is totally something you could do at home, and makes for a quick, dust-free housing. Add some silicone glue around the wires and you’re water resistant, too!</p>
+
+<p><img src="/images/blog/2013-03-19-tiny-led-controller/led2.jpg" alt="LED Controller" /></p>
+
+<p>Cutting off the heat shrink cover reveals a minimalist PCB underneath. The top side has pads on the edges with power and data wires (no connectors here!), along with a STC15F101E microcontroller (RMB1.5 on taobao), and a couple of passives. Pretty standard. Note the 2×3 row of vias that make a nice connection between the ground trace on the top of the board to the ground plane on the back.</p>
+
+<p><img src="/images/blog/2013-03-19-tiny-led-controller/led3.jpg" alt="LED Controller" /></p>
+
+<p>On the back is an awesome surprise: super cheap buttons! These are nothing more than tiny, stamped little metal discs, that pop down when you press them to short out two parts of a PCB. They’re actually just taped in place, and you can peel them up:</p>
+
+<p><img src="/images/blog/2013-03-19-tiny-led-controller/led4.jpg" alt="LED Controller" /></p>
+
+<p>That’s super slick, and probably also super cheap. It probably won’t last forever, either, but we aren’t exactly talking about a luxury product here.</p>
+
+<p>Edit: This style of button is called 锅仔片 (Guō zǎi piàn, or metal dome), and they are also super cheap- around RMB.01 ($.0016 USD) each in quantities of 1000. Thanks, Honghong!</p>
+
+<p><img src="/images/blog/2013-03-19-tiny-led-controller/led5.jpg" alt="LED Controller" /></p>
+
+<p>The final step was to hook it up and see if it actually works. This particular controller can only support WS2811-style LED drivers, and I didn’t happen to have any on hand, so I soldered it up to an integrated WS2811 pixel instead. Lo and behold, it lights up and changes color! I’ll have to reserve judgement on the animation quality until I get a full set of strips, but I’m not expecting much more than blinking and color fading patterns from it. Improving this state of affairs is, of course, one of the main reasons that we started Blinkinlabs.</p>
+ 
+      
+      <a name="comments"></a>
+      <div id="disqus_thread" style="margin-top: 40px">
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'blinkinlabscom';
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </div>
+    </div>
+  </div> 
+
+<div class = "three columns"> 
+  <div class = "project_full, project_info">
+
+    <div class="sidebar-nav">
+      <h3><a href="/blinkytape/">BlinkyTape</a></h3>
+      <h3><a href="/blog/">Blog</a></h3>
+      <h3><a href="/projects/">Projects</a></h3>
+    </div>
+
+     
+
+     
+
+    <div class="sidebar-blog-links">
+      <h3>Latest Posts</h3>
+      <ul>
+      
+        <li><span>27 Feb 2014</span> &raquo; <a href="/post/spectrogram.html">New Audio Visualizer -- BlinkySpectrogram!</a></li>
+      
+        <li><span>12 Feb 2014</span> &raquo; <a href="/post/zomg-blog.html">ZOMG! We're starting a blog!</a></li>
+      
+        <li><span>20 Jan 2014</span> &raquo; <a href="/post/saga-tubes.html">The Saga of the Tubes</a></li>
+      
+        <li><span>13 Dec 2013</span> &raquo; <a href="/post/plan-comes-together.html">I love it when a plan comes together</a></li>
+      
+        <li><span>22 Nov 2013</span> &raquo; <a href="/post/super-shipping.html">I love it when a plan comes together</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</div> 
+
+
+</div> 
+
+ 
+
+ 
+
+</div>
+
+
+<footer class="row book">
+	    <section class="five columns">&nbsp; </section>
+	    
+	
+	    <section class="four columns">
+	      <ul class="block-grid three-up">
+			<li> 
+	      	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=BlinkyTape" style="width:220px; height:20px;"></iframe>
+			</li>
+		
+		
+		</ul>
+		</section> 
+		 
+	   
+	    <section class="seven columns">
+	      <p>Last update 2014-03-11 11:44:30 -0400 </p>
+	      <p>Created using <a href="http://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://foundation.zurb.com/">Foundation</a></p>
+		
+		</section> 
+		
+</footer>
+</div>
+
+<!-- container -->
+
+
+
+</body>
+</html>

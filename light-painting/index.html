@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> BlinkyTape .. Light Painting with BlinkyTube Persistence of Vision </title>
+   <meta name="author" content="BlinkyTape" />
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" /> 
+
+	<!-- Included CSS Files --> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
+	
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
+
+	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38619168-1']);
+	  _gaq.push(['_setDomainName', 'blinkiverse.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  <style>
+    body {
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition-property: all 2s ease-out;
+    }
+  </style>
+</head> 
+<body> 
+	
+<div class="site"> 
+<div class="container">
+	
+	<div class="row header book"> 
+		
+  		<div class="four columns">
+      <h1 class="logo">	<a href="/" class="hide-on-phones"><img src="/images/blinkinlabs-logo-trans.png" alt="BlinkyTape Logo" title="Blinkinlabs Logo" /></a></h1>
+		
+			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
+				<h1 class="logo logo-mobile"><a href="/"><img src="/images/blinkinlabs-logo-trans.png" alt="Blinkinlabs Logo" title="BlinkyTape" /></a></h1>
+				
+				<div class="eight columns menu menu-mobile">
+					<a href="/bio"> About </a>
+          <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+			  </div>
+				
+			</div>			
+
+  		</div>
+  		<div class="eight columns menu right hide-on-phones" style="padding-top:45px">
+        <a href="/bio"> About </a>
+	      <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+      </div>
+	</div>
+  
+  <div class="row">	
+
+<div class = "twelve columns"> 
+
+</div> 
+</div>
+
+<div class="row">	
+<div class = "nine columns"> 
+	
+	<div class = "project_full"> 
+		
+		<div class = "qq5">
+		<h1>
+		Light Painting with BlinkyTube Persistence of Vision 
+		</h1> 
+	
+		</div> 
+	
+		<p><strong>UPDATE: The tutorial below describes our initial experiments with light
+painting.  Check out <a href="/software/patternpaint">PatternPaint</a>, which makes the whole
+process much easier!</strong></p>
+
+<p><img src="/images/blinkytube-pov/big/blinkiverse-pov-final.png" alt="Blinkiverse! Long Exposure" /></p>
+
+<p>There are some <a href="https://sites.google.com/site/mechatronicsguy/lightscythe">cool</a>
+<a href="http://blog.makezine.com/2012/08/12/light-painting-with-raspberry-pi/">things</a>
+being done with <a href="http://www.flickr.com/groups/lightjunkies/#derp">light painting</a> out
+there!</p>
+
+<p>We were playing with the <a href="https://github.com/blinkiverse/BlinkyTape">BlinkyTape</a>,
+our tiny board that makes it dead simple to control LEDs over USB, and realized
+that light painting would be a great hack that we could knock out quickly.</p>
+
+<!--more-->
+
+
+<h1>Quick Overview</h1>
+
+<div class="videoWrapper">
+    <iframe class="project_full_video" src="http://player.vimeo.com/video/64485701?byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="393px" frameborder="0" webkitAllowFullScreen="" mozallowfullscreen="" allowFullScreen=""> </iframe>
+</div>
+
+
+<p>This video shows the basics of how the process works.</p>
+
+<h1>Hardware</h1>
+
+<p>We found some great aluminum extrusion in the markets of Shenzhen that comes in
+convenient 1 meter lengths, a perfect match for our 60-count RGB LED strips!</p>
+
+<p>Some double-sided tape made it easy to attach the LED strip and Blinkyboard:</p>
+
+<p><img src="/images/blinkytube-pov/big/hardware-1.jpg" alt="Blinkyboard and LED strip affixed to aluminum extrusion" /></p>
+
+<p>(Yes, the Blinkyboard is <em>that</em> small.)</p>
+
+<p>LEDs look great, but they look <em>even better</em> with a bit of diffusion.  We added
+a 1 meter length of diffusion tubing that fit perfectly over the aluminum
+extrusion (because we bought it from the same vendor).</p>
+
+<p><img src="/images/blinkytube-pov/big/hardware-2.png" alt="With a nice diffuser attached" /></p>
+
+<p><strong>Behold, the BlinkyTube&trade;!</strong></p>
+
+<h1>Software</h1>
+
+<p>With the BlinkyTube&trade; ready to go, it's time to create the actual imagery
+that we will paint.</p>
+
+<p>The default Blinkyboard firmware speaks a very simple serial protocol that
+allows a program on your computer to push pixel values to display.</p>
+
+<p>With this in mind, we wrote a <a href="http://processing.org/">Processing</a> called <a href="https://github.com/blinkiverse/BlinkyTape/tree/master/examples/povmaker">povmaker</a>.</p>
+
+<p>povmaker is pretty simple.  It uses Processing's drawing routines to create our
+image data on a small canvas 60 pixels tall.  Each column in the image then
+becomes one "frame" for it to send to the Blinkyboard.  This happens in a loop,
+so the animation simply runs over and over until you kill the program.</p>
+
+<p>You can grab the source for povmaker from the <a href="https://github.com/blinkiverse/BlinkyTape/tree/master/examples/povmaker">Blinkiverse GitHub</a> account.  You'll want to customize it by creating your own art, adjusting drawing speeds, etc.</p>
+
+<h1>Capture</h1>
+
+<p>At this point, we have enough of a system that we can paint some light!</p>
+
+<p><img src="/images/blinkytube-pov/big/ready-for-pov.jpg" alt="Marty, ready to do some light painting" /></p>
+
+<p>Light painting works best in the dark, so it's a good idea to do it at night or,
+if you're indoors, just block out the windows and shut off the lights.</p>
+
+<p>Set up a DSLR camera in long exposure mode on a table or tripod, aimed at the
+target area.</p>
+
+<p>To create your exposure, have a human volunteer carry the laptop +
+BlinkyTube&trade; combo through the target area.  Start your exposure just
+before the animation begins, and stop it just after the animation ends.</p>
+
+<p><img src="/images/blinkytube-pov/big/povmaker.png" alt="Our imagery. Some text that reads &quot;Blinkiverse!&quot; and a couple of red bars to help time the shot" /></p>
+
+<p>To help coordinate our camera and walking work, we added a couple of full-height
+red bars, separated by some black space to our image.  The practical effect of
+these bars is that the BlinkyTube&trade; flashes red to indicate when it is time
+to start the exposure and get moving.</p>
+
+<p>It took us a few tries to get a decent capture, but failure is cheap with
+a digital camera!</p>
+
+<h1>Results</h1>
+
+<p><img src="/images/blinkytube-pov/big/blinkiverse-pov-final.png" alt="Blinkiverse! Long Exposure" /></p>
+
+<p>The BlinkyTube&trade; POV turned out to be a great <a href="http://fffff.at/speed-project/">speed project</a>.
+We went from zero to passable images in less than an hour.</p>
+
+<p>Even better, we now have a tool for making some lovely light-painted mischief.</p>
+
+<p>Stay tuned for a future update where we will store the animation on the
+Blinkyboard itself for battery-powered light-painting action!</p>
+ 
+	
+	</div> 
+	
+
+	 
+	
+</div>
+<div class = "three columns"> 
+  <div class = "project_full, project_info">
+
+    <div class="sidebar-nav">
+      <h3><a href="/blinkytape/">BlinkyTape</a></h3>
+      <h3><a href="/blog/">Blog</a></h3>
+      <h3><a href="/projects/">Projects</a></h3>
+    </div>
+
+     
+    <h3> Used Technologies: </h3> 
+      <ul> 
+         
+        <li> Blinkyboard </li> 
+         
+        <li> Processing </li> 
+         
+        <li> Long Exposure Photography </li> 
+         
+      </ul> 
+     
+
+     
+    <h3> Sourcecode: </h3> 
+      <ul> 
+       
+        <li><a href="https://github.com/blinkiverse/BlinkyTape/tree/master/examples/povmaker" target="_new"> povmaker </a></li>
+      
+      </ul>
+     
+
+    <div class="sidebar-blog-links">
+      <h3>Latest Posts</h3>
+      <ul>
+      
+        <li><span>27 Feb 2014</span> &raquo; <a href="/post/spectrogram.html">New Audio Visualizer -- BlinkySpectrogram!</a></li>
+      
+        <li><span>12 Feb 2014</span> &raquo; <a href="/post/zomg-blog.html">ZOMG! We're starting a blog!</a></li>
+      
+        <li><span>20 Jan 2014</span> &raquo; <a href="/post/saga-tubes.html">The Saga of the Tubes</a></li>
+      
+        <li><span>13 Dec 2013</span> &raquo; <a href="/post/plan-comes-together.html">I love it when a plan comes together</a></li>
+      
+        <li><span>22 Nov 2013</span> &raquo; <a href="/post/super-shipping.html">I love it when a plan comes together</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</div> 
+
+</div> <!-- row --> 
+ 
+
+ 
+
+</div>
+
+
+<footer class="row book">
+	    <section class="five columns">&nbsp; </section>
+	    
+	
+	    <section class="four columns">
+	      <ul class="block-grid three-up">
+			<li> 
+	      	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=BlinkyTape" style="width:220px; height:20px;"></iframe>
+			</li>
+		
+		
+		</ul>
+		</section> 
+		 
+	   
+	    <section class="seven columns">
+	      <p>Last update 2014-03-11 11:44:30 -0400 </p>
+	      <p>Created using <a href="http://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://foundation.zurb.com/">Foundation</a></p>
+		
+		</section> 
+		
+</footer>
+</div>
+
+<!-- container -->
+
+
+
+</body>
+</html>

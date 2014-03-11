@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> BlinkyTape .. Troubleshooting OR How to fix common issues with the BlinkyTape </title>
+   <meta name="author" content="BlinkyTape" />
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" /> 
+
+	<!-- Included CSS Files --> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
+	
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
+
+	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38619168-1']);
+	  _gaq.push(['_setDomainName', 'blinkiverse.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  <style>
+    body {
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition-property: all 2s ease-out;
+    }
+  </style>
+</head> 
+<body> 
+	
+<div class="site"> 
+<div class="container">
+	
+	<div class="row header book"> 
+		
+  		<div class="four columns">
+      <h1 class="logo">	<a href="/" class="hide-on-phones"><img src="/images/blinkinlabs-logo-trans.png" alt="BlinkyTape Logo" title="Blinkinlabs Logo" /></a></h1>
+		
+			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
+				<h1 class="logo logo-mobile"><a href="/"><img src="/images/blinkinlabs-logo-trans.png" alt="Blinkinlabs Logo" title="BlinkyTape" /></a></h1>
+				
+				<div class="eight columns menu menu-mobile">
+					<a href="/bio"> About </a>
+          <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+			  </div>
+				
+			</div>			
+
+  		</div>
+  		<div class="eight columns menu right hide-on-phones" style="padding-top:45px">
+        <a href="/bio"> About </a>
+	      <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+      </div>
+	</div>
+  
+  <div class="row">	
+<div class="twelve columns"> 
+</div> 
+</div>
+
+<div class="row">	
+  <div class="twelve columns"> 
+    
+    <div class="project_full docs"> 
+      
+      <div class = "qq5">
+      <h1>
+      Troubleshooting OR How to fix common issues with the BlinkyTape 
+      </h1> 
+    
+      </div> 
+      <p>Like anything, BlinkyTape doesn't always work perfectly. There are a few issues that you might run into while you're getting up and running, or while you're creating your BlinkyTape magnum opus.  Here are a few suggestions on how to get going again if you run into an issue.</p>
+
+<h2>I'm having trouble getting started on Windows</h2>
+
+<p>While platforms like OS X and Linux don't need special drivers for the BlinkyTape, Windows does. The easiest way to do this is to grab the PatternPaint installer, here: <a href="https://github.com/Blinkinlabs/PatternPaint/releases">PatternPaint Releases</a></p>
+
+<p>On Windows, you'll need this even if you plan to make your own custom software, while you can skip this on other platforms if you're jumping right to the coding.</p>
+
+<h2>My BlinkyTape was just working, but now I'm getting a strange error message in Processing (or another program)</h2>
+
+<p>Most likely there's no reason to worry here. If you're seeing red text down in the bottom console box of Processing or Arduino when you try to run or upload a program, most likely the code that talks to your serial port is just confused.</p>
+
+<p>Luckily there's a quick fix: stop your program (if it's not already) disconnect your BlinkyTape, then reconnect it and try again.</p>
+
+<h2>My Mac won't let me run PatternPaint</h2>
+
+<p>Oh, right...since OS X 10.7 / "Mountain Lion" Apple also has infrastructure for signing applications, and has shipped new systems with settings that require apps to be signed. That's great for people who want to get most of their software from the app store or big commercial developers, but we turned that off right away because we use a lot of open-source software which isn't signed because signing costs money.</p>
+
+<p>We may get a certificate for PatternPaint, but right now, you'll need to allow your computer to run unsigned applications.  Click on the Apple logo on the top-right corner of your screen and go to <code>System Preferences</code>. Then click on <code>Security &amp; Privacy</code> in the top row. On the next screen, you should see an option that says "Allow applications downloaded from:" -- this is the one you need to change. Set it to "Allow applications downloaded from: Anywhere." There may be a pop-up warning at this point - click the button that says "Allow from Anywhere" so PatternPaint can run.</p>
+
+<h2>I'm running Windows, and Processing says something about an OpenGL framebuffer...and the program doesn't seem to work!</h2>
+
+<p>Sorry about that! Once again with the Windows drivers. Processing 2 and later can do advanced 3d-accelerated stuff based on OpenGL...unfortunately, there are some Windows graphics chips that can't handle it, especially when they are using older drivers.</p>
+
+<p>However, all is not lost. It may be possible to fix this by installing a newer driver. Check with your graphics chip/card manufacturer and install their latest. For example, we were able to resolve this by updating the drivers for a computer with Intel HD 3000 graphics.</p>
+
+<h2>I'm having some odd issues with my BlinkyTape on Ubuntu...</h2>
+
+<p>It seems that Ubuntu 13.10 runs a program called 'modem-manager' that identifies your BlinkyTape as a modem and tries to talk with it. In this ase, the tape will work for a moment, then stop updating, and first 10 or so LEDs on the strip will turn black.</p>
+
+<p>The easiest way to fix this is to remove the modem manager software completely:</p>
+
+<pre><code>sudo aptitude remove modemmanager
+</code></pre>
+
+<p>If you do need to use a dial-up modem, you may be able to stop the service temporarily, but most users can just remove this program without any problems.</p>
+
+<h2>I just made a custom Arduino program and uploaded it to my BlinkyTape! But...it doesn't seem to be doing anything.</h2>
+
+<p>Uh oh. It's possible to create Arduino sketches that will compile just fine, but will then crash when it tries to run on your BlinkyTape. There are a few reasons for this: using too much memory, asking for something from a memory location that's not defined, dividing by zero...that sort of thing. Some of these will put your Arduino in a state where it doesn't want to accept another sketch.</p>
+
+<p>However, there is a way to force your BlinkyTape to reset, so you can reprogram it:</p>
+
+<p><img src="/images/blinkytape/big/bt_reset.png" alt="BlinkyTape Reset points" /></p>
+
+<p>We've found that it's easy to use two sewing needles to reset the tape without peeling back the protective cover. There are four small holes near the USB connector - place one needle in the one furthest from the connector, and then push one so it's touching the ground pad.  Touch the two needles together and the tape will be in reset mode. Once you've reset the tape, you'll have six seconds to start uploading a new sketch using the Arduino IDE or the 'Restore Rainbow Sketch' option in PatternPaint.</p>
+
+<p>As for timing, we'd suggest clicking the Arduino upload button, then using this method to reset your tape so it can accept a new sketch. You might need to try a few times to get the timing down right, but it'll work.</p>
+
+<p>It should also be noted that this won't have any lasting effect if you're not uploading a sketch - this won't reset the tape to factory by itself.</p>
+
+<h2>I'm having intermittent issues, not always connecting, or strange behavior...</h2>
+
+<p>It's worth checking to see if your USB cable is bad.  Keep in mind that USB cables move around a lot and don't last forever, especially when you're relying on them for data transmission.  A cable that works fine for charging a phone might not work for your BlinkyTape.  Try swapping the one you're currently using for another microUSB cable, and if the one we shipped you isn't great, please let us know.</p>
+
+<h2>Still no worky!!!</h2>
+
+<p>OK, challenges are interesting and we are eager to meet and overcome them!  Try heading to the <a href="/forums">forum</a> or emailing us at <code>support@blinkinlabs.com</code>.</p>
+ 
+    </div> 
+    
+  </div>
+</div> 
+ 
+
+ 
+
+</div>
+
+
+<footer class="row book">
+	    <section class="five columns">&nbsp; </section>
+	    
+	
+	    <section class="four columns">
+	      <ul class="block-grid three-up">
+			<li> 
+	      	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=BlinkyTape" style="width:220px; height:20px;"></iframe>
+			</li>
+		
+		
+		</ul>
+		</section> 
+		 
+	   
+	    <section class="seven columns">
+	      <p>Last update 2014-03-11 11:44:30 -0400 </p>
+	      <p>Created using <a href="http://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://foundation.zurb.com/">Foundation</a></p>
+		
+		</section> 
+		
+</footer>
+</div>
+
+<!-- container -->
+
+
+
+</body>
+</html>

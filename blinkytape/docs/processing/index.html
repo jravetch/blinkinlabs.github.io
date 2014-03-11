@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> BlinkyTape .. Programming for Blinkytape using languages like Processing </title>
+   <meta name="author" content="BlinkyTape" />
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" /> 
+
+	<!-- Included CSS Files --> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
+	
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
+
+	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38619168-1']);
+	  _gaq.push(['_setDomainName', 'blinkiverse.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  <style>
+    body {
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition-property: all 2s ease-out;
+    }
+  </style>
+</head> 
+<body> 
+	
+<div class="site"> 
+<div class="container">
+	
+	<div class="row header book"> 
+		
+  		<div class="four columns">
+      <h1 class="logo">	<a href="/" class="hide-on-phones"><img src="/images/blinkinlabs-logo-trans.png" alt="BlinkyTape Logo" title="Blinkinlabs Logo" /></a></h1>
+		
+			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
+				<h1 class="logo logo-mobile"><a href="/"><img src="/images/blinkinlabs-logo-trans.png" alt="Blinkinlabs Logo" title="BlinkyTape" /></a></h1>
+				
+				<div class="eight columns menu menu-mobile">
+					<a href="/bio"> About </a>
+          <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+			  </div>
+				
+			</div>			
+
+  		</div>
+  		<div class="eight columns menu right hide-on-phones" style="padding-top:45px">
+        <a href="/bio"> About </a>
+	      <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+      </div>
+	</div>
+  
+  <div class="row">	
+<div class="twelve columns"> 
+</div> 
+</div>
+
+<div class="row">	
+  <div class="twelve columns"> 
+    
+    <div class="project_full docs"> 
+      
+      <div class = "qq5">
+      <h1>
+      Programming for Blinkytape using languages like Processing 
+      </h1> 
+    
+      </div> 
+      <p>OK, so you want to make a program that runs on your computer and sends instructions to your BlinkyTape? That's fabulous, and you're in the right place. (If that's not you, sorry, you're going to have find training techniques for <a href="http://en.wikipedia.org/wiki/Dog_agility">canine agility</a> somewhere else.)</p>
+
+<p>The easiest platform to program for BlinkyTape is called <a href="http://processing.org/">Processing</a>, which is a special language and development environment intended for visual art largely based on Java. It's what the BlinkyTape team used to make <a href="/software/PatternPaint/">PatternPaint</a>, so we can definitely help you get started.</p>
+
+<h2>Install Processing</h2>
+
+<p>The Processing development environment runs in Windows, Mac OS X, and Linux.</p>
+
+<p>BlinkyTape is known to work with Processing version 2.0.2.</p>
+
+<p>You can find downloads and detailed install instructions for your platform on
+the <a href="http://processing.org/tutorials/gettingstarted/">Processing Getting Started page</a>.</p>
+
+<h2>Install the BlinkyTape Processing Libraries</h2>
+
+<p>Now that you have downloaded Processing, it's time to download some helper code and examples. This stuff lets us make our programs a bit more simply than if we had to do everything from scratch, as you'll see later on.</p>
+
+<h3>Get it.</h3>
+
+<p>Here is the link to <a href="https://github.com/Blinkinlabs/BlinkyTape_Processing">what we want</a>. This is a live GitHub repository, so it should always be up to date. Use the <em>"Download ZIP"</em> link on the right of the page.<!--- we'll have to change this when there's a different download link ---></p>
+
+<h3>Install it</h3>
+
+<p>Unzip this folder in your Processing libraries folder - this is located at <code>Documents/Processing/libraries</code> on Mac or <code>My Documents\Processing\libraries</code> on Windows.</p>
+
+<p><strong>Important:</strong> When you unzip the file, the resulting folder will probably be called something like <code>BlinkyTape_Processing-master</code> -- delete everything after the underscore, or Processing won't import the library. (It doesn't like special characters.)</p>
+
+<h2>Install the ControlP5 library</h2>
+
+<p>The last step before firing up PatternPaint is to install a Processing library
+called "ControlP5." This helps us draw interface elements.</p>
+
+<p>Luckily, Processing 2 has a way to easily install ControlP5 without
+downloading it separately. In Processing, open the <strong>Sketch</strong> menu, followed by
+<strong>Import Library</strong>, then <strong>Add Library</strong>.  A new <strong>Library Manager</strong> window will
+appear. In the "<em>Filter your search...</em>" box, type in 'controlp5' and click the
+ControlP5 item that appears to install it.</p>
+
+<p>If you have any trouble, <a href="http://processing.org/reference/libraries/">here's some more info about libraries for
+Processing</a> including <a href="http://wiki.processing.org/w/How_to_Install_a_Contributed_Library">instructions
+for manually installing libraries</a>.
+If you need to install it manually, you can download ControlP5 from <a href="http://www.sojamo.de/libraries/controlP5/">the
+ControlP5 home page</a>.</p>
+
+<h2>Restart Processing, if it is running.</h2>
+
+<p>You should now see the BlinkyTape examples if you go to <strong>File | Examples</strong>. This will open a chooser-type window so you can scroll through all of your installed examples for Processing.  You'll find ours in <strong>Contributed Libraries | BlinkyTape</strong>.</p>
+
+<h2>The Simplest BlinkyTape Program</h2>
+
+<p>Here's a Processing sketch that talks to your BlinkyTape in just about the simplest way possible. Just paste this in to a new Processing window, plug in your BlinkyTape, and press the 'play' button in the upper right. In a few moments, you should see a slowly-changing rainbow.</p>
+
+<p>Here's the code:</p>
+
+<pre><code>// The simplest possible way to talk to a BlinkyTape
+import processing.serial.*;
+
+Serial s;
+
+void setup() {
+// Connect to the first serial port we can find
+// We assume there is a BlinkyTape there
+  for(String p : Serial.list()) {
+        // NOTE: you'll need to change the next line to match the serial port system, i.e. COMx on Windows
+        if (p.startsWith("/dev/tty.usbmodem")) { 
+        s = new Serial(this, p, 115200);
+        }
+  }
+}
+
+float phase = 0;
+
+void draw() {
+for(int i = 0; i &lt; 60; i++) {
+    // Make up a pretty color based on the current phase      
+    color c = color((sin(phase*.9         +i*.2)+1)*128,
+                    (sin(phase     + PI/2 +i*.2)+1)*128,
+                    (sin(phase*1.1 + PI   +i*.2)+1)*128);
+
+    // Send the color for the current LED to the strip,
+    // being careful not to send 255 (because that would
+    // cause the strip to display the pixels
+    s.write((byte)min(254, red(c)));
+    s.write((byte)min(254, green(c)));
+    s.write((byte)min(254, blue(c)));
+}
+
+// Send a 0xFF byte to the strip, to tell it to display the pixels
+s.write((byte)255);
+
+phase += .1;
+}
+</code></pre>
+
+<p>Most everything here is in the single <code>for</code> loop within the <code>draw()</code> routine. It goes through 60 times (once for each LED on the BlinkyTape) and calculates a color value; it then sends each one over as an individual byte. Each LED on the strip gets three bytes, one each for red, green, and blue. Then, after the <code>for</code> loop ends, we send a byte with the value 255 (aka 0xFF) to tell the BlinkyTape to display the colors it just received.</p>
+
+<p>Sending 3 x 60 bytes for color followed by a single 255 is about all it takes to talk to your BlinkyTape. This will always work, as long as you have a standard firmware on your Blinkytape.  However, if you're programming in Processing, you're probably not going to want to use your BlinkyTape like this.</p>
+
+<h2>Using the BlinkyTape class</h2>
+
+<p>So now you've Processing installed, you have some example code, and you're all ready to get going. Fantastic. Let's get you going on a new project that demonstrates a helper class for using BlinkyTape with Processing, called (creatively) <code>BlinkyTape</code>.  You'll find it as a file called BlinkyTape.pde in several of the included examples, including the BlinkyTapeDirect.  When you open that project, you can find this file already open in a tab -- just copy &amp; paste the contents of that tab into your Processing projects.</p>
+
+<p>This class can be used in a couple of ways.  You can use it to set pixels individually with a <code>.pushPixel()</code> method, and then call <code>.update()</code> when you're done.  There are also <code>.getIndex()</code> and <code>.setIndex()</code> methods so you can go right to setting the LED you want.
+There's another very clever way to use this class, however, which is the <code>.render()</code> method.  This takes an area of the screen and renders an approximation of it to an attached BlinkyTape. It's neat because it lets you use the robust functionality for drawing that's built into Processing and translate that into blinking LEDs!</p>
+
+<p>If that sounds complicated, don't worry -- we'll got through this in greater detail in these examples.</p>
+
+<h3>Let's get started.</h3>
+
+<p>Go ahead and start a new Processing sketch and call it something like 'BlinkyFoo'.</p>
+
+<h3>Grab the BlinkyTape class and add it to your new sketch</h3>
+
+<p>The easiest way to use a class in Processing is to add it in as another tab in your new sketch. Open one of the other examples from BlinkyTape using the <strong>File | Examples</strong> menu -- I'd recommend 'BlinkyDirect.'</p>
+
+<!-- **Sorry this example & the accompanying class may not be packaged up correctly at this point (mid-September 2013)  [here's a link to the sketch](/blinkytape/BlinkyTapeDirect.zip) if not.** -->
+
+
+<p>This new sketch will open in a separate window and you'll see that it has a tab called BlinkyTape. Click on that tab and copy the entire contents (command-a or control-a is your friend here, so you don't miss anything.)</p>
+
+<p>Go back to the new 'BlinkyFoo' sketch you created, then click on the down arrow near the tab.</p>
+
+<p><img src="/images/blinkytape/big/BlinkyFoo.png" alt="Processing Tab Menu" /></p>
+
+<p>This will give you an option to create a new tab. Make a new one, call it 'BlinkyTape' and past in the code you copied. This is a common way to add classes in Processing.</p>
+
+<h3>Add this code</h3>
+
+<p>Download <a href="/blinkytape/BlinkyFoo.txt">this code</a> and paste it into your new project. You'll also need to grab <a href="/images/blinkytape/big/bt.jpg">this image</a> and save it in a folder called 'data' within your Processing sketch save folder.  Again, that will be something like Documents/Processing/BlinkyFoo.</p>
+
+<h3>Let's give it a go!</h3>
+
+<p>Plug your Blinkytape in and press the icon that looks like a play button in the upper-right-hand corner of the Processing window. If all goes according to plan, you'll see a new window appear with that image you just downloaded, and a small rectangle in the middle. You can click the rectangle and move it around, and when you do that, you should see the colors changing to match (or at least approximate) what's being displayed in the rectangle on the screen.</p>
+
+<h3>So, what's happening here?</h3>
+
+<p>That's a great question. There are a few things that you'll want to pay attention to.</p>
+
+<p>First, we declare an <code>ArrayList</code> of <code>BlinkyTape</code> objects and call it <code>bt</code>:</p>
+
+<pre><code>ArrayList&lt;BlinkyTape&gt; bt = new ArrayList&lt;BlinkyTape&gt;();
+</code></pre>
+
+<p>Next, in the processing <code>"setup()"</code> function:</p>
+
+<pre><code>// auto connect to all blinkyboards
+  for(String p : Serial.list()) {
+    if(p.startsWith("/dev/cu.usbmodem") || p.startsWith("/dev/ttyUSB") || p.startsWith("COM")) {
+      bt.add(new BlinkyTape(this, p, numberOfLEDs));
+    }
+  }
+</code></pre>
+
+<p>Here, we're trying to auto-connect to any serial port as if it's a BlinkyBoard. We're instantiating a new <code>BlinkyTape</code> object with each seemingly-valid serial port we find -- this means it should work with several BlinkyTape strips (they will each show the same thing.) You might run into some trouble with this if you're still on dialup, but hopefully it will work for now.</p>
+
+<p>And here is where we ask the BlinkyTape to update:</p>
+
+<pre><code>for(int i = 0; i &lt; bt.size(); i++) {
+    bt.get(i).render(bx, by, bx + (scaleFactor * numberOfLEDs), by + scaleFactor);
+    bt.get(i).send();
+  }
+</code></pre>
+
+<p>We just iterate through each of our instantiated leds objects, and then we ask each of them to do a <code>sendUpdate</code>. The sendUpdate method takes four coordinates, takes a look at what's there in the Processing image window, creates an approximation, and displays it on the BlinkyTape. Pretty cool right?</p>
+
+<p>For some insight on the rest of the program, have a look at <a href="http://processing.org/examples/mousefunctions.html">this Processing example</a>.</p>
+
+<h2>Inside the BlinkyTape class</h2>
+
+<p>OK, great, so you've seen how to use BlinkyTape to render a section of your Processing window on your BlinkyTape. Great. Now, what happens if you want to go deeper?</p>
+
+<p>Luckily, we can have a look inside to see how the BlinkyTape protocol works. What we'll find is that we're just sending three bytes to the BlinkyBoard (the BlinkyTape's controller) to set the color for each LED. To actually make the tape display, we send it a single byte with a value of 255. That means each normal RGB value has a maximum value of 254, not 255 (more on this later).</p>
+
+<h3>So what else is in here?</h3>
+
+<p>As we saw earlier, the constructor takes the parent object, a string with the name of a serial port, and the number of LEDs in your strip. Right now, that's 60 for all BlinkyTapes, but you never know...</p>
+
+<pre><code>BlinkyTape(PApplet parent, String portName, int numberOfLEDs) {
+</code></pre>
+
+<p>When you instantiate an <code>BlinkyTape</code> object, it creates a new <code>Serial</code> object for internal use.</p>
+
+<p>To see what's going on with the <code>numberofLEDs</code> variable, let's go check out something in the <code>render()</code> routine we used earlier.</p>
+
+<pre><code>// Note: this should be sized appropriately
+byte[] data = new byte[m_numberOfLEDs*3 + 1];
+int dataIndex = 0;
+</code></pre>
+
+<p>So, here the method is creating an array of bytes that's sized to have one red value, one green value, and one blue value for each LED on the strip - and one more byte at the end for that '255' value which will make the strip update. And remember how we can't send any 255 values? Here's how we check when we're assigning the variables:</p>
+
+<pre><code>data[dataIndex++] = (byte)min(254, r);
+data[dataIndex++] = (byte)min(254, g);
+data[dataIndex++] = (byte)min(254, b);
+</code></pre>
+
+<h3>Not so fast...</h3>
+
+<p>OK, so now you're thinking, awesome! Let's just load up that array with 180 color values and that last '255', then we just fire it off to the BlinkyBoard and we start blinking away. Well...that's basically true, but with one notable exception: the serial communication for a tiny little Atmel-powered board is not very fast, and if we send too much data at once, we'll crash it. Since that's the case, we need to send the data in smaller chunks.</p>
+
+<p>The <code>BlinkyTape</code> class has a master <code>.update()</code> method which just checks to make sure that the last byte is the right one to tell the tape to update itself, and then calls <code>.send()</code>  That's method that starts this process, and then a few other routines that work together to make sure that the little board's USB serial doesn't get all choked with data. Most of the heavy lifting takes place in the <code>sendNextChunk()</code> method, so take a look there. The quick version is that it seems like sending chunks of no more than <strong>64</strong> bytes keeps the BlinkyTape happy.</p>
+
+<h2>Troubleshooting</h2>
+
+<p>If the program fails to compile or upload, or the BlinkyTape is not doing what you expected, there could be a number of things to check.</p>
+
+<h3>Compile Errors</h3>
+
+<p>Sometimes, when you try to run your new BlinkyTape program, down at the bottom of the Processing window, you'll see something like this:</p>
+
+<p><img src="/images/blinkytape/big/processing_bork.png" alt="Image of Compiling Failure" /></p>
+
+<p>This means that there's a problem of some sort which won't let your program compile properly. Often, it's just a typo or another simple syntax error, like forgetting a semi-colon at the end of a line or using the wrong kind of parenthesis. If it's a bigger issue, you might need to check out the <a href="http://processing.org/reference/">Processing language reference</a> or some of the other information available on the 'webs. <strong>Pro tip:</strong> Google searching specific bits of code will often quickly lead to useful forum or <a href="http://stackoverflow.com/">stackoverflow</a> pages.</p>
+
+<h3>BlinkyTape Not Acting Right</h3>
+
+<p>Uh oh. This is where it gets fun. ¯\(°_o)/¯</p>
+
+<p><strong>First off, save your program, close Processing, and disconnect your BlinkyTape for a moment. Then reconnect your tape and try it again.</strong></p>
+
+<p>This will fix a few common errors with the Java serial library. If that doesn't take care of it, but your program is acting right, take a moment to look through your code, thinking your logic through. If you've borrowed from examples around the web, make sure that you haven't skipped important parts. Go back to the language reference and make sure that your usage is proper. It might take some time to figure out what went wrong, but you'll get to the bottom of things eventually.</p>
+
+<h2>But I don't want to use Processing!</h2>
+
+<p>Oh man, sorry we went on about Processing for so long! We get it, you're into Lisp or Haskell or Fortran or whatever. That's great. We're really happy about that, but we're going to need you to help us spread support for BlinkyTape to other platforms. This Processing-based tutorial should give you a good idea about how to get started.</p>
+
+<p>As it happens, there have been some efforts already. You can find some work for python <a href="https://github.com/Blinkinlabs/BlinkyTape_Python">here in a BlinkinLabs Github repository</a> and we understand that there is a Perl module to be found in good old CPAN.  Check out <a href="https://github.com/Blinkinlabs/BlinkyTape_Perl">this usage example</a>.</p>
+
+<p>Last, we just want to say that we're super excited to see the amazing things you come up with!</p>
+ 
+    </div> 
+    
+  </div>
+</div> 
+ 
+
+ 
+
+</div>
+
+
+<footer class="row book">
+	    <section class="five columns">&nbsp; </section>
+	    
+	
+	    <section class="four columns">
+	      <ul class="block-grid three-up">
+			<li> 
+	      	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=BlinkyTape" style="width:220px; height:20px;"></iframe>
+			</li>
+		
+		
+		</ul>
+		</section> 
+		 
+	   
+	    <section class="seven columns">
+	      <p>Last update 2014-03-11 11:44:30 -0400 </p>
+	      <p>Created using <a href="http://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://foundation.zurb.com/">Foundation</a></p>
+		
+		</section> 
+		
+</footer>
+</div>
+
+<!-- container -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> BlinkyTape .. BlinkyTile - A square LED matrix made from BlinkyTape </title>
+   <meta name="author" content="BlinkyTape" />
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" /> 
+
+	<!-- Included CSS Files --> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
+	
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
+
+	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38619168-1']);
+	  _gaq.push(['_setDomainName', 'blinkiverse.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  <style>
+    body {
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition-property: all 2s ease-out;
+    }
+  </style>
+</head> 
+<body> 
+	
+<div class="site"> 
+<div class="container">
+	
+	<div class="row header book"> 
+		
+  		<div class="four columns">
+      <h1 class="logo">	<a href="/" class="hide-on-phones"><img src="/images/blinkinlabs-logo-trans.png" alt="BlinkyTape Logo" title="Blinkinlabs Logo" /></a></h1>
+		
+			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
+				<h1 class="logo logo-mobile"><a href="/"><img src="/images/blinkinlabs-logo-trans.png" alt="Blinkinlabs Logo" title="BlinkyTape" /></a></h1>
+				
+				<div class="eight columns menu menu-mobile">
+					<a href="/bio"> About </a>
+          <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+			  </div>
+				
+			</div>			
+
+  		</div>
+  		<div class="eight columns menu right hide-on-phones" style="padding-top:45px">
+        <a href="/bio"> About </a>
+	      <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+      </div>
+	</div>
+  
+  <div class="row">	
+
+<div class = "twelve columns"> 
+
+</div> 
+</div>
+
+<div class="row">	
+<div class = "nine columns"> 
+	
+	<div class = "project_full"> 
+		
+		<div class = "qq5">
+		<h1>
+		BlinkyTile - A square LED matrix made from BlinkyTape 
+		</h1> 
+	
+		</div> 
+	
+		<div class="videoWrapper">
+    <iframe class="vine-embed" src="https://vine.co/v/bLhMhIjzqFW/embed/simple" width="480" height="480" frameborder="0"></iframe><script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script>
+</div>
+
+
+<p>The BlinkyTile is an advanced hardware project that you can do with your
+<a href="/blinkytape">BlinkyTape</a>. It allows you to turn your BlinkyTape into a square
+display of (almost) 8x8 pixels!</p>
+
+<p>This project is pretty advanced, so be prepared to spend some time on it!</p>
+
+<!--more-->
+
+
+<h1>What You'll Need</h1>
+
+<h2>Tools</h2>
+
+<ul>
+<li>Wire cutters</li>
+<li>Soldering station</li>
+<li>Laser cutter</li>
+<li>Acrylic Glue with syringe applicator</li>
+<li>Clear tape</li>
+</ul>
+
+
+<h2>Supplies</h2>
+
+<ul>
+<li>1 x BlinkyTape</li>
+<li>22ga stranded wire, 3 colors</li>
+<li>3 x M3 bolts, 8mm long, with washers and nuts</li>
+<li>Laser cutting materials for the frame:
+
+<ul>
+<li>Black (or otherwise opaque) 1/8" acrylic, 12"x12" sheet</li>
+<li>Translucent 1/8" acrylic, 12"x12" sheet</li>
+<li>Thick card stock (or 1/32" acrylic), 12"x12" sheet</li>
+</ul>
+</li>
+</ul>
+
+
+<h1>Step 1: Segmenting the BlinkyTape</h1>
+
+<p>First, remove the silicone plastic tubing from the BlinkyTape.  It won't be
+needed anymore!</p>
+
+<p>We need to cut the BlinkyTape into 8 sections:</p>
+
+<ul>
+<li>One 6-pixel long section that includes the BlinkyBoard controller and USB port</li>
+<li>Six 8-pixel long sections</li>
+<li>One final 6-pixel long section</li>
+</ul>
+
+
+<p>The flexible PCB backing that makes up the BlinkyTape contains copper, so you
+will want to use wire cutters to cut the tape.</p>
+
+<p>When you're done, you'll have something like this:</p>
+
+<p><img src="/images/blinkytile/big/blinkytape-strips.jpg" alt="BlinkyTape cut into strips" /></p>
+
+<h1>Step 2: Cut and Strip Wires</h1>
+
+<p>We now have 8 segments that we need to join together.</p>
+
+<p><img src="/images/blinkytile/big/tape-segment-cut.jpg" alt="Data-out side of a strip" /></p>
+
+<p>You'll notice that each segment has arrows along the length of the strip.  These
+arrows indicate the direction that data moves along the strip.  For example, the
+top row's arrows point to the right, indicating that data comes in on the left
+and goes out on the right.  When wiring up two sections, we'll need to make sure
+that the arrows are facing the same direction.</p>
+
+<p>To save wire and hassle, we'll be joining our 8 segments in a "S" curve, using
+short jumper wires to connect one row to the next.  This means that each segment
+will be "upside down" relative to the previous segment, but allows data to flow
+in the correct direction.</p>
+
+<p>8 segments means we need to make 7 jumper connections.  Each connection requires
+three wires - Data, 5V, and GND.  Since these wires will be curving around to
+make a "C"-shape at each connection, we'll need to cut them at different
+lengths. Here is a set of links that worked for us.</p>
+
+<table>
+<thead>
+<tr>
+<th> Connection </th>
+<th> Data wire length </th>
+<th> 5V wire length </th>
+<th> GND wire length </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> 1 </td>
+<td> 7mm </td>
+<td> 6mm  </td>
+<td> 5mm</td>
+</tr>
+<tr>
+<td> 2 </td>
+<td> 5mm </td>
+<td> 6mm  </td>
+<td> 7mm</td>
+</tr>
+<tr>
+<td> 3 </td>
+<td> 7mm </td>
+<td> 6mm  </td>
+<td> 5mm</td>
+</tr>
+<tr>
+<td> 4 </td>
+<td> 5mm </td>
+<td> 6mm  </td>
+<td> 7mm</td>
+</tr>
+<tr>
+<td> 5 </td>
+<td> 7mm </td>
+<td> 6mm  </td>
+<td> 5mm</td>
+</tr>
+<tr>
+<td> 6 </td>
+<td> 5mm </td>
+<td> 6mm  </td>
+<td> 7mm</td>
+</tr>
+<tr>
+<td> 7 </td>
+<td> 9mm </td>
+<td> 8mm  </td>
+<td> 7mm</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><img src="/images/blinkytile/big/pre-cut-wires.jpg" alt="Some examples of pre-cut wires" /></p>
+
+<p>Above is an image of pre-cut and pre-stripped wire bundles for 4 connections.
+We used blue for Data, red for 5V, and black for GND.</p>
+
+<h1>Step 3: Reassembling the BlinkyTape</h1>
+
+<h2>Step 3a: Tin all of the wires and solder pads with solder.</h2>
+
+<p>To help make it easier ot mound the LEDs later, we'll be soldering the jumper
+wires to the solder pads on the back of the strip.</p>
+
+<h2>Step 3b: Solder the first jumper connection</h2>
+
+<p><img src="/images/blinkytile/big/pre-cut-wires.jpg" alt="Jumper wires attached to the back of the first segment" /></p>
+
+<p>Solder the first three wires to its appropriate pad on the "DO" (Data Out) side
+of the first segment (the segment with the BlinkyBoard attached).</p>
+
+<p>It can be easy to lose track of which pad goes to which wire when you're looking
+at the back of the strip, so be sure to double-check which wire is going where.</p>
+
+<h2>Step 3c: Connect the next segment</h2>
+
+<p><img src="/images/blinkytile/big/jumpered-segments-front.jpg" alt="Front view of a complete connection" /></p>
+
+<p>Solder the jumper wires from the first segment onto the next segment.  Be sure
+to make the following connections:</p>
+
+<ul>
+<li>GND from segment 1 connects to GND on segment 2</li>
+<li>5V from segment 1 connects to 5V on segment 2</li>
+<li><strong>DO</strong> from segment 1 connects to <strong>DIN</strong> on segment 2</li>
+</ul>
+
+
+<h2>Step 3*: Repeat!</h2>
+
+<p><img src="/images/blinkytile/big/reassembled-segments.jpg" alt="Completed soldering job" /></p>
+
+<p>Repeat steps 3b and 3c, using the correct length wires at each step, to connect
+the remaining segments of the board.  Above is an image of the reassembled
+BlinkyTape with all jumpers soldered.</p>
+
+<p>Now would be a great time to plug your reassembled tape into a computer to test
+it out.  You'll want to find broken/missing/incorrect wiring now rather than
+once you've closed the BlinkyTape up in a box!</p>
+
+<h1>Step 4: Create the Enclosure</h1>
+
+<h2>Cutting the Pieces</h2>
+
+<p>We've provided DXF format laser cutting files for the pieces that we used to
+construct our enclosure.  You can find them here:</p>
+
+<p><a href="https://github.com/blinkiverse/BlinkyTape/tree/master/examples/BlinkyTile/case_design">BlinkyTile hardware files on GitHub</a></p>
+
+<p>You'll need to use your favorite software to arrange these files into "cutting
+plates" to cut out of the appropriate plastic.  Here's a quick breakdown of
+which parts should be made of which plastic:</p>
+
+<ul>
+<li>Main Frame (1/8" black or other opaque acrylic sheet, 12"x12")
+
+<ul>
+<li>frame-back.dxf</li>
+<li>frame-bottom.dxf</li>
+<li>frame-top.dxf</li>
+<li>frame-left.dxf</li>
+<li>frame-right.dxf</li>
+</ul>
+</li>
+<li>Front Diffuser (1/8" semi-transparent acrylic, 12"x12")
+
+<ul>
+<li>frame-front.dxf</li>
+</ul>
+</li>
+<li>LED Mount (1/32" acrylic or heavy card stock)
+
+<ul>
+<li>led-mount.dxf</li>
+</ul>
+</li>
+</ul>
+
+
+<h1>Step 5: Assembly!</h1>
+
+<h2>Mounting the LEDs</h2>
+
+<p><img src="/images/blinkytile/big/cardstock-back-with-LEDs.jpg" alt="LEDs secured to cardstock mount with clear tape" /></p>
+
+<p>The LED mount has a space for the BlinkyBoard and USB connection and a succesion
+of holes that each LED should "click" into.  Because the wire jumpers put a
+torque on the strip that tends to make them pop out, we secured the ends of each
+segment with some clear tape.</p>
+
+<p><img src="/images/blinkytile/big/LED-mount-secured.jpg" alt="LED mount secured to the frame back with M3 hardware" /></p>
+
+<p>Next, attach the LED mount to the frame back using M3 hardware.  We used 8mm
+long bolts pushed through the back of the frame back, then used a washer and a
+nut on the LED mount side, where -- once the lid is in place -- they won't be
+seen.</p>
+
+<p>With the current enclosure design, the USB cable must be plugged in before
+assembling the final box, so go ahead and do that now.  You may want to add
+some strain relief in the form of a small zip-tie on your USB cable that will
+remain just inside the box to keep the cable from disconnecting if it is
+pulled on.</p>
+
+<h2>Assembling the Box</h2>
+
+<p>Do a "dry fit test" of all of your frame parts.  Start by identifying which of
+the side pieces is which.</p>
+
+<ul>
+<li>One side piece has a hole for the USB cable. We'll call this the "right side".</li>
+<li>The "left side" goes opposite of the right side, and can be identified because
+it is the same length as the right side.</li>
+<li>The "top side" is the shortest in length.  It is meant to sit snugly between
+the left and right sides.</li>
+<li>The "bottom side" is the longest in length.  It is meant to be a "seat" for
+the left and right pieces.</li>
+</ul>
+
+
+<p>Starting with the frame back lying flat on a table, use acrylic glue to attach
+each of the sides, starting with the "right side", followed by the "top side",
+"left side", and finally "bottom side".</p>
+
+<p>Once the sides are nicely affixed to the frame back, we can attach the
+front of the frame using acrylic glue.  Start by placing the front piece on top
+of the frame to get it lined up.  The front piece should just cover every edge
+of the frame.  Then, use a syringe applicator to squirt acrylic glue into the
+space between the front piece and the frame.  Do this on all four sides and
+apply pressure to make sure that the glue makes a nice bond.</p>
+
+<p>Finally, let the glue set according to the instructions.</p>
+
+<h1>Power it Up!</h1>
+
+<p><img src="/images/blinkytile/big/completed-blinkytile.jpg" alt="Completed BlinkyTile" /></p>
+
+<p>Plug the USB into your computer to see the results of your labor!</p>
+
+<h1>Coming Soon...</h1>
+
+<p>This project is a work-in-progress.  We'll be making some revisions soon
+including:</p>
+
+<ul>
+<li>Better photos and diagrams</li>
+<li>Software to make it easy to use your BlinkyTile</li>
+<li>Ways to customize your build</li>
+</ul>
+
+
+<p>Thanks for reading!  Got some feedback?  Feel free to drop us a note via Twitter
+at <a href="http://www.twitter.com/BlinkyTape">@BlinkyTape</a>!</p>
+ 
+	
+	</div> 
+	
+
+	 
+	
+</div>
+<div class = "three columns"> 
+  <div class = "project_full, project_info">
+
+    <div class="sidebar-nav">
+      <h3><a href="/blinkytape/">BlinkyTape</a></h3>
+      <h3><a href="/blog/">Blog</a></h3>
+      <h3><a href="/projects/">Projects</a></h3>
+    </div>
+
+     
+    <h3> Used Technologies: </h3> 
+      <ul> 
+         
+        <li> BlinkyTape </li> 
+         
+        <li> Laser Cutter </li> 
+         
+      </ul> 
+     
+
+     
+    <h3> Sourcecode: </h3> 
+      <ul> 
+       
+        <li><a href="https://github.com/blinkiverse/BlinkyTape/tree/master/examples/BlinkyTile" target="_new"> BlinkyTile </a></li>
+      
+      </ul>
+     
+
+    <div class="sidebar-blog-links">
+      <h3>Latest Posts</h3>
+      <ul>
+      
+        <li><span>27 Feb 2014</span> &raquo; <a href="/post/spectrogram.html">New Audio Visualizer -- BlinkySpectrogram!</a></li>
+      
+        <li><span>12 Feb 2014</span> &raquo; <a href="/post/zomg-blog.html">ZOMG! We're starting a blog!</a></li>
+      
+        <li><span>20 Jan 2014</span> &raquo; <a href="/post/saga-tubes.html">The Saga of the Tubes</a></li>
+      
+        <li><span>13 Dec 2013</span> &raquo; <a href="/post/plan-comes-together.html">I love it when a plan comes together</a></li>
+      
+        <li><span>22 Nov 2013</span> &raquo; <a href="/post/super-shipping.html">I love it when a plan comes together</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</div> 
+
+</div> <!-- row --> 
+ 
+
+ 
+
+</div>
+
+
+<footer class="row book">
+	    <section class="five columns">&nbsp; </section>
+	    
+	
+	    <section class="four columns">
+	      <ul class="block-grid three-up">
+			<li> 
+	      	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=BlinkyTape" style="width:220px; height:20px;"></iframe>
+			</li>
+		
+		
+		</ul>
+		</section> 
+		 
+	   
+	    <section class="seven columns">
+	      <p>Last update 2014-03-11 11:44:30 -0400 </p>
+	      <p>Created using <a href="http://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://foundation.zurb.com/">Foundation</a></p>
+		
+		</section> 
+		
+</footer>
+</div>
+
+<!-- container -->
+
+
+
+</body>
+</html>

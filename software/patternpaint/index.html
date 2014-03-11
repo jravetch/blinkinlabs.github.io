@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> BlinkyTape .. PatternPaint </title>
+   <meta name="author" content="BlinkyTape" />
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" /> 
+
+	<!-- Included CSS Files --> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
+	
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
+
+	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38619168-1']);
+	  _gaq.push(['_setDomainName', 'blinkiverse.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  <style>
+    body {
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition-property: all 2s ease-out;
+    }
+  </style>
+</head> 
+<body> 
+	
+<div class="site"> 
+<div class="container">
+	
+	<div class="row header book"> 
+		
+  		<div class="four columns">
+      <h1 class="logo">	<a href="/" class="hide-on-phones"><img src="/images/blinkinlabs-logo-trans.png" alt="BlinkyTape Logo" title="Blinkinlabs Logo" /></a></h1>
+		
+			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
+				<h1 class="logo logo-mobile"><a href="/"><img src="/images/blinkinlabs-logo-trans.png" alt="Blinkinlabs Logo" title="BlinkyTape" /></a></h1>
+				
+				<div class="eight columns menu menu-mobile">
+					<a href="/bio"> About </a>
+          <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+			  </div>
+				
+			</div>			
+
+  		</div>
+  		<div class="eight columns menu right hide-on-phones" style="padding-top:45px">
+        <a href="/bio"> About </a>
+	      <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+      </div>
+	</div>
+  
+  <div class="row">	
+
+<div class = "twelve columns"> 
+
+</div> 
+</div>
+
+<div class="row">	
+<div class = "nine columns"> 
+	
+	<div class = "project_full"> 
+		
+		<div class = "qq5">
+		<h1>
+		PatternPaint 
+		</h1> 
+	
+		</div> 
+	
+		<p>PatternPaint is companion software for the <a href="/blinkytape">BlinkyTape</a>.  It allows you to create animations for your BlinkyTape in real-time, and save your designs to the BlinkyTape for playback on-the-go.</p>
+
+<p><img src="/images/patternpaint/PatternPaint-nyan.png" alt="NyanCat in PatternPaint" /></p>
+
+<p><img src="/images/patternpaint/nyan-painted.jpg" alt="NyanCat painted in light" /></p>
+
+<h2>Uses</h2>
+
+<ul>
+<li>Create light paintings with long-exposure photography.</li>
+<li>Design blinky patterns for wearable lights.</li>
+<li>Set static patterns for ambient light installations.</li>
+<li>And more!</li>
+</ul>
+
+
+<h2>Features</h2>
+
+<ul>
+<li><strong>Simple Paint Tools</strong> - Create vivid animated patterns with just a few clicks.</li>
+<li><strong>Live Preview</strong> - Connect your BlinkyTape to your computer to preview your patterns in real time.</li>
+<li><strong>PNG Import and Export</strong> - Create or edit your patterns in your favorite paint program.</li>
+<li><strong>Save to BlinkyTape</strong> - When you're done, you can save your patterns directly to the BlinkyTape for playback away from your computer.</li>
+</ul>
+
+
+<h1>Downloading PatternPaint</h1>
+
+<p>Thanks to our programmers (OK, just Matt) working around the clock, PatternPaint now comes in a handy-dandy pre-packaged distribution, so you can get up and running in minutes.</p>
+
+<p><strong>Get it here: <a href="https://github.com/Blinkinlabs/PatternPaint/releases">PatternPaint Releases</a></strong></p>
+
+<p>There are versions here for both Windows and OS X.  The Windows installer also <strong>includes the drivers you'll need.</strong>  (Not necessary on other operating systems.) On Windows, just run the installer after it's downloaded and follow the prompts.  On OS X, open the <code>.dmg</code> and drag PatternPaint into your Applications folder.</p>
+
+<h1>Starting PatternPaint</h1>
+
+<ol>
+<li>Connect your BlinkyTape to your computer via USB</li>
+<li>Open the PatternPaint program</li>
+<li>Click the <em>Connect</em> button.</li>
+</ol>
+
+
+<p>The frame indicator bar should start moving across the preview area, and the patterns you draw will be displayed on your tape.</p>
+
+<h1>Using PatternPaint</h1>
+
+<p>PatternPaint provides some simple tools for drawing your own patterns.</p>
+
+<p>Alternatively, PatternPaint also lets you save and load PNG files, for use in your favorite graphics program.</p>
+
+<p>Here's a breakdown of the PatternPaint UI:</p>
+
+<p><img src="/images/blinkytape/big/PatternPaintQT.png" alt="PatternPaint Components" /></p>
+
+<h2>Drawing Controls</h2>
+
+<ul>
+<li>Click in the color selector to change the current color.</li>
+<li>Click in the pattern area to place points in the current color.</li>
+<li>Click and drag in the "ToolSize" slider to draw larger or smaller points and lines.</li>
+</ul>
+
+
+<h2>Importing and Exporting Images</h2>
+
+<ul>
+<li>Click the "Load" button to load a PNG image file.  The pattern area will resize to fit the new image.
+
+<ul>
+<li>A BlinkyTape has 60 LEDs, so use images that are 60px tall to fill the whole display!</li>
+</ul>
+</li>
+<li>Click the "Save" button to save your current pattern as a PNG image.
+
+<ul>
+<li>This is a great way to save your favorite patterns for later.</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Live Preview Controls</h2>
+
+<ul>
+<li>The preview frame indicator highlights the frame that is currently displayed on your BlinkyTape.</li>
+<li>Click the "Pause" button to pause or resume the live animation.</li>
+<li>Click and drag in the "Speed" slider to make the animation preview move faster or slower.</li>
+</ul>
+
+
+<!-- * When paused, use the Left and Right arrow keys to manually change which frame is displayed on your BlinkyTape. -->
+
+
+<h1>Saving Your Pattern to the BlinkyTape</h1>
+
+<p>One of the best features in PatternPaint is the ability to save patterns to your BlinkyTape for later. When you do this, the tape will play this pattern back whenever it's plugged in to a power source.</p>
+
+<p>When you've fine-tuned your pattern, just click the "Upload" button to save it to tape! You'll see a progress bar, and the tape will stop for a moment -- now your tape will remember its pattern after you've disconnected it from the computer!  Or just connect again to fine-tune.</p>
+
+<h1>Advanced Usage</h1>
+
+<p>For folks who are comfortable making things in Arduino or Processing, here's a little more in-depth technical information about how the BlinkyTape works with PatternPaint.  If this perks up your ears, we'd recommend checking out the information for using BlinkyTape with <a href="/blinkytape/docs/arduino/">Arduino</a> and <a href="/blinkytape/docs/processing/">Processing.</a></p>
+
+<p>You'll find another version of PatternPaint in the Processing blinkytape package. This one is great for hacking, but if it's not your cup of tea, you can find the source for the standalone QT-based version <a href="https://github.com/Blinkinlabs/PatternPaint/">right here</a></p>
+
+<p>You can use this stuff to save multiple animations to your BlinkyTape, create interactive programs that use animations, and more!</p>
+
+<h2>How the BlinkyTape Plays Back Animations</h2>
+
+<ul>
+<li>Call <code>pov()</code> in <code>loop()</code> to draw next frame</li>
+<li><code>anim_delay_ms</code> to speed up/slow down animation</li>
+<li>Fastest framerate? 120fps?</li>
+<li><code>animation.h</code>/<code>animation.cpp</code> contains the logic.</li>
+</ul>
+
+
+<h2>Chaining Multiple Animations</h2>
+
+<p>We've created an example of multiple animations on the BlinkyTape. With this program, the BlinkyTape draws a rainbow until the button is pressed, at which point it finishes the painting by drawing NyanCat.</p>
+
+<p><img src="/images/patternpaint/nyan-paint-long.jpg" alt="Long NyanCat is Nyaaaaaaaaaaaan" /></p>
+
+<p>You can find the code in the <a href="https://github.com/Blinkinlabs/BlinkyTape_Arduino/tree/master/examples/KickstarterVideo/NyanPaint">NyanPaint</a> example.</p>
+ 
+	
+	</div> 
+	
+
+	 
+	
+</div>
+<div class = "three columns"> 
+  <div class = "project_full, project_info">
+
+    <div class="sidebar-nav">
+      <h3><a href="/blinkytape/">BlinkyTape</a></h3>
+      <h3><a href="/blog/">Blog</a></h3>
+      <h3><a href="/projects/">Projects</a></h3>
+    </div>
+
+     
+    <h3> Used Technologies: </h3> 
+      <ul> 
+         
+        <li> Processing </li> 
+         
+        <li> Arduino </li> 
+         
+        <li> BlinkyTape </li> 
+         
+      </ul> 
+     
+
+     
+    <h3> Sourcecode: </h3> 
+      <ul> 
+       
+        <li><a href="https://github.com/blinkiverse/BlinkyTape/tree/master/examples/PatternPaint" target="_new"> PatternPaint </a></li>
+      
+      </ul>
+     
+
+    <div class="sidebar-blog-links">
+      <h3>Latest Posts</h3>
+      <ul>
+      
+        <li><span>27 Feb 2014</span> &raquo; <a href="/post/spectrogram.html">New Audio Visualizer -- BlinkySpectrogram!</a></li>
+      
+        <li><span>12 Feb 2014</span> &raquo; <a href="/post/zomg-blog.html">ZOMG! We're starting a blog!</a></li>
+      
+        <li><span>20 Jan 2014</span> &raquo; <a href="/post/saga-tubes.html">The Saga of the Tubes</a></li>
+      
+        <li><span>13 Dec 2013</span> &raquo; <a href="/post/plan-comes-together.html">I love it when a plan comes together</a></li>
+      
+        <li><span>22 Nov 2013</span> &raquo; <a href="/post/super-shipping.html">I love it when a plan comes together</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</div> 
+
+</div> <!-- row --> 
+ 
+
+ 
+
+</div>
+
+
+<footer class="row book">
+	    <section class="five columns">&nbsp; </section>
+	    
+	
+	    <section class="four columns">
+	      <ul class="block-grid three-up">
+			<li> 
+	      	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=BlinkyTape" style="width:220px; height:20px;"></iframe>
+			</li>
+		
+		
+		</ul>
+		</section> 
+		 
+	   
+	    <section class="seven columns">
+	      <p>Last update 2014-03-11 11:44:30 -0400 </p>
+	      <p>Created using <a href="http://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://foundation.zurb.com/">Foundation</a></p>
+		
+		</section> 
+		
+</footer>
+</div>
+
+<!-- container -->
+
+
+
+</body>
+</html>

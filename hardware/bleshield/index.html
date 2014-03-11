@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> BlinkyTape .. Bluetooth Low Energy Shield </title>
+   <meta name="author" content="BlinkyTape" />
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" /> 
+
+	<!-- Included CSS Files --> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
+	
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
+
+	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38619168-1']);
+	  _gaq.push(['_setDomainName', 'blinkiverse.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  <style>
+    body {
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition-property: all 2s ease-out;
+    }
+  </style>
+</head> 
+<body> 
+	
+<div class="site"> 
+<div class="container">
+	
+	<div class="row header book"> 
+		
+  		<div class="four columns">
+      <h1 class="logo">	<a href="/" class="hide-on-phones"><img src="/images/blinkinlabs-logo-trans.png" alt="BlinkyTape Logo" title="Blinkinlabs Logo" /></a></h1>
+		
+			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
+				<h1 class="logo logo-mobile"><a href="/"><img src="/images/blinkinlabs-logo-trans.png" alt="Blinkinlabs Logo" title="BlinkyTape" /></a></h1>
+				
+				<div class="eight columns menu menu-mobile">
+					<a href="/bio"> About </a>
+          <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+			  </div>
+				
+			</div>			
+
+  		</div>
+  		<div class="eight columns menu right hide-on-phones" style="padding-top:45px">
+        <a href="/bio"> About </a>
+	      <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+      </div>
+	</div>
+  
+  <div class="row">	
+
+<div class = "twelve columns"> 
+
+</div> 
+</div>
+
+<div class="row">	
+<div class = "nine columns"> 
+	
+	<div class = "project_full"> 
+		
+		<div class = "qq5">
+		<h1>
+		Bluetooth Low Energy Shield 
+		</h1> 
+	
+		</div> 
+	
+		<p><img src="/images/bleshield/ble.jpg" title="BLE Shield" alt="BLE Shield" /></p>
+<p>The Blinkiverse <span class="caps">BLE</span> Shield gives your <a href="http://arduino.cc/">Arduino</a> projects the ability to communicate using the Bluetooth Low Energy standard.  Featuring low power consumption and a simple serial interface, the <span class="caps">BLE</span> Shield makes it easy to go wireless.  Thanks to the <span class="caps">BLE</span> support in iOS 5 and 6, the <span class="caps">BLE</span> Shield is a great way to combine Arduino with your iPad or iPhone!</p>
+<h1>Quick Start</h1>
+<p>If you’ve just got your hands on a <span class="caps">BLE</span> Shield, these steps will get you up and running and verify that everything is working nicely.</p>
+<p><img src="/images/bleshield/ble2.jpg" title="BLE Shield" alt="BLE Shield" /></p>
+<h2>Things You’ll Need</h2>
+<ul>
+	<li>A <span class="caps">BLE</span> Shield</li>
+	<li>An Arduino (tested on Uno, Leonardo, and Duemilanove) with <span class="caps">USB</span> cable for programming and power</li>
+	<li>An iPad or iPhone with <span class="caps">BLE</span> support (in this example, an iPad Mini) with the <a href="https://itunes.apple.com/en/app/lightblue/id557428110?mt=8">LightBlue app</a> installed.</li>
+	<li>A computer with the <a href="http://arduino.cc/en/Main/Software">Arduino Software</a> installed</li>
+</ul>
+<h2>Step 1 – Connect your <span class="caps">BLE</span> Shield to the Arduino</h2>
+<h2>Step 2 – Connect your Arduino to your computer via <span class="caps">USB</span></h2>
+<p><img src="/images/bleshield/ble3.jpg" title="BLE Shield" alt="BLE Shield" /></p>
+<h2>Step 3 – Download the Blinkiverse <span class="caps">BLE</span> Shield library for Arduino</h2>
+<p><a href="https://github.com/blinkiverse/BleShield/archive/master.zip">Click Here</a> to download the Blinkiverse <span class="caps">BLE</span> Shield folder. From the <strong>library</strong> folder, copy the <strong>Blinkiverse_BLEShield</strong> folder to your Arduino libraries folder.</p>
+<h2>Step 3 – Upload the <span class="caps">BLE</span> Shield demo sketch to your Arduino</h2>
+<p>Open the Arduino Software on your computer and choose <strong>File</strong> | <strong>Sketchbook</strong> | <strong>libraries</strong> | <strong>Blinkiverse_BLEShield</strong> | <strong>BLEShield</strong></p>
+<p>Click Upload</p>
+<h2>Connect your iPad to your Arduino</h2>
+<p>Open the <a href="https://itunes.apple.com/en/app/lightblue/id557428110?mt=8">LightBlue app</a> on your iPad or iPhone.  You should see your Arduino in the Devices list on the left-hand side of the screen.</p>
+<p><img src="/images/bleshield/lb1.png" title="LightBlue App" alt="LightBlue App" /></p>
+<p>Tap the device to connect to it.  The blue “Connected” <span class="caps">LED</span> on the <span class="caps">BLE</span> Shield should light up and the iPad should show a list of Services provided by the <span class="caps">BLE</span> Shield.</p>
+<p><img src="/images/bleshield/lb2.png" title="LightBlue App" alt="LightBlue App" /></p>
+<p>Once a connection is established, the <span class="caps">BLE</span> Shield Test Sketch begins sending messages to your iPad about once per second.  To see them, tap <strong>0xFFF0</strong> from the Services list, then tap <strong>0xFFF4</strong> (Notify) in the Characteristics list that appears on the right.</p>
+<p><img src="/images/bleshield/lb3.png" title="LightBlue App" alt="LightBlue App" /></p>
+<p>Finally, tap the “Notify” button at the bottom of the screen to begin displaying the messages from the Arduino.</p>
+<p><img src="/images/bleshield/lb4.png" title="LightBlue App" alt="LightBlue App" /></p>
+<p>You should now see a changing message such as <strong>“Connected 10s”</strong> which increments about once per second. This message is coming from the <span class="caps">BLE</span> Shield Test Sketch!</p>
+<p>Next, in the Arduino software, open the <strong>Serial Monitor</strong>. You may need to select a speed of 115200. If your iOS device is connected over bluetooth and the blue “connected” <span class="caps">LED</span> is lit on the <span class="caps">BLE</span> Shield, you should see messages printing to the Serial Monitor once a second.</p>
+<p>On your device, select <strong>0xFFF0</strong> from the Services list, then select <strong>0xFFF1</strong> (Write) from the Characteristics list. Tap the <strong>Write</strong> button, tap the <strong>Write <span class="caps">ASCII</span></strong> text box, write a short message, and tap <strong>Send</strong>. You should see your message appear in the Arduino Serial Monitor!</p>
+<h1>Next Steps</h1>
+<p>Take a look at the source code for the <span class="caps">BLE</span> Shield Test Sketch.</p>
+<p>Make some changes to get a feel for how things work.</p>
+<p>Be sure to check out the Resources section, below!</p>
+<h1>Resources</h1>
+<p>You can find the board design files, BLEShield Arduino library, and example apps in the <a href="https://github.com/blinkiverse/BleShield">BLEShield repository on GitHub</a>.</p> 
+	
+	</div> 
+	
+
+	 
+	
+</div>
+<div class = "three columns"> 
+  <div class = "project_full, project_info">
+
+    <div class="sidebar-nav">
+      <h3><a href="/blinkytape/">BlinkyTape</a></h3>
+      <h3><a href="/blog/">Blog</a></h3>
+      <h3><a href="/projects/">Projects</a></h3>
+    </div>
+
+     
+    <h3> Used Technologies: </h3> 
+      <ul> 
+         
+        <li> Arduino </li> 
+         
+        <li> Bluetooth 4.0 </li> 
+         
+        <li> iOS </li> 
+         
+      </ul> 
+     
+
+     
+    <h3> Sourcecode: </h3> 
+      <ul> 
+       
+        <li><a href="https://github.com/blinkiverse/BLEShield" target="_new"> BLEShield </a></li>
+      
+      </ul>
+     
+
+    <div class="sidebar-blog-links">
+      <h3>Latest Posts</h3>
+      <ul>
+      
+        <li><span>27 Feb 2014</span> &raquo; <a href="/post/spectrogram.html">New Audio Visualizer -- BlinkySpectrogram!</a></li>
+      
+        <li><span>12 Feb 2014</span> &raquo; <a href="/post/zomg-blog.html">ZOMG! We're starting a blog!</a></li>
+      
+        <li><span>20 Jan 2014</span> &raquo; <a href="/post/saga-tubes.html">The Saga of the Tubes</a></li>
+      
+        <li><span>13 Dec 2013</span> &raquo; <a href="/post/plan-comes-together.html">I love it when a plan comes together</a></li>
+      
+        <li><span>22 Nov 2013</span> &raquo; <a href="/post/super-shipping.html">I love it when a plan comes together</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</div> 
+
+</div> <!-- row --> 
+ 
+
+ 
+
+</div>
+
+
+<footer class="row book">
+	    <section class="five columns">&nbsp; </section>
+	    
+	
+	    <section class="four columns">
+	      <ul class="block-grid three-up">
+			<li> 
+	      	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=BlinkyTape" style="width:220px; height:20px;"></iframe>
+			</li>
+		
+		
+		</ul>
+		</section> 
+		 
+	   
+	    <section class="seven columns">
+	      <p>Last update 2014-03-11 11:44:30 -0400 </p>
+	      <p>Created using <a href="http://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://foundation.zurb.com/">Foundation</a></p>
+		
+		</section> 
+		
+</footer>
+</div>
+
+<!-- container -->
+
+
+
+</body>
+</html>

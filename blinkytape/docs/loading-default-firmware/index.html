@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us" class="no-js">
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title> BlinkyTape .. Loading the Default BlinkyTape Firmware </title>
+   <meta name="author" content="BlinkyTape" />
+
+	<meta charset="utf-8" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" /> 
+
+	<!-- Included CSS Files --> 
+	<link rel="stylesheet" href="/stylesheets/foundation.css">
+	<link rel="stylesheet" href="/stylesheets/app.css"> 
+	
+	<link href="/javascripts/prettify/prettify.css" type="text/css" rel="stylesheet" /> 
+
+	<link rel="stylesheet" href="/stylesheets/web.css" type="text/css" media="screen, projection" /> 
+
+	<script type="text/javascript" src="/javascripts/lightbox.js"></script>
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-38619168-1']);
+	  _gaq.push(['_setDomainName', 'blinkiverse.com']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+  <style>
+    body {
+    -webkit-transform: rotate(0deg) scale(1);
+    -webkit-transition-property: all 2s ease-out;
+    }
+  </style>
+</head> 
+<body> 
+	
+<div class="site"> 
+<div class="container">
+	
+	<div class="row header book"> 
+		
+  		<div class="four columns">
+      <h1 class="logo">	<a href="/" class="hide-on-phones"><img src="/images/blinkinlabs-logo-trans.png" alt="BlinkyTape Logo" title="Blinkinlabs Logo" /></a></h1>
+		
+			<div class="show-on-phones hide-on-desktops hide-on-tablets main_sidebar main_sidebar_mobile"> 
+				<h1 class="logo logo-mobile"><a href="/"><img src="/images/blinkinlabs-logo-trans.png" alt="Blinkinlabs Logo" title="BlinkyTape" /></a></h1>
+				
+				<div class="eight columns menu menu-mobile">
+					<a href="/bio"> About </a>
+          <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+			  </div>
+				
+			</div>			
+
+  		</div>
+  		<div class="eight columns menu right hide-on-phones" style="padding-top:45px">
+        <a href="/bio"> About </a>
+	      <a href="/contact"> Contact Us </a>
+        <a href="/forums"> Forums </a>
+      </div>
+	</div>
+  
+  <div class="row">	
+<div class="twelve columns"> 
+</div> 
+</div>
+
+<div class="row">	
+  <div class="twelve columns"> 
+    
+    <div class="project_full docs"> 
+      
+      <div class = "qq5">
+      <h1>
+      Loading the Default BlinkyTape Firmware 
+      </h1> 
+    
+      </div> 
+      <p>It may happen that you want to reset your BlinkyTape to the factory default firmware.</p>
+
+<p>This tutorial will show you how!</p>
+
+<h2>Install Arduino</h2>
+
+<p>Our first step is to download the Arduino development environment. We made Blinkytape compatible with Arduino because it has a huge community and runs in Windows, Mac OS X, and Linux -- so, chances are good that you'll be able to run it on your computer and also find help if you get stuck anywhere.</p>
+
+<p>The fine folks at Arduino have this covered very well, so head over to the <a href="http://arduino.cc/en/Guide/HomePage">Arduino Getting Started page</a> for detailed install instructions. The installation process is very straightforward and they have <a href="http://arduino.cc/en/Guide/HomePage">good documentation</a> if you have any trouble.</p>
+
+<p>If you're having trouble picking a version, BlinkyTape is known to work with Arduino version 1.0.5.</p>
+
+<h3>A note on drivers</h3>
+
+<p>If you're using Windows, you'll need the drivers for both BlinkyTape and Arduino before you can program your tape this way. Make sure that you install the <a href="/software/patternpaint/">PatternPaint package</a> which includes the Blinkytape driver, and also the drivers for Arduino which are included in the Arduino package. Windows uses two slightly different drivers depending on how the tape identifies itself, but if you have both, you'll be OK in all scenarios.</p>
+
+<h2>Install the BlinkyTape Arduino Libraries</h2>
+
+<p>Our next step is to download and install a couple of things that we've used to make the Blinkytape firmware better. If you don't know what a <em>library</em> is, don't worry -- just think of it as some helper code. We'll download and install these libraries so we can use the example code. Later on, when you're making your own firmware, you'll see how some of these libraries make it easier to program for BlinkyTape.</p>
+
+<p>First install <a href="https://code.google.com/p/fastspi/downloads/list">this</a> -- it's called 'FastSPI_LED2' and it's for talking with LED strips like the one in your BlinkyTape. Grab the latest version, 'RC5' as of this writing.</p>
+
+<p>Then go ahead and grab <a href="https://github.com/Blinkinlabs/BlinkyTape_Arduino">this</a>! This one is called 'BlinkyTape_Arduino' and it's all the stuff we wrote, including our example code.</p>
+
+<h3>Get 'em.</h3>
+
+<p>If you're not a Git expert, the quickest way to get our BlinkyTape_Arduino package is to use the 'Download Zip' button on the right-hand side of the page. The button should look something like this:</p>
+
+<p><img src="/images/blinkytape/big/git_download_zip.png" alt="zip download button" /></p>
+
+<h3>Install 'em.</h3>
+
+<p>The best to install these particular libraries is to unzip them into the your Arduino libraries folder - they way they are named can cause trouble with the <a href="http://arduino.cc/en/Guide/Libraries">automatic method of installing Arduino libraries.</a> Scroll down on that page for detailed info, but you'll basically take the zipfile and extract it into a folder called Documents/Arduino/libraries (or My Documents\Arduino\libraries on Windows.)</p>
+
+<p>If you downloaded them as recommended above, <strong>you'll need to snip off the '-master' part of the name from the subfolder.</strong>  In other words, you want it to look like 'Documents/Arduino/libraries/FastSPI_LED2' not 'Documents/Arduino/libraries/FastSPI_LED2-master' -- otherwise Arduino won't use them. (It doesn't like special characters in libary names.)</p>
+
+<h3>Restart Arduino if it is running.</h3>
+
+<p>You can handle this one on your own!</p>
+
+<h2>Connect your BlinkyTape to your computer</h2>
+
+<p>Using a <a href="http://en.wikipedia.org/wiki/USB#Mini_and_Micro_connectors">micro-USB cable</a>, connect your BlinkyTape to a USB port on your computer. If this is the first time, prepare to be wowed by an epically awesome rainbow.</p>
+
+<h2>Load the Firmware Example in Arduino</h2>
+
+<ul>
+<li>Open Arduino</li>
+<li>In the menus, choose <strong>Examples | BlinkyTape | Firmware</strong>
+
+<ul>
+<li>Picture go here.</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Prepare Arduino to Program Your BlinkyTape</h2>
+
+<p>We're going to configure the Arduino environment to put software onto your Blinkytape. This should be pretty easy.</p>
+
+<ol>
+<li>Choose <strong>Tools | Board | Arduino Leonardo</strong></li>
+<li>Select your BlinkyBoard's serial port in the <strong>Tools | Serial Port </strong> menu. The port will be named something like 'COM2' on Windows, and something like /dev/tty.usbmodemab123 or /dev/cu.usbmodemab123 -- you can choose either one.</li>
+</ol>
+
+
+<h2>Program the BlinkyTape</h2>
+
+<p>Press the Upload Button in the upper right hand corner of the Arduino window to program your BlinkyTape. It should look like this:</p>
+
+<p><img src="/images/blinkytape/big/arduino_upload_button.png" alt="Here's the button!" /></p>
+
+<p>If all goes welll, Arduino won't have a message for you, but your BlinkyTape should pause for a few seconds as the program is uploaded.</p>
+
+<p>Once the upload is finished, the BlinkyTape should be running the factory
+default firmware.</p>
+ 
+    </div> 
+    
+  </div>
+</div> 
+ 
+
+ 
+
+</div>
+
+
+<footer class="row book">
+	    <section class="five columns">&nbsp; </section>
+	    
+	
+	    <section class="four columns">
+	      <ul class="block-grid three-up">
+			<li> 
+	      	<iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=BlinkyTape" style="width:220px; height:20px;"></iframe>
+			</li>
+		
+		
+		</ul>
+		</section> 
+		 
+	   
+	    <section class="seven columns">
+	      <p>Last update 2014-03-11 11:44:30 -0400 </p>
+	      <p>Created using <a href="http://github.com/mojombo/jekyll">Jekyll</a> & <a href="http://foundation.zurb.com/">Foundation</a></p>
+		
+		</section> 
+		
+</footer>
+</div>
+
+<!-- container -->
+
+
+
+</body>
+</html>

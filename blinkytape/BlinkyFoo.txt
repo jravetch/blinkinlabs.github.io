@@ -1,0 +1,87 @@
+import processing.serial.*;
+
+PImage img;
+
+// Here we declare some variables for use with BlinkyTape.
+ArrayList<BlinkyTape> bt = new ArrayList<BlinkyTape>();
+int scaleFactor = 2;
+int numberOfLEDs = 60;
+
+// Some variables for our indicator box
+float bx;
+float by;
+boolean overBox = false;
+boolean locked = false;
+float xOffset = 0.0; 
+float yOffset = 0.0;
+
+void setup() {
+  frameRate(30);
+  size(700, 525);
+  // The image file must be in the data folder of the current sketch 
+  // to load successfully
+  img = loadImage("bt.jpg");  // Load the image into the program  
+  
+  // auto connect to all blinkyboards
+  for(String p : Serial.list()) {
+    if(p.startsWith("/dev/cu.usbmodem") || p.startsWith("/dev/ttyUSB") || p.startsWith("COM")) {
+      bt.add(new BlinkyTape(this, p, numberOfLEDs));
+    }
+  }
+  
+  // Let's set up our rectangle
+  bx = width/2.0;
+  by = height/2.0;
+  rectMode(RADIUS);
+}
+
+void draw() {
+  // Displays the image at its actual size at point (0,0)
+  image(img, 0, 0);
+  
+  // Test if the cursor is over the box 
+  if (mouseX > bx-(scaleFactor * numberOfLEDs) && mouseX < bx+(scaleFactor * numberOfLEDs) && 
+      mouseY > by-(scaleFactor + 2) && mouseY < by+(scaleFactor+2)) {
+    overBox = true;  
+    if(!locked) {
+      stroke(255);
+      fill(100,1,1,10);
+    } 
+  } else {
+    stroke(255);
+    fill(100,1,1,10);
+    overBox = false;
+  }
+  
+  // Draw the box
+  
+  rect(bx, by, scaleFactor * numberOfLEDs, scaleFactor+2);
+  
+  for(int i = 0; i < bt.size(); i++) {
+    bt.get(i).render(bx, by, bx + (scaleFactor * numberOfLEDs), by + scaleFactor);
+    bt.get(i).send();
+  }
+}
+
+void mousePressed() {
+  if(overBox) { 
+    locked = true; 
+    stroke(255, 0, 0);
+  } else {
+    locked = false;
+  }
+  xOffset = mouseX-bx; 
+  yOffset = mouseY-by; 
+
+}
+
+void mouseDragged() {
+  if(locked) {
+    bx = mouseX-xOffset; 
+    by = mouseY-yOffset; 
+  }
+}
+
+void mouseReleased() {
+  locked = false;
+}
