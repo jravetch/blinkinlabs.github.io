@@ -16,7 +16,7 @@ context:
 ---
 
 **UPDATE: The tutorial below describes our initial experiments with light
-painting.  Check out [PatternPaint](/patternpaint), which makes the whole
+painting.  Check out [PatternPaint](/software/patternpaint), which makes the whole
 process much easier!**
 
 ![Blinkiverse! Long Exposure](/images/{{page.img}}/big/blinkiverse-pov-final.png)
